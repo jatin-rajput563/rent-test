@@ -9,54 +9,81 @@ const DlaKogo = () => {
     <section className="py-[114px] min-h-screen">
       <div className="max-w-[1180px] px-5 mx-auto">
         <div className="text-center">
-          <h2 className="text-[28px] md:text-[36px] font-bold text-dark-blue"></h2>
           <CustomHeading
-            headClass={
-              "font-bold text-dark-blue !leading-[121%] mb-6 text-center"
-            }
-            headText={"Dla kogo?"}
+            headClass="font-bold text-dark-blue !leading-[121%] mb-[44px] text-center"
+            headText="Dla kogo?"
           />
           <Tabs>
-            <TabList className="inline-flex bg-[#f2ebfe] p-[5px] rounded-full gap-2">
+            <TabList className="inline-flex bg-white border border-purple-blue rounded-full gap-1 justify-center items-center">
               <Tab
-                className="px-6 py-2 rounded-full text-sm font-semibold text-dark-blue cursor-pointer react-tabs__tab"
-                selectedClassName="bg-purple-600 text-white"
+                className="py-[21.5px] pl-[58.8px] pr-[42px] rounded-[73px] text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm"
               >
                 Firm, Które...
               </Tab>
               <Tab
-                className="px-6 py-2 rounded-full text-sm font-semibold text-dark-blue cursor-pointer react-tabs__tab"
-                selectedClassName="bg-purple-600 text-white"
+                className="px-6 py-[21.5px] rounded-[73px] text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm"
               >
                 Właścicieli, Którzy...
               </Tab>
             </TabList>
+
+            {/* Tab 1 Panel */}
             <TabPanel>
-              <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                {DlaKogo_data.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`rounded-[20px] max-w-[251px] px-5 pt-6 pb-5 text-center shadow-lg hover:scale-[1.02] duration-300 cursor-pointer ${
-                      index === 1
-                        ? "bg-white border-2 border-[#fce7f3]"
-                        : "bg-white"
-                    }`}
-                  >
+              <div className="mt-[77px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center place-items-center">
+                {DlaKogo_data.map((item, index) => {
+                  const iconBgColors = [
+                    "#5E13F6",
+                    "#FF3B61",
+                    "#FF4DF5",
+                    "#00F0FF",
+                  ];
+                  const iconShadows = [
+                    "group-hover:shadow-[5px_7px_58.2px_0px_#5E13F6]",
+                    "group-hover:shadow-[5px_7px_58.2px_0px_#FF3B61]",
+                    "group-hover:shadow-[5px_7px_58.2px_0px_#FF4DF5]",
+                    "group-hover:shadow-[5px_7px_58.2px_0px_#00F0FF]",
+                  ];
+
+                  const iconBg = iconBgColors[index] || "#000";
+                  const iconShadow = iconShadows[index] || "";
+
+                  const iconPositionClass =
+                    index === 1
+                      ? "mt-2 mr-6"
+                      : index === 2
+                      ? "-mt-10 mr-4"
+                      : "mr-4 mb-4";
+
+                  return (
                     <div
-                      className={`w-[55px] h-[55px] mx-auto mb-4 flex items-center justify-center rounded-xl ${item.bg}`}
+                      key={index}
+                      className="group rounded-[20px] w-full max-w-[300px] pt-6 pb-5 text-center duration-300 cursor-pointer bg-white hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
                     >
-                      {item.icon}
+                      <div
+                        className={`w-[77px] h-[77px] mx-auto mb-4 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
+                        style={{ backgroundColor: iconBg }}
+                      >
+                        <div
+                          className={`text-black w-6 h-6 ${iconPositionClass}`}
+                        >
+                          <item.icon className="w-full h-full" />
+                        </div>
+                      </div>
+                      <h3 className="text-dark-black font-bold text-xl leading-100">
+                        {item.title}
+                      </h3>
+                      <p className="text-dark-black text-sm opacity-80 mt-[11px] leading-snug">
+                        {item.subtitle}
+                      </p>
                     </div>
-                    <h3 className="text-dark-blue font-semibold text-lg">
-                      {item.title}
-                    </h3>
-                    <p className="text-dark-blue text-sm opacity-80 mt-1 leading-snug">
-                      {item.subtitle}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </TabPanel>
+
+            {/* Tab 2 Panel */}
             <TabPanel>
               <div className="mt-12 text-center text-dark-blue">
                 <p className="text-lg font-medium">
