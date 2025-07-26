@@ -8,7 +8,7 @@ import CustomButton from "./common/CustomButton";
 
 const Odkryj = () => {
   return (
-    <div className="min-h-screen">
+    <div >
       <section className="xl:pt-[278px] lg:pt-[140px] md:pt-[205px] pt-[60px] px-[17px]">
         <div className="max-w-[1137px] mx-auto">
           <div className="max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto">
