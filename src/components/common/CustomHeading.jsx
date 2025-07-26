@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const CustomHeading = () => {
+const CustomHeading = ({ headClass, headText }) => {
   return (
     <div>
-      <h2 className="font-bold text-5xl leading-100 text-dark-blue">Your Custom Heading</h2>
+      <h2
+        className={`font-bold text-[40px] sm:text-[44px] md:text-[48px] leading-100 text-dark-blue ${headClass}`}
+      >
+        {headText}
+      </h2>
     </div>
-  )
-}
+  );
+};
 
-export default CustomHeading
+export default CustomHeading;
