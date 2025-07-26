@@ -32,3 +32,7 @@ body {
 .renteasy-bg-shadow {
     box-shadow: 0px -4px 27px 0px #00000029;
 }
+
+.button-bg-shadow {
+    box-shadow: 0px 1px 15px 0px #5E13F687;
+}
