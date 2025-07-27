@@ -96,7 +96,7 @@ const Footer = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="sm:max-w-[175px] max-w-[175px]">
+                <div className="sm:max-w-[175px] max-w-[150px]">
                   <p className="text-base text-white font-semibold font-lato leading-118 mb-[21px]">
                     Napisz do nas
                   </p>
@@ -147,7 +147,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full border-t border-solid border-white py-4 px-5">
-          <p className="sm:text-base text-sm text-center leading-160 opacity-80 text-white font-poppins">
+          <p className="sm:text-base text-sm text-center leading-160 opacity-80 text-white ff-poppins">
             © <span>{new Date().getFullYear()}</span> RentEasy.AI — All rights
             reserved.
           </p>
