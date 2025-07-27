@@ -6,7 +6,7 @@ import CustomHeading from "./common/CustomHeading";
 
 const DlaKogo = () => {
   return (
-    <section className="py-[114px] min-h-screen">
+    <section className="pt-[140px]">
       <div className="max-w-[1180px] px-5 mx-auto">
         <div className="text-center">
           <CustomHeading
@@ -28,8 +28,6 @@ const DlaKogo = () => {
                 Właścicieli, Którzy...
               </Tab>
             </TabList>
-
-            {/* Tab 1 Panel */}
             <TabPanel>
               <div className="mt-[77px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center place-items-center">
                 {DlaKogo_data.map((item, index) => {
@@ -82,8 +80,6 @@ const DlaKogo = () => {
                 })}
               </div>
             </TabPanel>
-
-            {/* Tab 2 Panel */}
             <TabPanel>
               <div className="mt-12 text-center text-dark-blue">
                 <p className="text-lg font-medium">

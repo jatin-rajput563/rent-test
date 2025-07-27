@@ -3,7 +3,20 @@ import sliderImg2 from "../assets/images/png/slider-img-2.png";
 import sliderImg3 from "../assets/images/png/slider-img-3.png";
 import sliderImg4 from "../assets/images/png/slider-img-4.png";
 
-import { sliderIcon1, sliderIcon2, sliderIcon3, sliderIcon4, tabsIcon1, tabsIcon2, tabsIcon3, tabsIcon4 } from "./icon";
+import {
+    facebookIcon,
+    instagramIcon,
+    linkedinIcon,
+    mozemyIcon1,
+    mozemyIcon2,
+    mozemyIcon3,
+    mozemyIcon4,
+    mozemyIcon5,
+    mozemyIcon6,
+    sliderIcon1, sliderIcon2, sliderIcon3, sliderIcon4, tabsIcon1, tabsIcon2, tabsIcon3, tabsIcon4,
+    youtubeIcon,
+} from "./icon";
+
 export const HeroSlider_Data = [
     {
         Image: sliderImg1,
@@ -37,7 +50,6 @@ export const HeroSlider_Data = [
     },
 ];
 
-
 export const DlaKogo_data = [
     {
         icon: tabsIcon1,
@@ -59,5 +71,85 @@ export const DlaKogo_data = [
         title: "Walczą z chaosem",
         subtitle:
             "Przestań Ogarniać Wszystko W Excelu, Mailu I Na Telefonie.",
+    },
+];
+
+export const Comozemy_Data = [
+    {
+        title: "Zautomatyzuj windykację i rozliczenia",
+        text: "Pozwól systemowi automatycznie obsługiwać przypomnienia, zawiadomienia prawne i eskalacje do partnerów prawnych.",
+        icon: mozemyIcon1,
+    },
+    {
+        title: "Zminimalizuj błędy ludzkie",
+        text: "Zoe, Twój inteligentny asystent, śledzi terminy, dokumenty, płatności i interakcje z najemcami.",
+        icon: mozemyIcon2,
+    },
+    {
+        title: "Usprawnij swoje działania",
+        text: "Od wystawiania ofert i rejestracji nowych klientów po realizację zamówień i fakturowanie — zarządzaj wszystkim z jednej platformy.",
+        icon: mozemyIcon3,
+    },
+    {
+        title: "Oszczędzaj swój czas",
+        text: "Wbudowany menedżer zadań + panel samoobsługi najemcy = mniej połączeń, większa przejrzystość.",
+        icon: mozemyIcon4,
+    },
+    {
+        title: "Zyskaj przewagę konkurencyjną",
+        text: "Ocena najemców, rezerwacje online, integracja inteligentnych zamków, faktury, e-sąd — wszystko w jednym miejscu.",
+        icon: mozemyIcon5,
+    },
+    {
+        title: "Łatwa skalowalność",
+        text: "Dodaj więcej nieruchomości bez zatrudniania dodatkowych pracowników i bez wprowadzania chaosu. RentEasy.AI rozwija się razem z Tobą.",
+        icon: mozemyIcon6,
+    },
+];
+
+export const FooterIcons = [
+    {
+        name: "facebook",
+        href: "https://www.facebook.com",
+        // svg: facebookIcon,
+        svg: `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.4" y="0.4" width="39.2" height="39.2" rx="19.6" stroke="white" stroke-width="0.8"/>
+<path d="M24.9996 10H21.9996C20.6735 10 19.4018 10.5268 18.4641 11.4645C17.5264 12.4021 16.9996 13.6739 16.9996 15V18H13.9996V22H16.9996V30H20.9996V22H23.9996L24.9996 18H20.9996V15C20.9996 14.7348 21.105 14.4804 21.2925 14.2929C21.48 14.1054 21.7344 14 21.9996 14H24.9996V10Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+    },
+    {
+        name: "insta",
+        href: "https://www.instagram.com",
+        // svg: instagramIcon,
+        svg: `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.4" y="0.4" width="39.2" height="39.2" rx="19.6" stroke="white" stroke-width="0.8"/>
+<path d="M20 11.474C22.7769 11.474 23.1059 11.4846 24.2025 11.5346C25.3357 11.5863 26.5037 11.8449 27.3294 12.6706C28.1629 13.5041 28.4136 14.6606 28.4655 15.7976C28.5155 16.8942 28.5261 17.2231 28.5261 20.0001C28.5261 22.777 28.5155 23.1059 28.4655 24.2026C28.4141 25.33 28.1503 26.5086 27.3295 27.3294C26.4955 28.1634 25.3404 28.4136 24.2025 28.4656C23.1059 28.5156 22.7771 28.5262 20 28.5262C17.2228 28.5262 16.894 28.5156 15.7974 28.4656C14.6787 28.4145 13.4847 28.1436 12.6706 27.3296C11.8414 26.5004 11.586 25.3331 11.5344 24.2026C11.4844 23.1059 11.4738 22.777 11.4738 20.0001C11.4738 17.2231 11.4844 16.8942 11.5344 15.7975C11.5857 14.6742 11.8528 13.4884 12.6704 12.6707C13.5024 11.8387 14.6627 11.5863 15.7974 11.5345C16.8941 11.4846 17.2231 11.474 20 11.474ZM20 9.6001C17.1756 9.6001 16.8214 9.61204 15.7121 9.66266C14.1038 9.73607 12.508 10.1832 11.3455 11.3456C10.1787 12.5124 9.7359 14.1051 9.66257 15.7122C9.61195 16.8215 9.60001 17.1756 9.60001 20.0001C9.60001 22.8246 9.61195 23.1787 9.66257 24.288C9.73586 25.8937 10.1854 27.4944 11.3455 28.6545C12.5109 29.82 14.1069 30.2642 15.7121 30.3375C16.8214 30.3882 17.1756 30.4001 20 30.4001C22.8245 30.4001 23.1786 30.3882 24.2879 30.3375C25.8944 30.2642 27.4933 29.8157 28.6545 28.6546C29.8217 27.4874 30.2641 25.8954 30.3374 24.288C30.3881 23.1787 30.4 22.8246 30.4 20.0001C30.4 17.1756 30.3881 16.8215 30.3374 15.7122C30.2641 14.1048 29.8161 12.5073 28.6545 11.3457C27.4908 10.1819 25.8903 9.73579 24.2879 9.66266C23.1786 9.61204 22.8245 9.6001 20 9.6001Z" fill="white"/>
+<path d="M20 14.6592C17.0505 14.6592 14.6594 17.0502 14.6594 19.9997C14.6594 22.9492 17.0505 25.3403 20 25.3403C22.9495 25.3403 25.3406 22.9492 25.3406 19.9997C25.3406 17.0502 22.9495 14.6592 20 14.6592ZM20 23.4664C18.0854 23.4664 16.5333 21.9143 16.5333 19.9997C16.5333 18.0852 18.0854 16.5331 20 16.5331C21.9146 16.5331 23.4667 18.0852 23.4667 19.9997C23.4667 21.9143 21.9146 23.4664 20 23.4664Z" fill="white"/>
+<path d="M25.5516 15.6962C26.2408 15.6962 26.7996 15.1374 26.7996 14.4482C26.7996 13.7589 26.2408 13.2002 25.5516 13.2002C24.8623 13.2002 24.3036 13.7589 24.3036 14.4482C24.3036 15.1374 24.8623 15.6962 25.5516 15.6962Z" fill="white"/>
+</svg>
+`,
+    },
+    {
+        name: "linkedin",
+        href: "https://www.linkedin.com",
+        // svg: linkedinIcon,
+        svg: `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.4" y="0.4" width="39.2" height="39.2" rx="19.6" stroke="white" stroke-width="0.8"/>
+<path d="M25.9514 30.7998C26.0441 30.7998 30.2371 30.7989 30.1453 30.7989C30.5179 30.7989 30.8203 30.4965 30.8203 30.1239C30.5053 23.0527 32.4781 15.5908 25.1162 15.5908C23.7005 15.5908 22.5728 16.0741 21.7601 16.7131C21.7601 15.3982 20.339 16.1254 17.0585 15.9301C16.6859 15.9301 16.3835 16.2325 16.3835 16.6051C16.6553 29.3544 15.7769 30.7989 17.0585 30.7989H21.2525C22.4702 30.7989 21.6953 29.0817 21.9275 23.4298C21.9275 21.0952 22.6025 20.638 23.7689 20.638C25.0595 20.638 25.2764 21.5344 25.2764 23.5432C25.5077 29.0934 24.7382 30.7998 25.9514 30.7998ZM23.7689 19.288C19.727 19.288 20.5775 23.7322 20.5775 29.4489H17.7335V17.2801H20.4101V18.4483C20.4101 19.0963 21.3974 19.4149 21.7412 18.7633C22.184 17.9227 23.3342 16.9408 25.1162 16.9408C28.2905 16.9408 29.4703 18.5005 29.4703 22.6972V29.4498H26.6264C26.6264 23.0203 27.3068 19.288 23.7689 19.288Z" fill="white"/>
+<path d="M10.2303 15.9309C8.95227 15.9309 9.82707 17.3574 9.55527 30.1247C9.55527 30.4973 9.85767 30.7997 10.2303 30.7997H14.4287C15.7067 30.7997 14.8319 29.3732 15.1037 16.6059C15.1037 15.4404 13.4108 16.128 10.2303 15.9309ZM13.7537 29.4497H10.9053V17.2809H13.7537V29.4497Z" fill="white"/>
+<path d="M12.3273 9.2002C8.20889 9.2002 8.23409 15.4362 12.3273 15.4362C16.4177 15.4362 16.4501 9.2002 12.3273 9.2002ZM12.3273 14.0863C10.0161 14.0863 9.99448 10.5502 12.3273 10.5502C14.6645 10.5502 14.6348 14.0863 12.3273 14.0863Z" fill="white"/>
+</svg>
+`,
+    },
+    {
+        name: "youtube",
+        href: "https://www.youtube.com",
+        // svg: youtubeIcon,
+        svg: `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.4" y="0.4" width="39.2" height="39.2" rx="19.6" stroke="white" stroke-width="0.8"/>
+<path d="M30.54 14.42C30.4151 13.9523 30.1698 13.5255 29.8285 13.1821C29.4872 12.8387 29.0619 12.5908 28.595 12.463C26.88 12 20 12 20 12C20 12 13.12 12 11.405 12.463C10.9381 12.5908 10.5128 12.8387 10.1715 13.1821C9.83023 13.5255 9.58492 13.9523 9.46 14.42C9 16.148 9 19.75 9 19.75C9 19.75 9 23.352 9.46 25.08C9.58476 25.5479 9.83001 25.9749 10.1713 26.3185C10.5126 26.662 10.9379 26.9101 11.405 27.038C13.121 27.5 20 27.5 20 27.5C20 27.5 26.88 27.5 28.595 27.038C29.0621 26.9101 29.4874 26.662 29.8287 26.3185C30.17 25.9749 30.4152 25.5479 30.54 25.08C31 23.354 31 19.75 31 19.75C31 19.75 31 16.148 30.54 14.42ZM17.75 23.021V16.48L23.5 19.751L17.75 23.021Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+</svg>
+`,
     },
 ];
