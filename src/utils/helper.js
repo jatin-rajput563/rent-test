@@ -2,6 +2,7 @@ import sliderImg1 from "../assets/images/png/slider-img-1.png";
 import sliderImg2 from "../assets/images/png/slider-img-2.png";
 import sliderImg3 from "../assets/images/png/slider-img-3.png";
 import sliderImg4 from "../assets/images/png/slider-img-4.png";
+import Joe from "../assets/images/svg/joe.svg";
 
 import {
     ComozemyIcon1,
@@ -10,38 +11,73 @@ import {
     ComozemyIcon4,
     ComozemyIcon5,
     ComozemyIcon6,
+    DlaczegoLogoFive,
+    DlaczegoLogoFour,
+    DlaczegoLogoOne,
+    DlaczegoLogoThree,
+    DlaczegoLogoTwo,
     sliderIcon1, sliderIcon2, sliderIcon3, sliderIcon4, tabsIcon1, tabsIcon2, tabsIcon3, tabsIcon4,
 } from "./icon";
 
 export const HeroSlider_Data = [
     {
         Image: sliderImg1,
-        icon: sliderIcon1,
+        sliderIcon: sliderIcon1,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
         Image: sliderImg2,
-        icon: sliderIcon2,
+        sliderIcon: sliderIcon2,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
         Image: sliderImg3,
-        icon: sliderIcon3,
+        sliderIcon: sliderIcon3,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
         Image: sliderImg4,
-        icon: sliderIcon4,
+        sliderIcon: sliderIcon4,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
         Image: sliderImg2,
-        icon: sliderIcon2,
+        sliderIcon: sliderIcon2,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
         Image: sliderImg3,
-        icon: sliderIcon3,
+        sliderIcon: sliderIcon3,
+        description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
+    },
+    {
+        Image: sliderImg1,
+        sliderIcon: sliderIcon1,
+        description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
+    },
+    {
+        Image: sliderImg2,
+        sliderIcon: sliderIcon2,
+        description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
+    },
+    {
+        Image: sliderImg3,
+        sliderIcon: sliderIcon3,
+        description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
+    },
+    {
+        Image: sliderImg4,
+        sliderIcon: sliderIcon4,
+        description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
+    },
+    {
+        Image: sliderImg2,
+        sliderIcon: sliderIcon2,
+        description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
+    },
+    {
+        Image: sliderImg3,
+        sliderIcon: sliderIcon3,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
 ];
@@ -155,3 +191,39 @@ export const FooterIcons = [
 `,
     },
 ];
+
+export const HeaderLinks_Data = [
+    { href: "#home", label: "Strona Główna" },
+    { href: "#", label: "Dla kogo?" },
+    { href: "#", label: "Jak to działa?" },
+    { href: "#Modules", label: "Moduły" },
+    { href: "#MeetZoe", withImage: true, image: Joe },
+];
+
+export const DLACZEGO_DATA = [
+    {
+        icon: DlaczegoLogoOne,
+        title: "Przewaga Konkurencyjna",
+        descrition: "Ponieważ nie jesteśmy tylko oprogramowaniem — jesteśmy Twoją przewagą konkurencyjną."
+    },
+    {
+        icon: DlaczegoLogoTwo,
+        title: "Efektywność Kosztowa",
+        descrition: "Zamiast zatrudniać trzech nowych pracowników, uruchamiasz RentEasy.AI. I to działa."
+    },
+    {
+        icon: DlaczegoLogoThree,
+        title: "Wgląd W Branżę",
+        descrition: "Stworzyliśmy ten system we współpracy z prawdziwymi zarządcami nieruchomości — rozumiemy Twoją branżę, tempo pracy i formalności, z którymi się zmagasz."
+    },
+    {
+        icon: DlaczegoLogoFour,
+        title: "Aktywna Automatyzacja",
+        descrition: "RentEasy.AI nie tylko przechowuje informacje — wykonuje pracę za Ciebie."
+    },
+    {
+        icon: DlaczegoLogoFive,
+        title: "Łatwe Wdrożenie",
+        descrition: "Brak skomplikowanego procesu wdrażania — jest intuicyjny, nie wymaga szkolenia, a my pomagamy w migracji z innych narzędzi, takich jak SON."
+    },
+]

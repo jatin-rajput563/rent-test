@@ -97,7 +97,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="sm:max-w-[175px] max-w-[150px]">
-                  <p className="text-base text-white font-semibold font-lato leading-118 mb-[21px]">
+                  <p className="text-base text-white -ml-[25px] sm:-ml-0 font-semibold font-lato leading-118 mb-[21px]">
                     Napisz do nas
                   </p>
                   <ul className="flex gap-4 flex-col">
