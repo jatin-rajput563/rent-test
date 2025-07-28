@@ -3,12 +3,13 @@ import spyImg from "../assets/images/png/spy-img.png";
 import discoverRentImg from "../assets/images/png/discover-rent-img.png";
 import CustomHeading from "./common/CustomHeading";
 import SubHeading from "./common/SubHeading";
-import Description from "./common/Description";
+// import Description from "./common/Description";
 import CustomButton from "./common/CustomButton";
+import CustomPara from "./common/CustomPara";
 
 const Odkryj = () => {
   return (
-    <div >
+    <div>
       <section className="xl:pt-[278px] lg:pt-[140px] md:pt-[205px] pt-[60px] px-[17px]">
         <div className="max-w-[1137px] mx-auto">
           <div className="max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto">
@@ -32,8 +33,11 @@ const Odkryj = () => {
                       " pt-[18px] !leading-129 sm:pb-[14px] pb-[5px] max-w-[437px] max-[820px]:text-center max-[820px]:mx-auto"
                     }
                   />
-                  <Description
-                    descText={
+                  <CustomPara
+                    paraClass={
+                      "opacity-80 font-normal max-w-[262px] max-md:mx-auto sm:max-w-[457px] max-[820px]:text-center"
+                    }
+                    paraText={
                       <>
                         RentEasy.AI to pierwszy w Polsce system CRM stworzony od
                         podstaw specjalnie dla firm zarządzających
@@ -48,7 +52,6 @@ const Odkryj = () => {
                         </span>
                       </>
                     }
-                    descClass="opacity-80 font-normal max-w-[262px] max-md:mx-auto sm:max-w-[457px] max-[820px]:text-center"
                   />
                 </div>
                 <CustomButton
