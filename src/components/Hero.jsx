@@ -1,5 +1,6 @@
 import React from "react";
 import logoImg from "../assets/images/png/logo-text.png";
+import HeroDots from "../assets/images/png/dots-img.png";
 import CustomButton from "./common/CustomButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -13,42 +14,26 @@ const Hero = () => {
   return (
     <>
       <div>
-        <img src="" alt="" />
-        <div className="max-w-[1440px] px-[37px] bg-light-grey mx-auto rounded-[30px] pt-[53px] sm:pt-[77px]">
-          {/* Tagline */}
+        <div className="max-w-[1440px] relative px-[37px] bg-light-grey mx-auto rounded-[30px] pt-[53px] sm:pt-[77px]">
+          <img className="absolute right-[14px] top-[28px] max-w-[114px] w-full h-[186px] max-[1275px]:left-[14px] max-[1067px]:hidden" src={HeroDots} alt="dots" />
           <div className="justify-center items-center flex mx-auto mb-[18px] max-w-[291px] sm:max-w-full">
             <p className="bg-light-purple max-w-[352.97px] w-full py-[11.5px] rounded-[21px] border border-purple-blue text-purple-blue font-bold leading-100 text-center">
               Twój zespół cyfrowy dostępny 24/7.
             </p>
           </div>
-
-          {/* Heading + Image */}
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-[56px] lg:text-[64px] hidden lg:block font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
-              Zautomatyzuj zarządzanie nieruchomościami
-              <span className="bg-light-purple rounded-tl-xl rounded-bl-xl relative">
-                dzięki AI.
-                <img
-                  className="absolute -top-[32px] -right-[85px]"
-                  src={logoImg}
-                  alt="logo-text-img"
-                />
+            <h1 className="text-4xl sm:text-5xl md:text-[56px] lg:text-[64px] hidden lg:block font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto"> Zautomatyzuj zarządzanie nieruchomościami
+              <span className="bg-light-purple rounded-tl-xl rounded-bl-xl relative pl-2 ml-1">
+                 dzięki AI.
+                <img                  className="absolute -top-[32px] -right-[85px]"                  src={logoImg}                  alt="logo-text-img"                />
               </span>
             </h1>
             <h1 className="text-4xl sm:text-5xl md:text-[64px] lg:hidden font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
-              Zautomatyzuj zarządzanie nieruchomościami dzięki AI.
-            </h1>
-
-            {/* Description */}
+              Zautomatyzuj zarządzanie nieruchomościami dzięki AI.</h1>
             <p className="leading-134 opacity-80 text-dark-blue max-w-[280px] sm:max-w-[820px] text-center pt-[9px] sm:pt-[15px] mx-auto">
-              Pierwszy w Polsce system CRM oparty na sztucznej inteligencji,
-              stworzony specjalnie dla firm zarządzających nieruchomościami.{" "}
-              <br />
-              Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj
-              działalność — bez zatrudniania dodatkowych pracowników.
+              Pierwszy w Polsce system CRM oparty na sztucznej inteligencji, stworzony specjalnie dla firm zarządzających nieruchomościami.{" "}
+              <br /> Zautomatyzuj swoje działania, wyeliminuj chaos i skaluj działalność — bez zatrudniania dodatkowych pracowników.
             </p>
-
-            {/* Buttons */}
             <div className="sm:mt-[15.5px] mt-[10px] flex flex-wrap gap-[10px] sm:gap-[27px] mx-auto justify-center items-center">
               <CustomButton
                 btnClass="!py-[9px] !px-[16.7px] bg-purple-blue text-white"
@@ -60,8 +45,6 @@ const Hero = () => {
               />
             </div>
           </div>
-
-          {/* Swiper Slider */}
           <div className="mt-10">
             <Swiper
               modules={[Autoplay]}
