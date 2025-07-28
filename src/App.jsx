@@ -5,6 +5,7 @@ import Header from "./components/Header";
 // import Hero from "./components/Hero";
 import Odkryj from "./components/Odkryj";
 import Footer from "./components/Footer";
+import Najczęściej from "./components/Najczęściej";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Odkryj />
       <DlaKogo />
       <Comożemy />
+      <Najczęściej />
       <Footer />
     </>
   );

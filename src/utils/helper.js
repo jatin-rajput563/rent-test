@@ -4,17 +4,13 @@ import sliderImg3 from "../assets/images/png/slider-img-3.png";
 import sliderImg4 from "../assets/images/png/slider-img-4.png";
 
 import {
-    facebookIcon,
-    instagramIcon,
-    linkedinIcon,
-    mozemyIcon1,
-    mozemyIcon2,
-    mozemyIcon3,
-    mozemyIcon4,
-    mozemyIcon5,
-    mozemyIcon6,
+    ComozemyIcon1,
+    ComozemyIcon2,
+    ComozemyIcon3,
+    ComozemyIcon4,
+    ComozemyIcon5,
+    ComozemyIcon6,
     sliderIcon1, sliderIcon2, sliderIcon3, sliderIcon4, tabsIcon1, tabsIcon2, tabsIcon3, tabsIcon4,
-    youtubeIcon,
 } from "./icon";
 
 export const HeroSlider_Data = [
@@ -78,32 +74,38 @@ export const Comozemy_Data = [
     {
         title: "Zautomatyzuj windykację i rozliczenia",
         text: "Pozwól systemowi automatycznie obsługiwać przypomnienia, zawiadomienia prawne i eskalacje do partnerów prawnych.",
-        icon: mozemyIcon1,
+        image: ComozemyIcon1,
+        bgColor: "#5E13F6",
     },
     {
         title: "Zminimalizuj błędy ludzkie",
         text: "Zoe, Twój inteligentny asystent, śledzi terminy, dokumenty, płatności i interakcje z najemcami.",
-        icon: mozemyIcon2,
+        image: ComozemyIcon2,
+        bgColor: "#FF3B61",
     },
     {
         title: "Usprawnij swoje działania",
         text: "Od wystawiania ofert i rejestracji nowych klientów po realizację zamówień i fakturowanie — zarządzaj wszystkim z jednej platformy.",
-        icon: mozemyIcon3,
+        image: ComozemyIcon3,
+        bgColor: "#FF4DF5",
     },
     {
         title: "Oszczędzaj swój czas",
         text: "Wbudowany menedżer zadań + panel samoobsługi najemcy = mniej połączeń, większa przejrzystość.",
-        icon: mozemyIcon4,
+        image: ComozemyIcon4,
+        bgColor: "#00F0FF",
     },
     {
         title: "Zyskaj przewagę konkurencyjną",
         text: "Ocena najemców, rezerwacje online, integracja inteligentnych zamków, faktury, e-sąd — wszystko w jednym miejscu.",
-        icon: mozemyIcon5,
+        image: ComozemyIcon5,
+        bgColor: "#D5C7FF",
     },
     {
         title: "Łatwa skalowalność",
         text: "Dodaj więcej nieruchomości bez zatrudniania dodatkowych pracowników i bez wprowadzania chaosu. RentEasy.AI rozwija się razem z Tobą.",
-        icon: mozemyIcon6,
+        image: ComozemyIcon6,
+        bgColor: "#1B1E3C",
     },
 ];
 

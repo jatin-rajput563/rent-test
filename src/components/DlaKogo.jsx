@@ -57,10 +57,10 @@ const DlaKogo = () => {
                   return (
                     <div
                       key={index}
-                      className="group rounded-[20px] w-full max-w-[300px] pt-6 pb-5 text-center duration-300 cursor-pointer bg-white hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
+                      className="group rounded-[20px] w-full max-w-[251px] h-[258px] py-[30px] text-center duration-300 cursor-pointer bg-white hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
                     >
                       <div
-                        className={`w-[77px] h-[77px] mx-auto mb-4 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
+                        className={`w-[77px] h-[77px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
                         style={{ backgroundColor: iconBg }}
                       >
                         <div
@@ -72,7 +72,7 @@ const DlaKogo = () => {
                       <h3 className="text-dark-black font-bold text-xl leading-100">
                         {item.title}
                       </h3>
-                      <p className="text-dark-black text-sm opacity-80 mt-[11px] leading-snug">
+                      <p className="text-dark-black text-sm opacity-80 mt-[11px] leading-134 ff-cabin">
                         {item.subtitle}
                       </p>
                     </div>
