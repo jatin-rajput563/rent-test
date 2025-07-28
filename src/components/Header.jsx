@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../assets/images/svg/Logo.svg";
 import Flag from "../assets/images/svg/Flag.svg";
 import { HeaderLinks_Data } from "../utils/helper";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,9 @@ const Header = () => {
 
   return (
     <div className="max-w-[1180px] px-5 mx-auto sm:pt-7 py-[11px] sm:pb-[26px] flex justify-between items-center relative overflow-x-clip">
-      <a href="#">
+      <NavLink to="/">
         <img className="sm:h-[55px] h-[42px]" src={Logo} alt="logo" />
-      </a>
+      </NavLink>
 
       <ul
         id="navMenu"
@@ -30,14 +31,14 @@ const Header = () => {
       >
         {HeaderLinks_Data.map((link, index) => (
           <li key={index} className="nav-link text-dark-blue">
-            <a
-              href={link.href}
+            <NavLink
+              to={link.link}
               onClick={closeNavbar}
               className="relative after:absolute after:bottom-0 after:left-0 after:bg-purple-blue after:h-[1px] hover:after:w-full after:content-[''] after:w-0 after:duration-300 hover:text-purple-blue duration-300 flex items-center gap-2"
             >
               {link.label}
               {link.withImage && <img src={link.image} alt="Zoe" />}
-            </a>
+            </NavLink>
           </li>
         ))}
 

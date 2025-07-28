@@ -193,11 +193,11 @@ export const FooterIcons = [
 ];
 
 export const HeaderLinks_Data = [
-    { href: "#home", label: "Strona Główna" },
-    { href: "#", label: "Dla kogo?" },
-    { href: "#", label: "Jak to działa?" },
-    { href: "#Modules", label: "Moduły" },
-    { href: "#MeetZoe", withImage: true, image: Joe },
+    { link: "/dlaczego", label: "Strona Główna" },
+    { link: "/dlakogo", label: "Dla kogo?" },
+    { link: "/działa", label: "Jak to działa?" },
+    { link: "/moduly", label: "Moduły" },
+    { link: "/", withImage: true, image: Joe },
 ];
 
 export const DLACZEGO_DATA = [
