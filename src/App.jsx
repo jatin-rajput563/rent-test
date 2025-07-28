@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Odkryj from "./components/Odkryj";
 import Footer from "./components/Footer";
 import Najczęściej from "./components/Najczęściej";
+import JakZacząć from "./components/JakZacząć";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Odkryj />
       <DlaKogo />
       <Comożemy />
+      <JakZacząć />
       <Najczęściej />
       <Footer />
     </>
