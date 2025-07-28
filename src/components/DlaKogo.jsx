@@ -3,10 +3,14 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { DlaKogo_data } from "../utils/helper";
 import CustomHeading from "./common/CustomHeading";
+import { useLocation } from "react-router-dom";
 
 const DlaKogo = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
-    <section className="pt-[140px]">
+    <section className={`${isHomePage ? "pt-[140px]" : "pt-0"}`}>
       <div className="max-w-[1180px] px-5 mx-auto">
         <div className="text-center">
           <CustomHeading

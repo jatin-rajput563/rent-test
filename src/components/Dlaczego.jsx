@@ -2,7 +2,12 @@ import React from "react";
 import CustomHeading from "./common/CustomHeading";
 import aiImg from "../assets/images/png/ai-img.png";
 import { DLACZEGO_DATA } from "../utils/helper";
+import { useLocation } from "react-router-dom";
+
 const Dlaczego = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   const COLORS = [
     "bg-[#5E13F6]",
     "bg-[#FF3B61]",
@@ -10,12 +15,20 @@ const Dlaczego = () => {
     "bg-[#00F0FF]",
     "bg-[#1B1E3C]",
   ];
+
   return (
-    <div className="mt-[52px] md:mt-[130px] lg:mt-[140px] xl:mt-[164px] mb-[22px] sm:mb-0 px-5">
+    <div
+      className={`${
+        isHomePage
+          ? "mt-[52px] md:mt-[130px] lg:mt-[140px] xl:mt-[164px]"
+          : "mt-[50px]"
+      } sm:mb-0 px-5 mb-[22px]`}
+    >
       <div className="max-w-[1140px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-[37px] xl:gap-[83px] justify-center items-center">
           <div className="flex flex-col max-w-[600px] w-full py-0">
-            <CustomHeading headClass={"!text-[40px] sm:text-[44px] md:text-[46px] leading-120 mb-[37px] max-lg:text-center"}
+            <CustomHeading
+              headClass="!text-[40px] sm:text-[44px] md:text-[46px] leading-120 mb-[37px] max-lg:text-center"
               headText="Dlaczego warto skorzystać z RentEasy.AI?"
             />
             {DLACZEGO_DATA.map((item, index) => (
@@ -30,7 +43,7 @@ const Dlaczego = () => {
                     COLORS[index % COLORS.length]
                   }`}
                 >
-                  {<item.icon />}
+                  <item.icon />
                 </div>
                 <div>
                   <h4 className="font-bold text-xl leading-100 pb-1.5 text-dark-black">
@@ -43,11 +56,12 @@ const Dlaczego = () => {
               </div>
             ))}
           </div>
+
           <div className="w-full lg:max-w-[457px] mx-auto lg:h-[610px] sm:h-[500px] h-[447px]">
             <img
               src={aiImg}
               alt="work with us"
-              className="w-full h-full object-cover  pointer-events-none rounded-[15px]"
+              className="w-full h-full object-cover pointer-events-none rounded-[15px]"
             />
           </div>
         </div>
