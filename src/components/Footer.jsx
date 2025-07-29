@@ -14,9 +14,9 @@ const Footer = () => {
 
   return (
     <>
-      <section
+      <div
         className={`sm:px-[37px] px-[21px] ${
-          isHomePage ? "pt-[116px]" : "pt-[20px]"
+          isHomePage ? "sm:pt-[81px] pt-[93px]" : "pt-[20px]"
         }`}
       >
         <div className="container max-w-[1366px] !transform-[unset] -mt-[59px] sm:-mt-[65px] translate-y-[59px] sm:translate-y-[65px] mx-auto rounded-[15px] bg-purple-blue w-full sm:py-10 pt-[41px] md:py-[61px] px-5 pb-[57px] sm:px-6">
@@ -46,7 +46,7 @@ const Footer = () => {
             />
           </div>
         </div>
-      </section>
+      </div>
 
       <footer className="bg-dark-blue sm:pt-[169px] pt-[141px]">
         <div className="container w-full mx-auto max-w-[1182px] px-[21px] pb-[59px]">
@@ -142,7 +142,7 @@ const Footer = () => {
                           src={Phone}
                           alt="phone-icon"
                         />
-                        +48 123 456 789
+                        +48 519 519 190
                       </a>
                     </li>
                     <li className="relative">
@@ -155,7 +155,7 @@ const Footer = () => {
                           src={Mail}
                           alt="mail-icon"
                         />
-                        support@renteasy.ai
+                        info@renteasy.ai
                       </a>
                     </li>
                   </ul>

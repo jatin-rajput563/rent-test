@@ -80,7 +80,7 @@ const Najczęściej = () => {
           })}
           <CustomButton
             btnText="Poznaj Zoe!"
-            btnClass="bg-purple-blue text-white flex mx-auto py-[9px] px-[24.5px]"
+            btnClass="bg-purple-blue text-white flex mx-auto py-[9px] px-[24.5px] mt-[118px] sm:mt-[51px]"
           />
         </div>
       </div>
