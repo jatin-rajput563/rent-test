@@ -2,6 +2,10 @@ import sliderImg1 from "../assets/images/png/slider-img-1.png";
 import sliderImg2 from "../assets/images/png/slider-img-2.png";
 import sliderImg3 from "../assets/images/png/slider-img-3.png";
 import sliderImg4 from "../assets/images/png/slider-img-4.png";
+import userGear from "../assets/images/svg/user-gear.svg";
+import corporate from "../assets/images/svg/corporate.svg";
+import portfolio from "../assets/images/svg/portfolio.svg";
+import trash from "../assets/images/svg/trash-can.svg";
 import Joe from "../assets/images/svg/joe.svg";
 
 import {
@@ -258,5 +262,307 @@ export const ACCORDION_DATA = [
         question: "Czy dostępna jest bezpłatna wersja próbna lub demo?",
         answer:
             "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+];
+
+export const tabData = [
+    {
+        id: 0,
+        label: "Moduł ofert z integracjami",
+        heading: "Moduł ofert z integracjami",
+        subheading: "Do czego służy?",
+        description:
+            "Ten moduł pozwala publikować oferty najmu bez pośredników i prowizji bezpośrednio z systemu RentEasy.AI. Dzięki integracjom z zewnętrznymi portalami i własną podstroną ofertową możesz prowadzić cały lejek rezerwacyjny samodzielnie.",
+        features: [
+            {
+                title: "Możliwość Tworzenia i Publikowania Ogłoszeń Z Poziomu Systemu.",
+                color: "#5E13F6",
+            },
+            {
+                title: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+                color: "#FF3B61",
+            },
+            {
+                title: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+                color: "#FF4DF5",
+            },
+            {
+                title: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+                color: "#1B1E3C",
+            },
+        ],
+        benefitsTitle: "Dla kogo?",
+        benefitsSub: "Dla firm, które chcą:",
+        benefits: [
+            {
+                text: "Zwiększyć Kontrolę Nad Procesem Wynajmu",
+                iconSrc: userGear,
+                bgColor: "bg-[#5E13F6]",
+            },
+            {
+                text: "Zminimalizować Czas Od Publikacji Do Podpisania Umowy",
+                iconSrc: corporate,
+                bgColor: "bg-[#FF3B61]",
+            },
+            {
+                text: "Pozyskać Najemców Bez Pośredników",
+                iconSrc: portfolio,
+                bgColor: "bg-[#FF4DF5]",
+            },
+            {
+                text: "Budować Markę Własną W Ramach Strony Ofertowej",
+                iconSrc: trash,
+                bgColor: "bg-[#00F0FF]",
+            },
+        ],
+    },
+    {
+        id: 1,
+        label: "Moduł podstawowy",
+        heading: "Moduł podstawowy",
+        subheading: "Do czego służy?",
+        description:
+            "To fundament całego systemu. Dzięki niemu masz w jednym miejscu pełny przegląd swojej działalności: mieszkania, właściciele, najemcy, umowy, płatności i dokumenty",
+        features: [
+            {
+                title: "Możliwość Tworzenia i Publikowania Ogłoszeń Z Poziomu Systemu.",
+                color: "#5E13F6",
+            },
+            {
+                title: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+                color: "#FF3B61",
+            },
+            {
+                title: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+                color: "#FF4DF5",
+            },
+            {
+                title: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+                color: "#1B1E3C",
+            },
+        ],
+        benefitsTitle: "Co rozwiązuje?",
+        benefits: [
+            {
+                text: "Zwiększyć Kontrolę Nad Procesem Wynajmu",
+                iconSrc: userGear,
+                bgColor: "bg-[#5E13F6]",
+            },
+            {
+                text: "Zminimalizować Czas Od Publikacji Do Podpisania Umowy",
+                iconSrc: corporate,
+                bgColor: "bg-[#FF3B61]",
+            },
+            {
+                text: "Pozyskać Najemców Bez Pośredników",
+                iconSrc: portfolio,
+                bgColor: "bg-[#FF4DF5]",
+            },
+            {
+                text: "Budować Markę Własną W Ramach Strony Ofertowej",
+                iconSrc: trash,
+                bgColor: "bg-[#00F0FF]",
+            },
+        ],
+    },
+    {
+        id: 2,
+        label: "Moduł Integracji z Google Workspace",
+        heading: "Moduł ofert z integracjami",
+        subheading: "Do czego służy?",
+        description:
+            "Ten moduł pozwala publikować oferty najmu bez pośredników i prowizji bezpośrednio z systemu RentEasy.Al. Dzięki integracjom z zewnętrznymi portalami i własną podstroną ofertową możesz prowadzić cały lejek rezerwacyjny samodzielnie.",
+        features: [
+            {
+                title: "Możliwość Tworzenia i Publikowania Ogłoszeń Z Poziomu Systemu.",
+                color: "#5E13F6",
+            },
+            {
+                title: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+                color: "#FF3B61",
+            },
+            {
+                title: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+                color: "#FF4DF5",
+            },
+            {
+                title: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+                color: "#1B1E3C",
+            },
+        ],
+        benefitsTitle: "Dla kogo?",
+        benefitsSub: "Dla firm, które chcą:",
+        benefits: [
+            {
+                text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
+                iconSrc: userGear,
+                bgColor: "bg-[#5E13F6]",
+            },
+            {
+                text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
+                iconSrc: corporate,
+                bgColor: "bg-[#FF3B61]",
+            },
+            {
+                text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
+                iconSrc: portfolio,
+                bgColor: "bg-[#FF4DF5]",
+            },
+            {
+                text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
+                iconSrc: trash,
+                bgColor: "bg-[#00F0FF]",
+            },
+        ],
+    },
+    {
+        id: 2,
+        label: "Moduł Integracji z Google Workspace",
+        heading: "Moduł ofert z integracjami",
+        subheading: "Do czego służy?",
+        description:
+            "Ten moduł pozwala publikować oferty najmu bez pośredników i prowizji bezpośrednio z systemu RentEasy.Al. Dzięki integracjom z zewnętrznymi portalami i własną podstroną ofertową możesz prowadzić cały lejek rezerwacyjny samodzielnie.",
+        features: [
+            {
+                title: "Możliwość Tworzenia i Publikowania Ogłoszeń Z Poziomu Systemu.",
+                color: "#5E13F6",
+            },
+            {
+                title: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+                color: "#FF3B61",
+            },
+            {
+                title: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+                color: "#FF4DF5",
+            },
+            {
+                title: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+                color: "#1B1E3C",
+            },
+        ],
+        benefitsTitle: "Dla kogo?",
+        benefitsSub: "Dla firm, które chcą:",
+        benefits: [
+            {
+                text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
+                iconSrc: userGear,
+                bgColor: "bg-[#5E13F6]",
+            },
+            {
+                text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
+                iconSrc: corporate,
+                bgColor: "bg-[#FF3B61]",
+            },
+            {
+                text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
+                iconSrc: portfolio,
+                bgColor: "bg-[#FF4DF5]",
+            },
+            {
+                text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
+                iconSrc: trash,
+                bgColor: "bg-[#00F0FF]",
+            },
+        ],
+    },
+    {
+        id: 2,
+        label: "Moduł Integracji z Google Workspace",
+        heading: "Moduł ofert z integracjami",
+        subheading: "Do czego służy?",
+        description:
+            "Ten moduł pozwala publikować oferty najmu bez pośredników i prowizji bezpośrednio z systemu RentEasy.Al. Dzięki integracjom z zewnętrznymi portalami i własną podstroną ofertową możesz prowadzić cały lejek rezerwacyjny samodzielnie.",
+        features: [
+            {
+                title: "Możliwość Tworzenia i Publikowania Ogłoszeń Z Poziomu Systemu.",
+                color: "#5E13F6",
+            },
+            {
+                title: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+                color: "#FF3B61",
+            },
+            {
+                title: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+                color: "#FF4DF5",
+            },
+            {
+                title: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+                color: "#1B1E3C",
+            },
+        ],
+        benefitsTitle: "Dla kogo?",
+        benefitsSub: "Dla firm, które chcą:",
+        benefits: [
+            {
+                text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
+                iconSrc: userGear,
+                bgColor: "bg-[#5E13F6]",
+            },
+            {
+                text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
+                iconSrc: corporate,
+                bgColor: "bg-[#FF3B61]",
+            },
+            {
+                text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
+                iconSrc: portfolio,
+                bgColor: "bg-[#FF4DF5]",
+            },
+            {
+                text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
+                iconSrc: trash,
+                bgColor: "bg-[#00F0FF]",
+            },
+        ],
+    },
+    {
+        id: 2,
+        label: "Moduł Integracji z Google Workspace",
+        heading: "Moduł ofert z integracjami",
+        subheading: "Do czego służy?",
+        description:
+            "Ten moduł pozwala publikować oferty najmu bez pośredników i prowizji bezpośrednio z systemu RentEasy.Al. Dzięki integracjom z zewnętrznymi portalami i własną podstroną ofertową możesz prowadzić cały lejek rezerwacyjny samodzielnie.",
+        features: [
+            {
+                title: "Możliwość Tworzenia i Publikowania Ogłoszeń Z Poziomu Systemu.",
+                color: "#5E13F6",
+            },
+            {
+                title: "Własna Podstrona Ofertowa Z Brandingiem Klienta.",
+                color: "#FF3B61",
+            },
+            {
+                title: "Zbieranie Rezerwacji I Danych Kontaktowych Online.",
+                color: "#FF4DF5",
+            },
+            {
+                title: "Integracja Z Popularnymi Portalami Ogłoszeniowymi (Planowana).",
+                color: "#1B1E3C",
+            },
+        ],
+        benefitsTitle: "Dla kogo?",
+        benefitsSub: "Dla firm, które chcą:",
+        benefits: [
+            {
+                text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
+                iconSrc: userGear,
+                bgColor: "bg-[#5E13F6]",
+            },
+            {
+                text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
+                iconSrc: corporate,
+                bgColor: "bg-[#FF3B61]",
+            },
+            {
+                text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
+                iconSrc: portfolio,
+                bgColor: "bg-[#FF4DF5]",
+            },
+            {
+                text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
+                iconSrc: trash,
+                bgColor: "bg-[#00F0FF]",
+            },
+        ],
     },
 ];

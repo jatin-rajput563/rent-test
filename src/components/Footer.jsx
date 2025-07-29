@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import CustomButton from "./common/CustomButton";
 import CustomHeading from "./common/CustomHeading";
 import FooterLogo from "../assets/images/svg/FooterLogo.svg";
@@ -8,28 +9,29 @@ import Phone from "../assets/images/svg/Phone.svg";
 import Mail from "../assets/images/svg/Mail.svg";
 
 const Footer = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
     <>
-      <section className="sm:px-[37px] px-[21px] sm:pt-20 pt-[116px]">
+      <section
+        className={`sm:px-[37px] px-[21px] ${
+          isHomePage ? "pt-[116px]" : "pt-[20px]"
+        }`}
+      >
         <div className="container max-w-[1366px] !transform-[unset] -mt-[59px] sm:-mt-[65px] translate-y-[59px] sm:translate-y-[65px] mx-auto rounded-[15px] bg-purple-blue w-full sm:py-10 pt-[41px] md:py-[61px] px-5 pb-[57px] sm:px-6">
           <CustomHeading
-            headText=" Zrób pierwszy krok w kierunku bezstresowego zarządzania
-            nieruchomościami"
-            headClass={
-              "text-center !leading-120 mb-[39px] md:mb-[41] lg:mb-[51px] text-white !text-[32px] sm:!text-[40px] md:!text-[48px]"
-            }
+            headText=" Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami"
+            headClass="text-center !leading-120 mb-[39px] md:mb-[41] lg:mb-[51px] text-white !text-[32px] sm:!text-[40px] md:!text-[48px]"
           />
           <div className="flex justify-center">
             <CustomButton
-              btnText={"Zarejestruj się"}
-              btnClass={
-                "text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] !px-[23.8px]"
-              }
+              btnText="Zarejestruj się"
+              btnClass="text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] !px-[23.8px]"
             />
           </div>
         </div>
       </section>
-
       <footer className="bg-dark-blue sm:pt-[169px] pt-[141px]">
         <div className="container w-full mx-auto max-w-[1182px] px-[21px] pb-[59px]">
           <div className="flex flex-wrap flex-row items-start">
@@ -104,7 +106,7 @@ const Footer = () => {
                     <li className="relative">
                       <a
                         href="#"
-                        className=" opacity-80 text-white flex text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
+                        className="opacity-80 text-white flex text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
                       >
                         <img
                           className="absolute left-[-30px] top-[-1px]"
@@ -137,7 +139,7 @@ const Footer = () => {
                           src={Mail}
                           alt="mail-icon"
                         />
-                         support@renteasy.ai
+                        support@renteasy.ai
                       </a>
                     </li>
                   </ul>
@@ -146,6 +148,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="w-full border-t border-solid border-white py-4 px-5">
           <p className="sm:text-base text-sm text-center leading-160 opacity-80 text-white ff-poppins">
             © <span>{new Date().getFullYear()}</span> RentEasy.AI — All rights
