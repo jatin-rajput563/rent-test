@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/svg/Logo.svg";
-import Flag from "../assets/images/svg/Flag.svg";
+import Flag from "../assets/images/png/flag.png";
 import { HeaderLinks_Data } from "../utils/helper";
 import { NavLink } from "react-router-dom";
 
@@ -45,25 +45,26 @@ const Header = () => {
         <li>
           <div className="items-center gap-[15px] flex flex-col sm:hidden">
             <button className="text-dark-blue leading-[19px] duration-300 flex justify-center items-center gap-[15px]">
-              Polski <img src={Flag} alt="flag" />
+              Polski{" "}
+              <img className=" !w-[33.6px] !h-[21px]" src={Flag} alt="flag" />
             </button>
-            <button className="px-[29px] py-3 text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
-              Sign Up
+            <button className="px-[25.3px] py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
+              Zarejestruj
             </button>
           </div>
         </li>
       </ul>
 
-      <div className="flex items-center gap-[22px]">
-        <div className="items-center gap-[22px] sm:flex hidden">
+      <div className="flex items-center gap-[15px]">
+        <div className="items-center gap-[15px] sm:flex hidden">
           <button className="text-dark-blue leading-[19px] duration-300 flex justify-center items-center gap-[15px]">
-            Polski <img src={Flag} alt="flag" />
+            Polski{" "}
+            <img className=" !w-[33.6px] !h-[21px]" src={Flag} alt="flag" />
           </button>
-          <button className="px-[29px] py-3 text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
-            Sign Up
+          <button className="px-[25.3px] py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
+            Zarejestruj
           </button>
         </div>
-
         <div
           className="z-50 cursor-pointer group relative min-h-[17px] w-[25px] flex flex-col justify-center items-center gap-1 lg:hidden"
           onClick={toggleNavbar}
