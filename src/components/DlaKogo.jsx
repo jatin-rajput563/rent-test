@@ -87,7 +87,7 @@ const DlaKogo = () => {
             <TabPanel>
               <div className="mt-12 text-center text-dark-blue">
                 <p className="text-lg font-medium">
-                  Coming Soon: Owner Specific Features...
+                  Wkrótce: Funkcje dla Właścicieli...
                 </p>
               </div>
             </TabPanel>

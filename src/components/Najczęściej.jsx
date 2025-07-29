@@ -1,68 +1,92 @@
-import React, { useState } from "react";
-
-const accordionData = [
-  {
-    title: "Czym jest RentEasy.AI?",
-    content:
-      "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
-  },
-  {
-    title: "Dla kogo jest ta platforma?",
-    content:
-      "Platforma jest przeznaczona dla właścicieli nieruchomości, zarządców oraz firm zarządzających wynajmem.",
-  },
-  {
-    title: "Czy muszę instalować jakieś oprogramowanie?",
-    content:
-      "Nie, RentEasy.AI działa w przeglądarce – nie wymaga instalacji dodatkowego oprogramowania.",
-  },
-  {
-    title: "Czy moje dane są bezpieczne?",
-    content:
-      "Tak, bezpieczeństwo danych to nasz priorytet. Wszystkie dane są szyfrowane i przechowywane zgodnie z najlepszymi praktykami.",
-  },
-];
+import React, { useState, useRef, useEffect } from "react";
+import { ACCORDION_DATA } from "../utils/helper";
+import CustomButton from "./common/CustomButton";
 
 const Najczęściej = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
+  const [heightMap, setHeightMap] = useState({});
 
-  const toggleAccordion = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
+  const contentRefs = useRef([]);
+
+  useEffect(() => {
+    const newHeights = {};
+    contentRefs.current.forEach((ref, index) => {
+      if (ref) {
+        newHeights[index] = ref.scrollHeight;
+      }
+    });
+    setHeightMap(newHeights);
+  }, [openIndex]);
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <>
-      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h2 className="text-center text-3xl sm:text-4xl font-bold mb-10 text-dark-blue">
-          Najczęściej zadawane pytania
+    <div className="px-5 pt-[176px]">
+      <div className="max-w-[996px] mx-auto">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-[51px]">
+          Najczęściej Zadawane Pytania
         </h2>
-        <div className="space-y-6">
-          {accordionData.map((item, index) => (
-            <div
-              key={index}
-              className="border border-[#F0F0F0] rounded-xl bg-white overflow-hidden shadow-sm"
-            >
-              <button
-                className="w-full text-left px-6 py-5 flex justify-between items-center"
-                onClick={() => toggleAccordion(index)}
+
+        <div className="space-y-5 sm:space-y-6">
+          {ACCORDION_DATA.map((obj, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={index}
+                className={`transition-all duration-300 overflow-hidden ${
+                  isOpen
+                    ? "bg-[#F8F5FF] rounded-[15px]"
+                    : "bg-white shadow-[0_4px_25px_rgba(0,0,0,0.04)] rounded-[191px]"
+                }`}
               >
-                <span className="text-base sm:text-lg font-semibold text-dark-blue">
-                  {item.title}
-                </span>
-                <span className="text-purple-blue text-xl font-bold">
-                  {activeIndex === index ? "−" : "+"}
-                </span>
-              </button>
-              {activeIndex === index && (
-                <div className="px-6 pb-5 text-sm text-gray-700 leading-relaxed">
-                  {item.content}
-                </div>
-              )}
-            </div>
-          ))}
+                <button
+                  onClick={() => handleToggle(index)}
+                  className={`w-full flex flex-col text-left font-bold text-base md:text-xl leading-[120%] px-[25px] transition-all duration-300 ${
+                    isOpen ? "py-[30px]" : "py-5 sm:py-[26px]"
+                  }`}
+                >
+                  <div className="flex justify-between items-center w-full">
+                    <span>{obj.question}</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform duration-300 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      fill="none"
+                      stroke={isOpen ? "#5E13F6" : "currentColor"}
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 9l-7 7-7-7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    className="overflow-hidden transition-all duration-500 ease-in-out"
+                    style={{
+                      maxHeight: isOpen ? `${heightMap[index] || 0}px` : "0px",
+                    }}
+                  >
+                    <p
+                      ref={(el) => (contentRefs.current[index] = el)}
+                      className="mt-[6px] text-base font-normal text-[#000302] opacity-70 leading-[134%] ff-cabin max-w-[900px]"
+                    >
+                      {obj.answer}
+                    </p>
+                  </div>
+                </button>
+              </div>
+            );
+          })}
+          <CustomButton btnText="Poznaj Zoe!" btnClass="bg-purple-blue text-white flex mx-auto py-[9px] px-[24.5px]" />
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 };
 

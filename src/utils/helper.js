@@ -226,4 +226,37 @@ export const DLACZEGO_DATA = [
         title: "Łatwe Wdrożenie",
         descrition: "Brak skomplikowanego procesu wdrażania — jest intuicyjny, nie wymaga szkolenia, a my pomagamy w migracji z innych narzędzi, takich jak SON."
     },
-]
+];
+
+export const ACCORDION_DATA = [
+    {
+        question: "Czym jest RentEasy.AI?",
+        answer:
+            "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+    {
+        question: "Dla kogo przeznaczone jest RentEasy.AI?",
+        answer:
+            "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+    {
+        question: "Czy potrzebuję szkolenia, aby korzystać z RentEasy.AI?",
+        answer:
+            "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+    {
+        question: "Czy RentEasy.AI może zastąpić moje obecne narzędzia?",
+        answer:
+            "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+    {
+        question: "Czym RentEasy.AI różni się od innych narzędzi związanych z nieruchomościami?",
+        answer:
+            "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+    {
+        question: "Czy dostępna jest bezpłatna wersja próbna lub demo?",
+        answer:
+            "RentEasy.AI to pierwszy w Polsce CRM stworzony od podstaw z myślą o firmach zarządzających najmem. To nie tylko system – to Twój cyfrowy zespół operacyjny, który działa 24/7. Automatyzuje windykację, rozliczenia, komunikację, meldunki, zarządzanie zadaniami i wiele więcej. Dzięki wirtualnej asystentce Zoe oraz modułowej strukturze, RentEasy.AI zastępuje nawet 2–3 etaty, upraszcza codzienną pracę i pozwala skalować biznes bez chaosu.",
+    },
+];
