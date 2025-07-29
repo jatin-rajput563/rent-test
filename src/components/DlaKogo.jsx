@@ -10,13 +10,14 @@ const DlaKogo = () => {
   const isHomePage = location.pathname === "/";
 
   return (
-    <section className={`${isHomePage ? "pt-[140px]" : "pt-0"}`}>
+    <section className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}>
       <div className="max-w-[1180px] px-5 mx-auto">
         <div className="text-center">
           <CustomHeading
-            headClass="font-bold text-dark-blue !leading-[121%] mb-[44px] text-center"
+            headClass="font-bold text-dark-blue !leading-[121%] mb-[34px] sm:mb-[44px] text-center"
             headText="Dla kogo?"
           />
+
           <Tabs>
             <TabList className="inline-flex bg-white border border-purple-blue rounded-full gap-1 justify-center items-center">
               <Tab
@@ -32,8 +33,9 @@ const DlaKogo = () => {
                 Właścicieli, Którzy...
               </Tab>
             </TabList>
+
             <TabPanel>
-              <div className="mt-[77px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center place-items-center">
+              <div className="mt-[79px] sm:mt-[77px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center place-items-center max-w-[1052px] mx-auto">
                 {DlaKogo_data.map((item, index) => {
                   const iconBgColors = [
                     "#5E13F6",
@@ -47,9 +49,16 @@ const DlaKogo = () => {
                     "group-hover:shadow-[5px_7px_58.2px_0px_#FF4DF5]",
                     "group-hover:shadow-[5px_7px_58.2px_0px_#00F0FF]",
                   ];
+                  const cardShadows = [
+                    "hover:shadow-[5px_7px_58.2px_0px_#5E13F61A]",
+                    "hover:shadow-[5px_7px_58.2px_0px_#FF3B611A]",
+                    "hover:shadow-[5px_7px_58.2px_0px_#FF4DF51A]",
+                    "hover:shadow-[5px_7px_58.2px_0px_#00F0FF1A]",
+                  ];
 
                   const iconBg = iconBgColors[index] || "#000";
                   const iconShadow = iconShadows[index] || "";
+                  const cardShadow = cardShadows[index] || "";
 
                   const iconPositionClass =
                     index === 1
@@ -61,10 +70,10 @@ const DlaKogo = () => {
                   return (
                     <div
                       key={index}
-                      className="group rounded-[20px] w-full max-w-[251px] h-[258px] py-[30px] text-center duration-300 cursor-pointer bg-white hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
+                      className={`group rounded-[20px] w-full max-w-[301px] sm:max-w-[251px] sm:h-[258px] h-[155px] sm:py-[30px] text-center cursor-pointer bg-white duration-300 ${cardShadow}`}
                     >
                       <div
-                        className={`w-[77px] h-[77px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
+                        className={`w-[74px] h-[74px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
                         style={{ backgroundColor: iconBg }}
                       >
                         <div
@@ -76,7 +85,11 @@ const DlaKogo = () => {
                       <h3 className="text-dark-black font-bold text-xl leading-100">
                         {item.title}
                       </h3>
-                      <p className="text-dark-black text-sm opacity-80 mt-[11px] leading-134 ff-cabin">
+                      <p
+                        className={`text-dark-black text-sm opacity-80 mt-[11px] leading-134 ff-cabin mx-auto ${
+                          index === 3 ? "max-w-[170px]" : ""
+                        }`}
+                      >
                         {item.subtitle}
                       </p>
                     </div>
@@ -84,6 +97,7 @@ const DlaKogo = () => {
                 })}
               </div>
             </TabPanel>
+
             <TabPanel>
               <div className="mt-12 text-center text-dark-blue">
                 <p className="text-lg font-medium">

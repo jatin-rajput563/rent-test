@@ -5,7 +5,7 @@ import { Comozemy_Data } from "../utils/helper";
 
 const Comożemy = () => {
   return (
-    <div className="pt-[140px]">
+    <div className="pt-[162px] sm:pt-[140px]">
       <img
         className="mx-auto max-w-[221px] w-full pointer-events-none"
         src={spyimg}
@@ -20,7 +20,7 @@ const Comożemy = () => {
           {Comozemy_Data.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center sm:bg-white max-w-[527px] xl:min-h-[199px] rounded-2xl md:py-[22px] sm:py-6 md:pl-[21px] md:pr-[45px] sm:px-4 sm:h-full transition-all duration-200 ease-in-out"
+              className="flex flex-col items-center text-center sm:bg-white max-w-[301px] sm:max-w-[527px] min-h-[223px] xl:min-h-[199px] rounded-2xl md:py-[22px] sm:py-6 md:pl-[21px] md:pr-[45px] sm:px-4 sm:h-full transition-all duration-200 ease-in-out"
             >
               <div
                 className="justify-center items-center flex sm:size-16 size-[74px] rounded-2xl"

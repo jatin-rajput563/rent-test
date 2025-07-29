@@ -20,15 +20,15 @@ const Dlaczego = () => {
     <div
       className={`${
         isHomePage
-          ? "mt-[52px] md:mt-[130px] lg:mt-[140px] xl:mt-[164px]"
+          ? "pt-[121px] sm:pt-[164px]"
           : "mt-[50px]"
-      } sm:mb-0 px-5 mb-[22px]`}
+      } sm:pb-0 px-5 pb-[22px]`}
     >
       <div className="max-w-[1140px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-[37px] xl:gap-[83px] justify-center items-center">
           <div className="flex flex-col max-w-[600px] w-full py-0">
             <CustomHeading
-              headClass="!text-[40px] sm:text-[44px] md:text-[46px] leading-120 mb-[37px] max-lg:text-center"
+              headClass="!text-[40px] sm:!text-[44px] md:!text-[46px] leading-120 mb-[37px] max-lg:text-center"
               headText="Dlaczego warto skorzystać z RentEasy.AI?"
             />
             {DLACZEGO_DATA.map((item, index) => (

@@ -11,7 +11,7 @@ import CustomPara from "./common/CustomPara";
 const JakZacząć = () => {
   return (
     <>
-      <div className="">
+      <div className="sm:pt-[191px]">
         <div className="max-w-[1140px] mx-auto px-[19.5px] xl:px-0">
           <img
             className="max-w-[221px] mx-auto"
