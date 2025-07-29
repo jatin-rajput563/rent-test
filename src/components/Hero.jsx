@@ -21,7 +21,7 @@ const Hero = () => {
             alt="dots"
           />
           <div className="justify-center items-center flex mx-auto mb-[18px] max-w-[291px] sm:max-w-full">
-            <p className="bg-light-purple max-w-[352.97px] w-full py-[11.5px] uppercase rounded-[21px] border border-purple-blue text-purple-blue font-bold leading-100 text-center">
+            <p className="bg-light-purple max-w-[352.97px] text-sm sm:text-base max-sm:whitespace-nowrap w-full py-[11.5px] uppercase rounded-[21px] border border-purple-blue text-purple-blue font-bold leading-100 text-center">
               Twój zespół cyfrowy dostępny 24/7.
             </p>
           </div>

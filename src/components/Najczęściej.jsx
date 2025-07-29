@@ -32,7 +32,7 @@ const Najczęściej = () => {
               >
                 <button
                   onClick={() => handleToggle(index)}
-                  className={`w-full flex flex-col text-left font-bold text-dark-black text-lg sm:text-xl leading-[120%] px-[25px] transition-all duration-300 overflow-hidden ${
+                  className={`w-full flex flex-col text-left cursor-pointer font-bold text-dark-black text-lg sm:text-xl leading-[120%] px-[25px] transition-all duration-300 overflow-hidden ${
                     isOpen
                       ? "py-[30px]"
                       : "min-h-[76px] py-[20px] justify-center"
@@ -80,7 +80,7 @@ const Najczęściej = () => {
           })}
           <CustomButton
             btnText="Poznaj Zoe!"
-            btnClass="bg-purple-blue text-white flex mx-auto py-[9px] px-[24.5px] mt-[118px] sm:mt-[51px]"
+            btnClass="bg-purple-blue text-white flex justify-center mx-auto py-[9px] px-[24.5px] mt-[118px] sm:mt-[27px] max-sm:w-full"
           />
         </div>
       </div>

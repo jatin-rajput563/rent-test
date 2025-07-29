@@ -42,7 +42,7 @@ const Footer = () => {
               btnText={
                 isHomePage ? "Zarejestruj się" : "Skonfiguruj swój pakiet"
               }
-              btnClass="text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] !px-[23.8px]"
+              btnClass="text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] sm:!px-[23.8px] !px-[59.3px]"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex flex-wrap flex-row items-start">
             <div className="lg:w-[46%] sm:w-1/3 w-full max-sm:mb-[33px]">
               <div className="max-sm:flex justify-center">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="#" rel="noopener noreferrer">
                   <img
                     src={FooterLogo}
                     alt="footer-logo"
@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
 
             <div className="lg:w-[54%] sm:w-2/3 w-full flex sm:justify-end lg:justify-start pt-4">
-              <div className="flex lg:gap-[112px] max-sm:justify-between max-sm:w-full gap-[50px] sm:gap-6 md:gap-16">
+              <div className="flex lg:gap-[183px] max-sm:justify-between max-sm:w-full gap-[50px] sm:gap-6 md:gap-16">
                 <div className="sm:max-w-[173px] max-w-[109px]">
                   <p className="text-base text-white font-semibold font-lato leading-118 mb-[21px]">
                     Szybkie linki
@@ -165,7 +165,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full border-t border-solid border-white py-4 px-5">
+        <div className="w-full sm:border-t border-solid border-white py-4 px-5">
           <p className="sm:text-base text-sm text-center leading-160 opacity-80 text-white ff-poppins">
             © <span>{new Date().getFullYear()}</span> RentEasy.AI — All rights
             reserved.

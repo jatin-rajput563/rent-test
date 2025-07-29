@@ -70,17 +70,17 @@ const Header = () => {
           onClick={toggleNavbar}
         >
           <span
-            className={`h-[3px] bg-purple-blue rounded-full duration-300 w-full ${
+            className={`h-[3px] bg-dark-blue rounded-full duration-300 w-full ${
               isOpen ? "rotate-45 translate-y-[8px]" : ""
             }`}
           />
           <span
-            className={`h-[3px] bg-purple-blue rounded-full duration-300 w-full ${
+            className={`h-[3px] bg-dark-blue rounded-full duration-300 w-full ${
               isOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`h-[3px] bg-purple-blue rounded-full duration-300 w-full ${
+            className={`h-[3px] bg-dark-blue rounded-full duration-300 w-full ${
               isOpen ? "-rotate-47 -translate-y-[6px]" : ""
             }`}
           />
