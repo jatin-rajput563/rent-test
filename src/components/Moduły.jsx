@@ -69,7 +69,7 @@ const Moduły = () => {
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(idx)}
-                  className={`relative h-[76px] px-[16px] rounded-md font-medium transition-all text-sm sm:text-xl text-center
+                  className={`relative h-[76px] cursor-pointer px-[16px] rounded-md font-medium transition-all text-sm sm:text-xl text-center
     ${
       activeTab === idx
         ? "bg-purple-blue text-white"

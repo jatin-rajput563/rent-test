@@ -30,7 +30,7 @@ const Odkryj = () => {
                       "Jesteśmy Twoim zespołem ds. operacji cyfrowych, pracującym dla Ciebie 24/7."
                     }
                     subClass={
-                      " pt-[18px] !leading-129 sm:pb-[14px] pb-[5px] max-w-[437px] max-[820px]:text-center max-[820px]:mx-auto"
+                      "pt-[11px] sm:pt-[18px] !leading-129 sm:pb-[14px] pb-[6px] max-w-[437px] max-[820px]:text-center max-[820px]:mx-auto"
                     }
                   />
                   <CustomPara
@@ -65,7 +65,7 @@ const Odkryj = () => {
                 <img
                   src={discoverRentImg}
                   alt="discover-rent-img"
-                  className="lg:size-[515px] max-lg:w-[408px] max-lg:h-[520px] max-md:w-[500px] pointer-events-none max-md:h-[430px] max-sm:h-[447px] rounded-2xl object-cover max-[820px]:mx-auto max-[820px]:w-[530px]"
+                  className="min-[820px]:size-[515px] max-[425px]:h-[474px] pointer-events-none rounded-2xl object-cover"
                 />
               </div>
             </div>

@@ -21,17 +21,33 @@ const Footer = () => {
       >
         <div className="container max-w-[1366px] !transform-[unset] -mt-[59px] sm:-mt-[65px] translate-y-[59px] sm:translate-y-[65px] mx-auto rounded-[15px] bg-purple-blue w-full sm:py-10 pt-[41px] md:py-[61px] px-5 pb-[57px] sm:px-6">
           <CustomHeading
-            headText=" Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami"
+            headText={
+              isHomePage
+                ? " Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami"
+                : "Poznaj moc Zoe"
+            }
             headClass="text-center !leading-120 mb-[39px] md:mb-[41] lg:mb-[51px] text-white !text-[32px] sm:!text-[40px] md:!text-[48px]"
           />
+
+          {!isHomePage && (
+            <p className="text-white opacity-80 text-center max-w-[830px] mx-auto text-base sm:text-lg mb-7">
+              Pozwól Zoe zająć się powtarzalnymi zadaniami, aby Twój zespół mógł
+              skupić się na tym, co najważniejsze. Nie jest tylko funkcją — jest
+              Twoją przewagą konkurencyjną.
+            </p>
+          )}
+
           <div className="flex justify-center">
             <CustomButton
-              btnText="Zarejestruj się"
+              btnText={
+                isHomePage ? "Zarejestruj się" : "Skonfiguruj swój pakiet"
+              }
               btnClass="text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] !px-[23.8px]"
             />
           </div>
         </div>
       </section>
+
       <footer className="bg-dark-blue sm:pt-[169px] pt-[141px]">
         <div className="container w-full mx-auto max-w-[1182px] px-[21px] pb-[59px]">
           <div className="flex flex-wrap flex-row items-start">
