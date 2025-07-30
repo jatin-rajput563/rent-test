@@ -1,7 +1,7 @@
 import React from "react";
 import CustomHeading from "./common/CustomHeading";
-import AiImg from "../assets/images/png/ai-img.png";
-import { Dlaczego_Data, DlaKogo_Data } from "../utils/helper";
+import AiImg from "../assets/images/webp/ai-img.webp";
+import { Dlaczego_Data } from "../utils/helper";
 import { useLocation } from "react-router-dom";
 
 const Dlaczego = () => {
