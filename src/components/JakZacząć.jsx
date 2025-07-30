@@ -32,7 +32,7 @@ const roadmapData = [
 const JakZacząć = () => {
   return (
     <>
-      <div className="sm:pt-[191px]">
+      <div className="md:pt-0 lg:pt-[100px] xl:pt-[191px]">
         <div className="max-w-[1140px] mx-auto px-[19.5px] xl:px-0">
           <img
             className="max-w-[221px] mx-auto"
@@ -43,7 +43,7 @@ const JakZacząć = () => {
             <CustomHeading headText={"Jak Zacząć?"} headClass={"text-center"} />
             <CustomPara
               paraClass={
-                "max-w-[234px] sm:max-w-[450px] mx-auto !text-dark-black opacity-70 text-center leading-134 pt-[18px] ff-cabin capitalize mb-[41px] sm:mb-[51px] md:mb-[69px]"
+                "max-w-[234px] sm:max-w-[450px] mx-auto !text-dark-black opacity-70 text-center leading-134 pt-[18px] ff-cabin capitalize mb-[41px] lg:mb-[69px]"
               }
               paraText={
                 "Chcesz uprościć zarządzanie swoją nieruchomością? Wykonaj trzy proste kroki:"
@@ -97,32 +97,32 @@ const JakZacząć = () => {
               ))}
             </div>
             <div className="block min-[1070px]:hidden">
-              {roadmapData.map((item, index) => (
-                <div
-                  key={index}
-                  className={`justify-center flex flex-col items-center ${
-                    index !== 0 ? "mt-[49px]" : ""
-                  }`}
-                >
-                  <img
-                    className="size-[54.26px]"
-                    src={
-                      index === 0
-                        ? RoadmapImg1
-                        : index === 1
-                        ? RoadmapImg2
-                        : RoadmapImg3
-                    }
-                    alt={`roadmap-img-${index + 1}`}
-                  />
-                  <p className="font-bold text-xl leading-[100%] pt-[13px] font-lato text-center whitespace-nowrap text-dark-black">
-                    {item.heading}
-                  </p>
-                  <p className="sm:max-w-[338px] text-center text-dark-black opacity-70 leading-134 ff-cabin pt-[6px] max-w-[242px]">
-                    {item.paragraph}
-                  </p>
-                </div>
-              ))}
+              <div className="flex flex-wrap justify-center gap-[49px] sm:gap-[80px]">
+                {roadmapData.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center text-center max-w-[300px]"
+                  >
+                    <img
+                      className="w-[54px] h-[54px]"
+                      src={
+                        index === 0
+                          ? RoadmapImg1
+                          : index === 1
+                          ? RoadmapImg2
+                          : RoadmapImg3
+                      }
+                      alt={`roadmap-img-${index + 1}`}
+                    />
+                    <p className="font-bold text-xl leading-120 pt-[13px] font-lato text-dark-black">
+                      {item.heading}
+                    </p>
+                    <p className="text-dark-black opacity-70 leading-[134%] ff-cabin pt-[6px]">
+                      {item.paragraph}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -40,7 +40,7 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] lg:hidden font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
               Zautomatyzuj zarządzanie nieruchomościami dzięki AI.
             </h1>
-            <p className="leading-134 opacity-80 text-dark-blue max-w-[280px] sm:max-w-[820px] text-center pt-[9px] sm:pt-[15px] mx-auto">
+            <p className="leading-134 opacity-80 text-dark-blue max-[425px]:max-w-[280px] lg:max-w-[820px] text-center pt-[9px] sm:pt-[15px] mx-auto">
               Pierwszy w Polsce system CRM oparty na sztucznej inteligencji,
               stworzony specjalnie dla firm zarządzających nieruchomościami.
               <br />
@@ -77,7 +77,7 @@ const Hero = () => {
                 1024: { slidesPerView: 4 },
                 768: { slidesPerView: 3 },
                 640: { slidesPerView: 2 },
-                0: { slidesPerView: 1 },
+                425: { slidesPerView: 1 },
               }}
               className="mySwiper"
             >

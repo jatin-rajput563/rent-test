@@ -3,16 +3,15 @@ import spyImg from "../assets/images/png/spy-img.png";
 import discoverRentImg from "../assets/images/png/discover-rent-img.png";
 import CustomHeading from "./common/CustomHeading";
 import SubHeading from "./common/SubHeading";
-// import Description from "./common/Description";
 import CustomButton from "./common/CustomButton";
 import CustomPara from "./common/CustomPara";
 
 const Odkryj = () => {
   return (
     <div>
-      <section className="lg:pt-[140px] md:pt-[80px] pt-[52px] px-[17px]">
+      <section className="pt-[52px] md:pt-[60px] lg:pt-[80px] xl:pt-[140px] px-[17px]">
         <div className="max-w-[1137px] mx-auto">
-          <div className="max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto pointer-events-none">
+          <div className="max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto">
             <img src={spyImg} alt="spy-img" />
           </div>
           <div className="bg-white border-2 border-grey rounded-[15px] renteasy-bg-shadow md:py-[55px] max-md:pt-[41px] max-md:pb-[33px] xl:pl-14 pl-[37px] pr-[37px] max-lg:px-7 max-sm:px-[10px]">
