@@ -54,13 +54,15 @@ const Header = () => {
 
         <li>
           <div className="items-center gap-[15px] flex flex-col sm:hidden">
-            <button className="text-dark-blue leading-[19px] duration-300 flex justify-center items-center gap-[15px]">
+            <button className="text-dark-blue leading-[19px] duration-300 flex !cursor-pointer justify-center items-center gap-[15px]">
               Polski{" "}
-              <img
-                className="!w-[33.6px] !h-[21px] pointer-events-none"
-                src={Flag}
-                alt="flag"
-              />
+              <span className="!cursor-pointer ">
+                <img
+                  className="!w-[33.6px] !cursor-pointer !h-[21px]"
+                  src={Flag}
+                  alt="flag"
+                />
+              </span>
             </button>
             <button className="px-[25.3px] py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
               Zarejestruj
@@ -70,15 +72,17 @@ const Header = () => {
       </ul>
       <div className="flex items-center gap-[15px]">
         <div className="items-center gap-[15px] sm:flex hidden">
-          <button className="text-dark-blue leading-[19px] duration-300 flex justify-center items-center gap-[15px]">
+          <button className="text-dark-blue leading-[19px] duration-300 !cursor-pointer flex justify-center items-center gap-[15px]">
             Polski{" "}
-            <img
-              className=" !w-[33.6px] cursor-pointer pointer-events-none !h-[21px]"
-              src={Flag}
-              alt="flag"
-            />
+            <span className="!cursor-pointer">
+              <img
+                className=" !w-[33.6px] !cursor-pointer !h-[21px]"
+                src={Flag}
+                alt="flag"
+              />
+            </span>
           </button>
-          <button className="px-[25.3px] cursor-pointer py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
+          <button className="px-[25.3px]  cursor-pointer py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
             Zarejestruj
           </button>
         </div>

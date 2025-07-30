@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { DlaKogo_data } from "../utils/helper";
+import { DlaKogo_Data } from "../utils/helper";
 import CustomHeading from "./common/CustomHeading";
 import { useLocation } from "react-router-dom";
 
@@ -25,13 +25,13 @@ const DlaKogo = () => {
             <Tabs>
               <TabList className="inline-flex bg-white border border-purple-blue rounded-full gap-1 justify-center items-center">
                 <Tab
-                  className="py-[21.5px] pl-[58.8px] pr-[42px] rounded-[73px] text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                  className="sm:py-[21.5px] sm:pl-[58.8px] py-[27px] px-9 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
                   selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm"
                 >
                   Firm, Które...
                 </Tab>
                 <Tab
-                  className="px-6 py-[21.5px] rounded-[73px] text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                  className="pl-4 sm:px-6 py-[27px] sm:py-[21.5px] rounded-[73px] whitespace-nowrap sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
                   selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm"
                 >
                   Właścicieli, Którzy...
@@ -39,8 +39,8 @@ const DlaKogo = () => {
               </TabList>
 
               <TabPanel>
-                <div className="mt-[79px] sm:mt-[77px] flex flex-wrap justify-center gap-[40px]">
-                  {DlaKogo_data.map((item, index) => {
+                <div className="mt-[79px] sm:mt-[77px] flex flex-wrap justify-center gap-[45px]">
+                  {DlaKogo_Data.map((item, index) => {
                     const iconBgColors = [
                       "#5E13F6",
                       "#FF3B61",

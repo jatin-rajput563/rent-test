@@ -1,109 +1,116 @@
-import sliderImg1 from "../assets/images/png/slider-img-1.png";
-import sliderImg2 from "../assets/images/png/slider-img-2.png";
-import sliderImg3 from "../assets/images/png/slider-img-3.png";
-import sliderImg4 from "../assets/images/png/slider-img-4.png";
-import userGear from "../assets/images/svg/user-gear.svg";
-import corporate from "../assets/images/svg/corporate.svg";
-import portfolio from "../assets/images/svg/portfolio.svg";
-import trash from "../assets/images/svg/trash-can.svg";
-import Joe from "../assets/images/svg/joe.svg";
+import SliderImgOne from "../assets/images/png/slider-img-1.png";
+import SliderImgTwo from "../assets/images/png/slider-img-2.png";
+import SliderImgThree from "../assets/images/png/slider-img-3.png";
+import SliderImgFour from "../assets/images/png/slider-img-4.png";
+import UserGear from "../assets/images/svg/user-gear.svg";
+import CorporateImg from "../assets/images/svg/CorporateImg.svg";
+import PortfolioImg from "../assets/images/svg/PortfolioImg.svg";
+import TrashImg from "../assets/images/svg/TrashImg-can.svg";
+import JoeImg from "../assets/images/svg/joe.svg";
 
 import {
-    ComozemyIcon1,
-    ComozemyIcon2,
-    ComozemyIcon3,
-    ComozemyIcon4,
-    ComozemyIcon5,
-    ComozemyIcon6,
-    DlaczegoLogoFive,
-    DlaczegoLogoFour,
-    DlaczegoLogoOne,
-    DlaczegoLogoThree,
-    DlaczegoLogoTwo,
-    sliderIcon1, sliderIcon2, sliderIcon3, sliderIcon4, tabsIcon1, tabsIcon2, tabsIcon3, tabsIcon4,
-} from "./icon";
+    dlaczegoLogoFive,
+    dlaczegoLogoFour,
+    dlaczegoLogoOne,
+    dlaczegoLogoThree,
+    dlaczegoLogoTwo,
+    comozemyIconOne,
+    comozemyIconTwo,
+    comozemyIconThree,
+    comozemyIconFour,
+    comozemyIconFive,
+    comozemyIconSix,
+    sliderIconOne,
+    sliderIconTwo,
+    sliderIconThree,
+    sliderIconFour,
+    tabsIconOne,
+    tabsIconTwo,
+    tabsIconThree,
+    tabsIconFour,
+} from "./Icons";
 
 export const HeroSlider_Data = [
     {
-        Image: sliderImg1,
-        sliderIcon: sliderIcon1,
+        image: SliderImgOne,
+        sliderIcon: sliderIconOne,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
-        Image: sliderImg2,
-        sliderIcon: sliderIcon2,
+        image: SliderImgTwo,
+        sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        Image: sliderImg3,
-        sliderIcon: sliderIcon3,
+        image: SliderImgThree,
+        sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
-        Image: sliderImg4,
-        sliderIcon: sliderIcon4,
+        image: SliderImgFour,
+        sliderIcon: sliderIconFour,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
-        Image: sliderImg2,
-        sliderIcon: sliderIcon2,
+        image: SliderImgTwo,
+        sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        Image: sliderImg3,
-        sliderIcon: sliderIcon3,
+        image: SliderImgThree,
+        sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
-        Image: sliderImg1,
-        sliderIcon: sliderIcon1,
+        image: SliderImgOne,
+        sliderIcon: sliderIconOne,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
-        Image: sliderImg2,
-        sliderIcon: sliderIcon2,
+        image: SliderImgTwo,
+        sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        Image: sliderImg3,
-        sliderIcon: sliderIcon3,
+        image: SliderImgThree,
+        sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
-        Image: sliderImg4,
-        sliderIcon: sliderIcon4,
+        image: SliderImgFour,
+        sliderIcon: sliderIconFour,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
-        Image: sliderImg2,
-        sliderIcon: sliderIcon2,
+        image: SliderImgTwo,
+        sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        Image: sliderImg3,
-        sliderIcon: sliderIcon3,
+        image: SliderImgThree,
+        sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
 ];
 
-export const DlaKogo_data = [
+export const DlaKogo_Data = [
     {
-        icon: tabsIcon1,
+        icon: tabsIconOne,
         title: "Zarządzają wynajmem",
         subtitle: "Długoterminowym Lub Krótkoterminowym.",
     },
     {
-        icon: tabsIcon2,
+        icon: tabsIconTwo,
         title: "Obsługują apartotele",
         subtitle: "Lub Kwatery Pracownicze.",
     },
     {
-        icon: tabsIcon3,
+        icon: tabsIconThree,
         title: "Mają własne mieszkania",
         subtitle: "I Chcą Je Prowadzić Profesjonalnie.",
     },
     {
-        icon: tabsIcon4,
+        icon: tabsIconFour,
         title: "Walczą z chaosem",
         subtitle:
             "Przestań Ogarniać Wszystko W Excelu, Mailu I Na Telefonie.",
@@ -114,42 +121,42 @@ export const Comozemy_Data = [
     {
         title: "Zautomatyzuj windykację i rozliczenia",
         text: "Pozwól systemowi automatycznie obsługiwać przypomnienia, zawiadomienia prawne i eskalacje do partnerów prawnych.",
-        image: ComozemyIcon1,
+        image: comozemyIconOne,
         bgColor: "#5E13F6",
     },
     {
         title: "Zminimalizuj błędy ludzkie",
         text: "Zoe, Twój inteligentny asystent, śledzi terminy, dokumenty, płatności i interakcje z najemcami.",
-        image: ComozemyIcon2,
+        image: comozemyIconTwo,
         bgColor: "#FF3B61",
     },
     {
         title: "Usprawnij swoje działania",
         text: "Od wystawiania ofert i rejestracji nowych klientów po realizację zamówień i fakturowanie — zarządzaj wszystkim z jednej platformy.",
-        image: ComozemyIcon3,
+        image: comozemyIconThree,
         bgColor: "#FF4DF5",
     },
     {
         title: "Oszczędzaj swój czas",
         text: "Wbudowany menedżer zadań + panel samoobsługi najemcy = mniej połączeń, większa przejrzystość.",
-        image: ComozemyIcon4,
+        image: comozemyIconFour,
         bgColor: "#00F0FF",
     },
     {
         title: "Zyskaj przewagę konkurencyjną",
         text: "Ocena najemców, rezerwacje online, integracja inteligentnych zamków, faktury, e-sąd — wszystko w jednym miejscu.",
-        image: ComozemyIcon5,
+        image: comozemyIconFive,
         bgColor: "#D5C7FF",
     },
     {
         title: "Łatwa skalowalność",
         text: "Dodaj więcej nieruchomości bez zatrudniania dodatkowych pracowników i bez wprowadzania chaosu. RentEasy.AI rozwija się razem z Tobą.",
-        image: ComozemyIcon6,
+        image: comozemyIconSix,
         bgColor: "#1B1E3C",
     },
 ];
 
-export const FooterIcons = [
+export const FooterIcons_Data = [
     {
         name: "facebook",
         href: "https://www.facebook.com",
@@ -197,38 +204,38 @@ export const HeaderLinks_Data = [
     { link: "/dlakogo", label: "Dla kogo?" },
     { link: "/działa", label: "Jak to działa?" },
     { link: "/moduly", label: "Moduły" },
-    { link: "/", withImage: true, image: Joe },
+    { link: "/", withImage: true, image: JoeImg },
 ];
 
-export const DLACZEGO_DATA = [
+export const Dlaczego_Data = [
     {
-        icon: DlaczegoLogoOne,
+        icon: dlaczegoLogoOne,
         title: "Przewaga Konkurencyjna",
         descrition: "Ponieważ nie jesteśmy tylko oprogramowaniem — jesteśmy Twoją przewagą konkurencyjną."
     },
     {
-        icon: DlaczegoLogoTwo,
+        icon: dlaczegoLogoTwo,
         title: "Efektywność Kosztowa",
         descrition: "Zamiast zatrudniać trzech nowych pracowników, uruchamiasz RentEasy.AI. I to działa."
     },
     {
-        icon: DlaczegoLogoThree,
+        icon: dlaczegoLogoThree,
         title: "Wgląd W Branżę",
         descrition: "Stworzyliśmy ten system we współpracy z prawdziwymi zarządcami nieruchomości — rozumiemy Twoją branżę, tempo pracy i formalności, z którymi się zmagasz."
     },
     {
-        icon: DlaczegoLogoFour,
+        icon: dlaczegoLogoFour,
         title: "Aktywna Automatyzacja",
         descrition: "RentEasy.AI nie tylko przechowuje informacje — wykonuje pracę za Ciebie."
     },
     {
-        icon: DlaczegoLogoFive,
+        icon: dlaczegoLogoFive,
         title: "Łatwe Wdrożenie",
         descrition: "Brak skomplikowanego procesu wdrażania — jest intuicyjny, nie wymaga szkolenia, a my pomagamy w migracji z innych narzędzi, takich jak SON."
     },
 ];
 
-export const ACCORDION_DATA = [
+export const Accordion_Data = [
     {
         question: "Czym jest RentEasy.AI?",
         answer:
@@ -261,7 +268,7 @@ export const ACCORDION_DATA = [
     },
 ];
 
-export const tabData = [
+export const Tab_Data = [
     {
         id: 0,
         label: "Moduł ofert z integracjami",
@@ -292,22 +299,22 @@ export const tabData = [
         benefits: [
             {
                 text: "Zwiększyć Kontrolę Nad Procesem Wynajmu",
-                iconSrc: userGear,
+                iconSrc: UserGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Zminimalizować Czas Od Publikacji Do Podpisania Umowy",
-                iconSrc: corporate,
+                iconSrc: CorporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Pozyskać Najemców Bez Pośredników",
-                iconSrc: portfolio,
+                iconSrc: PortfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Budować Markę Własną W Ramach Strony Ofertowej",
-                iconSrc: trash,
+                iconSrc: TrashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -341,22 +348,22 @@ export const tabData = [
         benefits: [
             {
                 text: "Zwiększyć Kontrolę Nad Procesem Wynajmu",
-                iconSrc: userGear,
+                iconSrc: UserGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Zminimalizować Czas Od Publikacji Do Podpisania Umowy",
-                iconSrc: corporate,
+                iconSrc: CorporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Pozyskać Najemców Bez Pośredników",
-                iconSrc: portfolio,
+                iconSrc: PortfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Budować Markę Własną W Ramach Strony Ofertowej",
-                iconSrc: trash,
+                iconSrc: TrashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -391,22 +398,22 @@ export const tabData = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: userGear,
+                iconSrc: UserGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: corporate,
+                iconSrc: CorporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: portfolio,
+                iconSrc: PortfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: trash,
+                iconSrc: TrashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -441,22 +448,22 @@ export const tabData = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: userGear,
+                iconSrc: UserGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: corporate,
+                iconSrc: CorporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: portfolio,
+                iconSrc: PortfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: trash,
+                iconSrc: TrashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -491,22 +498,22 @@ export const tabData = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: userGear,
+                iconSrc: UserGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: corporate,
+                iconSrc: CorporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: portfolio,
+                iconSrc: PortfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: trash,
+                iconSrc: TrashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -541,29 +548,29 @@ export const tabData = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: userGear,
+                iconSrc: UserGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: corporate,
+                iconSrc: CorporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: portfolio,
+                iconSrc: PortfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: trash,
+                iconSrc: TrashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
     },
 ];
 
-export const navLinks = [
+export const NavLinks_Data = [
     { label: "Strona Główna", href: "/" },
     { label: "Dla kogo?", href: "/dla-kogo" },
     { label: "Jak to działa?", href: "/jak-to-dziala" },

@@ -1,15 +1,15 @@
 import React from "react";
-import spyimg from "../assets/images/png/spy-img.png";
+import SpyImg from "../assets/images/png/spy-img.png";
 import CustomHeading from "./common/CustomHeading";
 import { Comozemy_Data } from "../utils/helper";
 
-const Comożemy = () => {
+const Comozemy = () => {
   return (
     <>
       <div className="max-[640px]:pt-[162px] sm:pt-[80px] lg:pt-[140px] max-xl:px-5">
         <img
           className="mx-auto max-w-[221px] w-full pointer-events-none"
-          src={spyimg}
+          src={SpyImg}
           alt="spy-img"
         />
         <div className="max-w-[1137px] mx-auto bg-light-grey shadow-top-glow rounded-[15px] py-[48px] lg:py-10 xl:py-[58px] px-[17px] xl:px-[26px] border-2 border-grey">
@@ -21,7 +21,7 @@ const Comożemy = () => {
             {Comozemy_Data.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center bg-white max-w-[301px] sm:max-w-[527px] min-h-[223px] xl:min-h-[199px] rounded-[15px] md:py-[22px] sm:py-6 md:pl-[21px] md:pr-[45px] sm:px-4 sm:h-full transition-all duration-300 ease-in-out comozemy-card hover:shadow-lg"
+                className="flex flex-col items-center text-center sm:bg-white max-w-[301px] sm:max-w-[527px] min-h-[223px] xl:min-h-[199px] rounded-[15px] md:py-[22px] sm:py-6 md:pl-[21px] md:pr-[45px] sm:px-4 sm:h-full transition-all duration-300 ease-in-out comozemy-card hover:shadow-lg"
               >
                 <div
                   className="justify-center items-center flex sm:size-16 size-[74px] rounded-2xl"
@@ -44,4 +44,4 @@ const Comożemy = () => {
   );
 };
 
-export default Comożemy;
+export default Comozemy;

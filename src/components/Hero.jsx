@@ -99,7 +99,7 @@ const Hero = () => {
                     >
                       <img
                         className="max-w-[231px] h-[145px] w-full rounded-t-[15px]"
-                        src={slide.Image}
+                        src={slide.image}
                         alt="slider-img"
                       />
                       <div className="absolute top-[40%] size-[54px] left-1/2 -translate-x-1/2 z-10">

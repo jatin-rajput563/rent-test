@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import dotImage from "../assets/images/png/dot.png";
-import circleImage from "../assets/images/png/circle.png";
-import tabImage from "../assets/images/png/tab-image.png";
+import DotImage from "../assets/images/png/dot.png";
+import CircleImg from "../assets/images/png/circle.png";
+import TabImg from "../assets/images/png/tab-image.png";
 import taskChecklist from "../assets/images/svg/task-checklist.svg";
-import { tabData } from "../utils/helper";
+import { Tab_Data } from "../utils/helper";
 
 export function FeatureCard({ label, color }) {
   return (
@@ -25,9 +25,9 @@ export function FeatureCard({ label, color }) {
     </div>
   );
 }
-const Moduły = () => {
+const Moduly = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const tab = tabData[activeTab];
+  const tab = Tab_Data[activeTab];
   return (
     <>
       <div>
@@ -35,7 +35,7 @@ const Moduły = () => {
           <div className="flex flex-col justify-start items-center bg-light-grey relative max-w-[1366px] rounded-[30px] w-full pt-[53px] sm:pt-[63px] md:pt-[77px] pb-[52px] sm:pb-[33px]">
             <img
               className="absolute w-[80px] lg:w-[114px] sm:max-[1240px] max-[1260px]:-rotate-270 origin-top-left min-[1260px]:right-[40px] top-[7%] lg:flex hidden -right-[90px]"
-              src={dotImage}
+              src={DotImage}
               alt="dots"
             />
 
@@ -48,8 +48,8 @@ const Moduły = () => {
             </h2>
             <div>
               <img
-                src={circleImage}
-                alt="circleImage"
+                src={CircleImg}
+                alt="CircleImg"
                 className="max-w-[220px] sm:max-w-[267px] w-full h-auto pointer-events-none"
               />
             </div>
@@ -64,7 +64,7 @@ const Moduły = () => {
     [@media(min-width:858px)]:grid-cols-3
     lg:flex lg:flex-col max-[450px]:max-w-[267px] lg:max-w-[267px] mx-auto"
             >
-              {tabData.map((item, idx) => (
+              {Tab_Data.map((item, idx) => (
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(idx)}
@@ -118,7 +118,7 @@ const Moduły = () => {
 
                 <div className="hidden md:flex flex-shrink-0 items-center justify-center my-6 md:my-0">
                   <div className="w-[188px] flex items-center justify-center relative overflow-hidden">
-                    <img src={tabImage} alt="" className="" draggable={false} />
+                    <img src={TabImg} alt="" className="" draggable={false} />
                   </div>
                 </div>
                 <div className="hidden md:flex flex-col gap-0 md:gap-8 lg:gap-[53px] flex-1">
@@ -143,7 +143,7 @@ const Moduły = () => {
                 />
                 <div className="flex items-center justify-center my-6">
                   <div className="w-[188px] flex items-center justify-center relative overflow-hidden">
-                    <img src={tabImage} alt="" className="" draggable={false} />
+                    <img src={TabImg} alt="" className="" draggable={false} />
                   </div>
                 </div>
                 <FeatureCard
@@ -200,4 +200,4 @@ const Moduły = () => {
   );
 };
 
-export default Moduły;
+export default Moduly;

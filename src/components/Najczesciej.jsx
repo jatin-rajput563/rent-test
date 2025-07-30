@@ -1,16 +1,15 @@
 import React, { useState, useRef } from "react";
-import { ACCORDION_DATA } from "../utils/helper";
+import { Accordion_Data } from "../utils/helper";
 import CustomButton from "./common/CustomButton";
 import CustomHeading from "./common/CustomHeading";
 
-const Najczęściej = () => {
+const Najczesciej = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const contentRefs = useRef([]);
 
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
   return (
     <>
       <div className="sm:px-5 pt-[48px] sm:pt-[176px]">
@@ -20,7 +19,7 @@ const Najczęściej = () => {
             headClass="mb-[22px] text-center"
           />
           <div className="space-y-5 sm:space-y-6 max-sm:px-5">
-            {ACCORDION_DATA.map((obj, index) => {
+            {Accordion_Data.map((obj, index) => {
               const isOpen = openIndex === index;
               return (
                 <div
@@ -90,4 +89,4 @@ const Najczęściej = () => {
   );
 };
 
-export default Najczęściej;
+export default Najczesciej;

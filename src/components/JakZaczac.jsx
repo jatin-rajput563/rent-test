@@ -1,10 +1,11 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import RoadmapTopImg from "../assets/images/png/roadmap-top-img.png";
-import RoadmapImg1 from "../assets/images/svg/roadmap-img-1.svg";
-import RoadmapImg2 from "../assets/images/svg/roadmap-img-2.svg";
-import RoadmapImg3 from "../assets/images/svg/roadmap-img-3.svg";
-import RoadmapLine1 from "../assets/images/svg/roadmap-line-1.svg";
-import RoadmapLine2 from "../assets/images/svg/roadmap-line-2.svg";
+import RoadmapImgOne from "../assets/images/svg/roadmap-img-1.svg";
+import RoadmapImgTwo from "../assets/images/svg/roadmap-img-2.svg";
+import RoadmapImgThree from "../assets/images/svg/roadmap-img-3.svg";
+import RoadmapLineOne from "../assets/images/svg/roadmap-line-1.svg";
+import RoadmapLineTwo from "../assets/images/svg/roadmap-line-2.svg";
 import CustomHeading from "./common/CustomHeading";
 import CustomPara from "./common/CustomPara";
 
@@ -29,10 +30,18 @@ const roadmapData = [
   },
 ];
 
-const JakZacząć = () => {
+const JakZaczac = () => {
+  const location = useLocation();
+  const shouldShowPadding = location.pathname === "/";
   return (
     <>
-      <div className="sm:pt-0 md:pt-[50px] lg:pt-[100px] xl:pt-[191px]">
+      <div
+        className={`${
+          shouldShowPadding
+            ? "sm:pt-0 md:pt-[50px] lg:pt-[100px] xl:pt-[191px]"
+            : "pt-[50px]"
+        }`}
+      >
         <div className="max-w-[1140px] mx-auto px-[19.5px] xl:px-0">
           <img
             className="max-w-[170px] lg:max-w-[221px] pointer-events-none mx-auto"
@@ -52,28 +61,28 @@ const JakZacząć = () => {
             <div className="relative max-w-[1200px] mx-auto px-4 before:content-[''] hidden min-[1070px]:block before:absolute before:top-0 before:bottom-0 before:left-1/2 before:-ml-[3px]">
               <img
                 className="absolute min-[1140px]:left-[43%] z-10 left-[47%]"
-                src={RoadmapImg1}
+                src={RoadmapImgOne}
                 alt="roadmap-img-1"
               />
               <img
                 className="absolute left-[49.2%] top-[11%] hidden min-[1140px]:block"
-                src={RoadmapLine1}
+                src={RoadmapLineOne}
                 alt="roadmap-line-1"
               />
               <div className="w-1 bg-black absolute left-[50.5%] top-[1%] block min-[1140px]:hidden h-[350px] min-[768px]:h-[281px] max-[900px]:left-[52%]"></div>
               <img
                 className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[37%]"
-                src={RoadmapImg2}
+                src={RoadmapImgTwo}
                 alt="roadmap-img-2"
               />
               <img
                 className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block"
-                src={RoadmapLine2}
+                src={RoadmapLineTwo}
                 alt="line-2"
               />
               <img
                 className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]"
-                src={RoadmapImg3}
+                src={RoadmapImgThree}
                 alt="roadmap-img-3"
               />
               {roadmapData.map((item, index) => (
@@ -107,10 +116,10 @@ const JakZacząć = () => {
                       className="w-[54px] h-[54px]"
                       src={
                         index === 0
-                          ? RoadmapImg1
+                          ? RoadmapImgOne
                           : index === 1
-                          ? RoadmapImg2
-                          : RoadmapImg3
+                          ? RoadmapImgTwo
+                          : RoadmapImgThree 
                       }
                       alt={`roadmap-img-${index + 1}`}
                     />
@@ -131,4 +140,4 @@ const JakZacząć = () => {
   );
 };
 
-export default JakZacząć;
+export default JakZaczac;

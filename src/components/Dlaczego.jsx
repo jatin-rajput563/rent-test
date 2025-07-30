@@ -1,7 +1,7 @@
 import React from "react";
 import CustomHeading from "./common/CustomHeading";
-import aiImg from "../assets/images/png/ai-img.png";
-import { DLACZEGO_DATA } from "../utils/helper";
+import AiImg from "../assets/images/png/ai-img.png";
+import { DlaKogo_Data } from "../utils/helper";
 import { useLocation } from "react-router-dom";
 
 const Dlaczego = () => {
@@ -30,7 +30,7 @@ const Dlaczego = () => {
                 headClass="!text-[40px] sm:!text-[44px] lg:!text-[38px] xl:!text-[46px] leading-120 mb-[37px] max-lg:text-center"
                 headText="Dlaczego warto skorzystać z RentEasy.AI?"
               />
-              {DLACZEGO_DATA.map((item, index) => (
+              {DlaKogo_Data.map((item, index) => (
                 <div
                   key={index}
                   className={`flex items-start gap-[25px] ${
@@ -58,7 +58,7 @@ const Dlaczego = () => {
 
             <div className="w-full lg:max-w-[457px] mx-auto lg:h-[610px] sm:h-[500px] h-[447px]">
               <img
-                src={aiImg}
+                src={AiImg}
                 alt="work with us"
                 className="w-full h-full object-cover pointer-events-none rounded-[15px]"
               />

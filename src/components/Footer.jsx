@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import CustomButton from "./common/CustomButton";
 import CustomHeading from "./common/CustomHeading";
 import FooterLogo from "../assets/images/svg/FooterLogo.svg";
-import { FooterIcons, navLinks } from "../utils/helper";
+import { FooterIcons_Data, NavLinks_Data } from "../utils/helper";
 import Location from "../assets/images/svg/Location.svg";
 import Phone from "../assets/images/svg/Phone.svg";
 import Mail from "../assets/images/svg/Mail.svg";
@@ -79,7 +79,7 @@ const Footer = () => {
                 Zbudowane przez profesjonalistów, dla profesjonalistów
               </p>
               <div className="flex gap-4 mt-[22px] sm:mt-4 items-center max-sm:justify-center">
-                {FooterIcons.map(({ href, svg }, index) => (
+                {FooterIcons_Data.map(({ href, svg }, index) => (
                   <a
                     href={href}
                     target="_blank"
@@ -108,8 +108,13 @@ const Footer = () => {
                     Szybkie linki
                   </p>
                   <ul className="flex gap-4 flex-col">
-                    {navLinks.map((link, i) => (
-                      <li key={i} className="leading-160">
+                    {NavLinks_Data.map((link, i) => (
+                      <li
+                        key={i}
+                        className={`leading-160 ${
+                          i === 2 ? "max-[425px]:max-w-[50px]" : ""
+                        }`}
+                      >
                         <a
                           href={link.href}
                           className="font-lato opacity-80 text-white text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
