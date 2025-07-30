@@ -19,17 +19,28 @@ const Footer = () => {
           isHomePage ? "sm:pt-[81px] pt-[93px]" : "pt-[199px] sm:pt-[63px]"
         }`}
       >
-        <div className="container max-w-[1366px] !transform-[unset] -mt-[59px] sm:-mt-[65px] translate-y-[59px] sm:translate-y-[65px] mx-auto rounded-[15px] bg-purple-blue w-full sm:py-10 pt-[41px] md:py-[61px] px-5 pb-[57px] sm:px-6">
+        <div
+          className={`container max-w-[1366px] !transform-[unset] -mt-[59px] sm:-mt-[65px] translate-y-[59px] sm:translate-y-[65px] mx-auto rounded-[15px] bg-purple-blue w-full px-5 sm:px-6 ${
+            isHomePage
+              ? "sm:py-10 pt-[41px] md:py-[61px] pb-[57px]"
+              : "sm:py-[66px] pt-[47.5px] max-sm:pb-[63.5px]"
+          }`}
+        >
           <CustomHeading
             headText={
               isHomePage
                 ? " Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami"
                 : "Poznaj moc Zoe"
             }
-            headClass="text-center !leading-120 mb-[39px] md:mb-[41] lg:mb-[51px] text-white !text-[32px] sm:!text-[40px] md:!text-[48px]"
+            headClass={`text-center !leading-120 text-white !text-[32px] sm:!text-[40px] md:!text-[48px] ${
+              isHomePage
+                ? "mb-[39px] md:mb-[41px] lg:mb-[51px]"
+                : "mb-[12px] sm:mb-[15px] !text-[48px] !leading-[124%]"
+            }`}
           />
+
           {!isHomePage && (
-            <p className="text-white opacity-80 text-center max-w-[830px] mx-auto text-base sm:text-lg mb-7">
+            <p className="text-white opacity-80 text-center max-w-[593px] mx-auto leading-134 mb-[30px] sm:mb-[39px]">
               Pozwól Zoe zająć się powtarzalnymi zadaniami, aby Twój zespół mógł
               skupić się na tym, co najważniejsze. Nie jest tylko funkcją — jest
               Twoją przewagą konkurencyjną.
@@ -41,7 +52,9 @@ const Footer = () => {
               btnText={
                 isHomePage ? "Zarejestruj się" : "Skonfiguruj swój pakiet"
               }
-              btnClass="text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] sm:!px-[23.8px] !px-[59.3px]"
+              btnClass={`text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] ${
+                isHomePage ? "sm:!px-[23.8px] !px-[59.3px]" : "!px-[20.8px]"
+              }`}
             />
           </div>
         </div>
@@ -157,18 +170,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full py-3 px-4 flex flex-wrap gap-3 justify-center border-t border-white">
-          {navLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="text-white text-sm sm:text-base opacity-80 hover:opacity-100 transition-opacity duration-200"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-        <div className="w-full text-center text-white py-4 px-5 text-sm sm:text-base opacity-80">
+        <div className="w-full text-center text-white py-4 px-5 text-sm sm:border-t sm:border-white sm:text-base opacity-80">
           © {new Date().getFullYear()} RentEasy.AI — All rights reserved.
         </div>
       </footer>

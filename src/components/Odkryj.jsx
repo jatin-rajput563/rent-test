@@ -12,7 +12,7 @@ const Odkryj = () => {
     <div>
       <section className="lg:pt-[140px] md:pt-[80px] pt-[52px] px-[17px]">
         <div className="max-w-[1137px] mx-auto">
-          <div className="max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto">
+          <div className="max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto pointer-events-none">
             <img src={spyImg} alt="spy-img" />
           </div>
           <div className="bg-white border-2 border-grey rounded-[15px] renteasy-bg-shadow md:py-[55px] max-md:pt-[41px] max-md:pb-[33px] xl:pl-14 pl-[37px] pr-[37px] max-lg:px-7 max-sm:px-[10px]">
@@ -61,11 +61,11 @@ const Odkryj = () => {
                   btnText={"Sprawdź nas!"}
                 />
               </div>
-              <div className="max-xl:pl-1">
+              <div>
                 <img
                   src={discoverRentImg}
                   alt="discover-rent-img"
-                  className="min-[820px]:size-[515px] max-[425px]:h-[474px] pointer-events-none rounded-2xl object-cover"
+                  className="max-[425px]:h-[474px] min-[820px]:w-[517.3px] min-[820px]:h-[515px] pointer-events-none rounded-2xl object-cover"
                 />
               </div>
             </div>

@@ -417,7 +417,7 @@ export const tabData = [
     },
     {
         id: 2,
-        label: "Moduł Integracji z Google Workspace",
+        label: "Moduł Bramki SMS",
         heading: "Moduł ofert z integracjami",
         subheading: "Do czego służy?",
         description:
@@ -467,7 +467,7 @@ export const tabData = [
     },
     {
         id: 2,
-        label: "Moduł Integracji z Google Workspace",
+        label: "Moduł płatności + umowy + klamki",
         heading: "Moduł ofert z integracjami",
         subheading: "Do czego służy?",
         description:
@@ -517,7 +517,7 @@ export const tabData = [
     },
     {
         id: 2,
-        label: "Moduł Integracji z Google Workspace",
+        label: "Moduł Task Manager",
         heading: "Moduł ofert z integracjami",
         subheading: "Do czego służy?",
         description:

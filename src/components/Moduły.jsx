@@ -55,13 +55,13 @@ const Moduły = () => {
             </div>
           </div>
         </div>
-        <div className="max-xl:px-4">
+        <div className="max-xl:px-5">
           <div className="flex flex-col lg:flex-row gap-6 max-w-[1140px] mx-auto max-lg:px-3 pt-[63px]">
             <aside
               className="w-full gap-2.5 grid
-    grid-cols-1                                      // default <650px
-    [@media(min-width:650px)]:grid-cols-2            // 650px+
-    [@media(min-width:858px)]:grid-cols-3            // 858px+
+    grid-cols-1
+    [@media(min-width:650px)]:grid-cols-2
+    [@media(min-width:858px)]:grid-cols-3
     lg:flex lg:flex-col max-[450px]:max-w-[267px] lg:max-w-[267px] mx-auto"
             >
               {tabData.map((item, idx) => (
@@ -69,37 +69,43 @@ const Moduły = () => {
                   key={item.id}
                   onClick={() => setActiveTab(idx)}
                   className={`relative h-[76px] moduly-button-shadow cursor-pointer px-[16px] rounded-[11px] transition-all text-xl text-center
-    ${
-      activeTab === idx
-        ? "bg-purple-blue text-white"
-        : "bg-white border border-gray-200 text-dark-blue hover:bg-gray-100"
-    } ${idx === 0 ? "whitespace-nowrap" : ""}`}
+        ${
+          activeTab === idx
+            ? "bg-purple-blue text-white"
+            : "bg-white border border-gray-200 text-dark-blue hover:bg-gray-100"
+        } ${idx === 0 ? "whitespace-nowrap" : ""}`}
                   style={
                     activeTab === idx
                       ? { boxShadow: "0px -3.01px 20.32px 0px #00000029" }
                       : {}
                   }
                 >
-                  {item.label}
+                  <span
+                    className={`${
+                      idx === 4 ? "block max-w-[165px] mx-auto" : ""
+                    }`}
+                  >
+                    {item.label}
+                  </span>
                 </button>
               ))}
             </aside>
 
-            <section className="bg-white shadow-xl moduly-shadow max-w-[850px] rounded-2xl p-[30px] w-full lg:w-3/4">
-              <h2 className="text-2xl sm:text-4xl font-bold text-dark-blue text-center">
+            <section className="bg-white shadow-xl moduly-shadow lg:max-w-[850px] rounded-2xl p-[30px] w-full lg:w-3/4 mx-auto max-lg:w-full">
+              <h2 className="text-[32px] sm:text-4xl font-bold text-dark-blue text-center">
                 {tab.heading}
               </h2>
-              <h3 className="text-purple-blue text-lg sm:text-2xl font-semibold mt-[11px] text-center">
+              <h3 className="text-purple-blue text-lg sm:text-2xl font-semibold mt-[9px] sm:mt-[11px] text-center">
                 {tab.subheading}
               </h3>
-              <p className="text-dark-blue opacity-80 text-sm sm:text-base mt-[11px] text-center mx-auto max-w-[777px]">
+              <p className="text-dark-blue opacity-80 text-sm sm:text-base mt-[28.82px] sm:mt-[11px] text-center mx-auto max-w-[777px]">
                 {tab.description}
               </p>
-              <p className="text-dark-blue text-2xl text-center font-bold mt-[30px]">
+              <p className="text-dark-blue text-xl sm:text-2xl text-center font-bold mt-[30px]">
                 Co konkretnie zawiera?
               </p>
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-6 -mt-1">
-                <div className="hidden md:flex flex-col gap-6 md:gap-[53px] flex-1">
+                <div className="hidden md:flex flex-col gap-0 md:gap-8 lg:gap-[53px] flex-1">
                   <FeatureCard
                     label={tab.features[0].title}
                     color={tab.features[0].color}
@@ -115,7 +121,7 @@ const Moduły = () => {
                     <img src={tabImage} alt="" className="" draggable={false} />
                   </div>
                 </div>
-                <div className="hidden md:flex flex-col gap-6 md:gap-[53px] flex-1">
+                <div className="hidden md:flex flex-col gap-0 md:gap-8 lg:gap-[53px] flex-1">
                   <FeatureCard
                     label={tab.features[1].title}
                     color={tab.features[1].color}
@@ -126,7 +132,7 @@ const Moduły = () => {
                   />
                 </div>
               </div>
-              <div className="md:hidden flex flex-col gap-6 mt-6">
+              <div className="md:hidden flex flex-col gap-0 mt-6">
                 <FeatureCard
                   label={tab.features[0].title}
                   color={tab.features[0].color}
@@ -150,11 +156,11 @@ const Moduły = () => {
                 />
               </div>
 
-              <div className="mt-[34px] mx-auto">
-                <h3 className="text-lg sm:text-[32px] font-semibold text-center text-dark-blue">
+              <div className="sm:mt-[34px] mt-[72px] mx-auto">
+                <h3 className="text-2xl sm:text-[32px] font-semibold text-center text-dark-blue">
                   {tab.benefitsTitle}
                 </h3>
-                <h5 className="text-purple-blue text-2xl text-center font-bold mt-[10px]">
+                <h5 className="text-purple-blue text-base sm:text-2xl text-center font-bold mt-[14px] sm:mt-[10px]">
                   {tab.benefitsSub}
                 </h5>
                 <div className="flex flex-wrap justify-center mt-[26px] sm:mt-[42px]">
