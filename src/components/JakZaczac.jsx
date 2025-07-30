@@ -48,8 +48,8 @@ const JakZaczac = () => {
             src={RoadmapTopImg}
             alt="roadmap-top-img"
           />
-          <div className="w-full shadow-lg rounded-[15px] border border-grey renteasy-bg-shadow pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
-            <CustomHeading headText={"Jak Zacząć?"} headClass={"text-center"} />
+          <div className="w-full shadow-lg text-center mx-auto rounded-[15px] border border-grey renteasy-bg-shadow pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
+            <CustomHeading headingText={"Jak Zacząć?"} headinglass={"text-center"} />
             <CustomPara
               paraClass={
                 "max-w-[234px] sm:max-w-[450px] mx-auto !text-dark-black opacity-70 text-center leading-134 pt-[18px] ff-cabin capitalize mb-[41px] lg:mb-[69px]"

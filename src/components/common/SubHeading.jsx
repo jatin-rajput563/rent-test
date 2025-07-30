@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SubHeading = ({subText, subClass}) => {
+const SubHeading = ({subHeadingText, subHeadingClass}) => {
   return (
     <div>
-      <p className={`font-bold text-base sm:text-xl text-dark-blue  ${subClass}`}>{subText}</p>
+      <p className={`font-bold text-base sm:text-xl text-dark-blue  ${subHeadingClass}`}>{subHeadingText}</p>
     </div>
   )
 }

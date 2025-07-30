@@ -15,8 +15,8 @@ const Najczesciej = () => {
       <div className="sm:px-5 pt-[48px] sm:pt-[176px]">
         <div className="max-w-[996px] mx-auto">
           <CustomHeading
-            headText="Najczęściej Zadawane Pytania"
-            headClass="mb-[22px] text-center"
+            headingText="Najczęściej Zadawane Pytania"
+            headingClass="mb-[22px] text-center"
           />
           <div className="space-y-5 sm:space-y-6 max-sm:px-5">
             {Accordion_Data.map((obj, index) => {

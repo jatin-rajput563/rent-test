@@ -18,8 +18,8 @@ const DlaKogo = () => {
         <div className="max-w-[1180px] px-5 mx-auto">
           <div className="text-center">
             <CustomHeading
-              headClass="font-bold text-dark-blue !leading-[121%] mb-[34px] sm:mb-[44px] text-center"
-              headText="Dla kogo?"
+              headingClass="font-bold text-dark-blue !leading-[121%] mb-[34px] sm:mb-[44px] text-center"
+              headingText="Dla kogo?"
             />
 
             <Tabs>

@@ -18,17 +18,17 @@ const Odkryj = () => {
             <div className="min-[821px]:flex max-[821px]:flex-wrap gap-9 lg:gap-[58px]">
               <div className="flex flex-col max-[820px]:items-center max-sm:px-4">
                 <CustomHeading
-                  headClass={
+                  headingClass={
                     "font-bold text-dark-blue !leading-[121%] font-lato xl:text-5xl md:text-custom-4xl max-[820px]:text-center max-w-[471px]"
                   }
-                  headText={" Odkryj RentEasy.AI"}
+                  headingText={" Odkryj RentEasy.AI"}
                 />
                 <div className="xl:pr-3">
                   <SubHeading
-                    subText={
+                    subHeadingText={
                       "Jesteśmy Twoim zespołem ds. operacji cyfrowych, pracującym dla Ciebie 24/7."
                     }
-                    subClass={
+                    subHeadingClass={
                       "pt-[11px] sm:pt-[18px] !leading-129 sm:pb-[14px] pb-[6px] max-w-[437px] max-[820px]:text-center max-[820px]:mx-auto"
                     }
                   />

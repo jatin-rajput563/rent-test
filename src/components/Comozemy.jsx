@@ -14,8 +14,8 @@ const Comozemy = () => {
         />
         <div className="max-w-[1137px] mx-auto bg-light-grey shadow-top-glow rounded-[15px] py-[48px] lg:py-10 xl:py-[58px] px-[17px] xl:px-[26px] border-2 border-grey">
           <CustomHeading
-            headClass={"text-center !leading-120 px-0 sm:px-8"}
-            headText={" Co możemy dla Ciebie zrobić?"}
+            headingClass={"text-center !leading-120 px-0 sm:px-8"}
+            headingText={" Co możemy dla Ciebie zrobić?"}
           />
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-y-10 gap-y-[47px] gap-x-[31px] sm:mt-10 mt-[47px] mx-auto place-items-center">
             {Comozemy_Data.map((item, index) => (

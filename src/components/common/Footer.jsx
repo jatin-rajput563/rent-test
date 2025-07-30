@@ -27,12 +27,12 @@ const Footer = () => {
           }`}
         >
           <CustomHeading
-            headText={
+            headingText={
               isHomePage
                 ? " Zrób pierwszy krok w kierunku bezstresowego zarządzania nieruchomościami"
                 : "Poznaj moc Zoe"
             }
-            headClass={`text-center !leading-120 text-white !text-[32px] sm:!text-[40px] md:!text-[44px] lg:!text-[48px] ${
+            headingClass={`text-center max-w-[1002px] mx-auto text-center !leading-120 text-white !text-[32px] sm:!text-[40px] md:!text-[44px] lg:!text-[48px] ${
               isHomePage
                 ? "mb-[39px] md:mb-[41px] lg:mb-[51px]"
                 : "mb-[12px] sm:mb-[15px] !text-[48px] !leading-[124%]"

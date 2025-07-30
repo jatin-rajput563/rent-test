@@ -27,8 +27,8 @@ const Dlaczego = () => {
           <div className="flex flex-col lg:flex-row gap-[37px] xl:gap-[83px] justify-center items-center">
             <div className="flex flex-col max-w-[600px] w-full py-0">
               <CustomHeading
-                headClass="!text-[40px] sm:!text-[44px] lg:!text-[38px] xl:!text-[46px] leading-120 mb-[37px] max-lg:text-center"
-                headText="Dlaczego warto skorzystać z RentEasy.AI?"
+                headingClass="!text-[40px] sm:!text-[44px] lg:!text-[38px] xl:!text-[46px] leading-120 mb-[37px] max-lg:text-center"
+                headingText="Dlaczego warto skorzystać z RentEasy.AI?"
               />
               {Dlaczego_Data.map((item, index) => (
                 <div
