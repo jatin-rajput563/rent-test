@@ -5,7 +5,7 @@ import { Comozemy_Data } from "../utils/helper";
 
 const Comożemy = () => {
   return (
-    <div className="pt-[162px] sm:pt-[140px] max-xl:px-5">
+    <div className="max-[640px]:pt-[162px] sm:pt-[80px] lg:pt-[140px] max-xl:px-5">
       <img
         className="mx-auto max-w-[221px] w-full pointer-events-none"
         src={spyimg}

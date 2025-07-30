@@ -37,7 +37,7 @@ const Hero = () => {
                 />
               </span>
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] lg:hidden font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
+            <h1 className="text-4xl sm:text-5xl min-[769px]:text-6xl lg:text-[64px] lg:hidden font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
               Zautomatyzuj zarządzanie nieruchomościami dzięki AI.
             </h1>
             <p className="leading-134 opacity-80 text-dark-blue max-[425px]:max-w-[280px] lg:max-w-[820px] text-center pt-[9px] sm:pt-[15px] mx-auto">
@@ -58,7 +58,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="sm:mt-[5.5px]">
+          <div className="min-[769px]:mt-[5.5px]">
             <Swiper
               modules={[Autoplay]}
               slidesPerView={5}
@@ -73,11 +73,13 @@ const Hero = () => {
                 clickable: false,
               }}
               breakpoints={{
-                1280: { slidesPerView: 5 },
-                1024: { slidesPerView: 4 },
-                768: { slidesPerView: 3 },
+                1440: { slidesPerView: 5 },
+                1280: { slidesPerView: 4 },
+                1024: { slidesPerView: 3.5 },
+                768: { slidesPerView: 2.5 },
                 640: { slidesPerView: 2 },
-                425: { slidesPerView: 1 },
+                480: { slidesPerView: 1.5 },
+                0: { slidesPerView: 1 },
               }}
               className="mySwiper"
             >

@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className="max-w-[1180px] px-5 mx-auto sm:pt-7 py-[11px] sm:pb-[26px] flex justify-between items-center relative overflow-x-clip">
       <NavLink to="/">
-        <img className="sm:h-[55px] h-[42px]" src={Logo} alt="logo" />
+        <img className="sm:h-[54px] h-[41px] w-[139px]  sm:w-[183px]" src={Logo} alt="logo" />
       </NavLink>
 
       <ul
@@ -37,7 +37,7 @@ const Header = () => {
               className="relative after:absolute after:bottom-0 after:left-0 after:bg-purple-blue after:h-[1px] hover:after:w-full after:content-[''] after:w-0 after:duration-300 hover:text-purple-blue duration-300 flex items-center gap-2"
             >
               {link.label}
-              {link.withImage && <img src={link.image} alt="Zoe" />}
+              {link.withImage && <img className="pointer-events-none w-[67.6px] h-[26px]" src={link.image} alt="Zoe" />}
             </NavLink>
           </li>
         ))}
@@ -46,7 +46,7 @@ const Header = () => {
           <div className="items-center gap-[15px] flex flex-col sm:hidden">
             <button className="text-dark-blue leading-[19px] duration-300 flex justify-center items-center gap-[15px]">
               Polski{" "}
-              <img className=" !w-[33.6px] !h-[21px]" src={Flag} alt="flag" />
+              <img className=" !w-[33.6px] !h-[21px] pointer-events-none" src={Flag} alt="flag" />
             </button>
             <button className="px-[25.3px] py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
               Zarejestruj
@@ -54,7 +54,6 @@ const Header = () => {
           </div>
         </li>
       </ul>
-
       <div className="flex items-center gap-[15px]">
         <div className="items-center gap-[15px] sm:flex hidden">
           <button className="text-dark-blue leading-[19px] duration-300 flex justify-center items-center gap-[15px]">

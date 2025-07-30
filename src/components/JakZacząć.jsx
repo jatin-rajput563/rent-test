@@ -32,10 +32,10 @@ const roadmapData = [
 const JakZacząć = () => {
   return (
     <>
-      <div className="md:pt-0 lg:pt-[100px] xl:pt-[191px]">
+      <div className="sm:pt-0 md:pt-[50px] lg:pt-[100px] xl:pt-[191px]">
         <div className="max-w-[1140px] mx-auto px-[19.5px] xl:px-0">
           <img
-            className="max-w-[221px] mx-auto"
+            className="max-w-[170px] lg:max-w-[221px] pointer-events-none mx-auto"
             src={RoadmapTopImg}
             alt="roadmap-top-img"
           />
