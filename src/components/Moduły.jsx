@@ -91,7 +91,7 @@ const Moduły = () => {
               ))}
             </aside>
 
-            <section className="bg-white shadow-xl moduly-shadow lg:max-w-[850px] rounded-2xl p-[30px] w-full lg:w-3/4 mx-auto max-lg:w-full">
+            <div className="bg-white shadow-xl moduly-shadow lg:max-w-[850px] rounded-2xl p-[30px] w-full lg:w-3/4 mx-auto max-lg:w-full">
               <h2 className="text-[32px] sm:text-4xl font-bold text-dark-blue text-center">
                 {tab.heading}
               </h2>
@@ -192,7 +192,7 @@ const Moduły = () => {
                   ))}
                 </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>

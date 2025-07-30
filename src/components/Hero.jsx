@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="px-[19.5px] sm:px-[24px] md:px-[27px] lg:px-[37px]">
         <div className="max-w-[1440px] relative bg-light-grey mx-auto rounded-[30px] pt-[53px] sm:pt-[77px]">
           <img
-            className="absolute right-[14px] top-[28px] max-w-[114px] w-full h-[186px] max-[1275px]:left-[14px] max-[1067px]:hidden"
+            className="absolute right-[14px] top-[28px] max-w-[114px] w-full pointer-events-none h-[186px] max-[1275px]:left-[14px] max-[1067px]:hidden"
             src={HeroDots}
             alt="dots"
           />
@@ -31,7 +31,7 @@ const Hero = () => {
               <span className="bg-light-purple rounded-tl-xl rounded-bl-xl relative pl-2 ml-1">
                 dzięki AI.
                 <img
-                  className="absolute -top-[32px] -right-[85px]"
+                  className="absolute -top-[32px] pointer-events-none -right-[85px] "
                   src={logoImg}
                   alt="logo-text-img"
                 />

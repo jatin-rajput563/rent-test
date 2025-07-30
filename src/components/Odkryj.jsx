@@ -8,8 +8,8 @@ import CustomPara from "./common/CustomPara";
 
 const Odkryj = () => {
   return (
-    <div>
-      <section className="pt-[52px] md:pt-[60px] lg:pt-[80px] xl:pt-[140px] px-[17px]">
+    <>
+      <div className="pt-[52px] md:pt-[60px] lg:pt-[80px] xl:pt-[140px] px-[17px]">
         <div className="max-w-[1137px] mx-auto">
           <div className="max-w-[170px] lg:max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto">
             <img src={spyImg} alt="spy-img" />
@@ -70,8 +70,8 @@ const Odkryj = () => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </>
   );
 };
 

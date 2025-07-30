@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <footer className="bg-dark-blue sm:pt-[169px] pt-[141px]">
+      <div className="bg-dark-blue sm:pt-[169px] pt-[141px]">
         <div className="container w-full mx-auto max-w-[1182px] px-[21px] pb-[59px]">
           <div className="flex flex-wrap flex-row items-start">
             <div className="lg:w-[46%] sm:w-1/3 w-full max-sm:mb-[33px]">
@@ -71,7 +71,7 @@ const Footer = () => {
                     alt="footer-logo"
                     width="183"
                     height="54"
-                    className="max-sm:w-[246px] max-sm:h-[74px] max-[183px] max-h-[54px]"
+                    className="max-sm:w-[246px] max-sm:h-[74px] pointer-events-none max-[183px] max-h-[54px]"
                   />
                 </a>
               </div>
@@ -131,7 +131,7 @@ const Footer = () => {
                         className="opacity-80 text-white flex text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
                       >
                         <img
-                          className="absolute left-[-30px] top-[-1px]"
+                          className="absolute pointer-events-none size-[24px] left-[-30px] top-[-1px]"
                           src={Location}
                           alt="location-icon"
                         />
@@ -144,7 +144,7 @@ const Footer = () => {
                         className="font-lato opacity-80 text-white text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
                       >
                         <img
-                          className="absolute left-[-30px] top-[-5px]"
+                          className="absolute pointer-events-none size-[24px] left-[-30px] top-[-5px]"
                           src={Phone}
                           alt="phone-icon"
                         />
@@ -157,7 +157,7 @@ const Footer = () => {
                         className="font-lato opacity-80 text-white text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
                       >
                         <img
-                          className="absolute left-[-30px] top-[-5px]"
+                          className="absolute pointer-events-none size-[24px] left-[-30px] top-[-5px]"
                           src={Mail}
                           alt="mail-icon"
                         />
@@ -173,7 +173,7 @@ const Footer = () => {
         <div className="w-full text-center text-white py-4 px-5 text-sm sm:border-t sm:border-white sm:text-base opacity-80">
           © {new Date().getFullYear()} RentEasy.AI — All rights reserved.
         </div>
-      </footer>
+      </div>
     </>
   );
 };
