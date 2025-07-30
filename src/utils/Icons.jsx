@@ -516,7 +516,7 @@ export const footerLogo = () => (
   </svg>
 );
 
-export const backToTopIcon = () => (
+export const BackToTopIcon = () => (
  <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

@@ -1,12 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import CustomButton from "./common/CustomButton";
-import CustomHeading from "./common/CustomHeading";
-import FooterLogo from "../assets/images/svg/FooterLogo.svg";
-import { FooterIcons_Data, NavLinks_Data } from "../utils/helper";
-import Location from "../assets/images/svg/Location.svg";
-import Phone from "../assets/images/svg/Phone.svg";
-import Mail from "../assets/images/svg/Mail.svg";
+import CustomButton from "./CustomButton";
+import CustomHeading from "./CustomHeading";
+import FooterLogo from "../../assets/images/svg/FooterLogo.svg";
+import { FooterIcons_Data, NavLinks_Data } from "../../utils/helper";
+import Location from "../../assets/images/svg/Location.svg";
+import Phone from "../../assets/images/svg/Phone.svg";
+import Mail from "../../assets/images/svg/Mail.svg";
 
 const Footer = () => {
   const location = useLocation();

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Logo from "../assets/images/svg/Logo.svg";
-import Flag from "../assets/images/png/flag.png";
-import { HeaderLinks_Data } from "../utils/helper";
+import Logo from "../../assets/images/svg//Logo.svg";
+import Flag from "../../assets/images/png/flag.png";
+import { HeaderLinks_Data } from "../../utils/helper";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
