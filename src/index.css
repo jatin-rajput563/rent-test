@@ -121,3 +121,8 @@ body {
 .moduly-button-shadow {
     box-shadow: 0px -3.01px 20.32px 0px #00000029;
 }
+
+.comozemy-card:hover {
+    box-shadow: 0px -3.01px 20.32px 0px #00000029;
+
+}

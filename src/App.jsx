@@ -10,6 +10,7 @@ import Najczęściej from "./components/Najczęściej";
 import JakZacząć from "./components/JakZacząć";
 import Dlaczego from "./components/Dlaczego";
 import Moduły from "./components/Moduły";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/moduly" element={<Moduły />} />
       </Routes>
       <Footer />
+      <BackToTop />
     </BrowserRouter>
   );
 }

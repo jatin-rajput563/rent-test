@@ -79,13 +79,13 @@ const Footer = () => {
                 Zbudowane przez profesjonalistów, dla profesjonalistów
               </p>
               <div className="flex gap-4 mt-[22px] sm:mt-4 items-center max-sm:justify-center">
-                {FooterIcons.map(({ name, href, svg }, index) => (
+                {FooterIcons.map(({ href, svg }, index) => (
                   <a
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
                     key={index}
-                    className="hover:scale-115 transition-transform duration-300 group hover:rotate-360"
+                    className="hover:scale-115 transition-transform duration-300 group"
                   >
                     <svg
                       width="40"

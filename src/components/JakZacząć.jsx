@@ -8,6 +8,27 @@ import RoadmapLine2 from "../assets/images/svg/roadmap-line-2.svg";
 import CustomHeading from "./common/CustomHeading";
 import CustomPara from "./common/CustomPara";
 
+const roadmapData = [
+  {
+    heading: "Skonfiguruj Swój Pakiet",
+    paragraph:
+      "Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.",
+    align: "text-right",
+  },
+  {
+    heading: "Uzyskaj Spersonalizowane Rekomendacje",
+    paragraph:
+      "Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.",
+    align: "text-left",
+  },
+  {
+    heading: "Przetestuj lub Skontaktuj się z nami",
+    paragraph:
+      "Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.",
+    align: "text-right",
+  },
+];
+
 const JakZacząć = () => {
   return (
     <>
@@ -18,14 +39,14 @@ const JakZacząć = () => {
             src={RoadmapTopImg}
             alt="roadmap-top-img"
           />
-          <div className="w-full shadow-lg rounded-[15px] border border-[#F6F5F4] pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
+          <div className="w-full shadow-lg rounded-[15px] border border-grey renteasy-bg-shadow pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
             <CustomHeading headText={"Jak Zacząć?"} headClass={"text-center"} />
             <CustomPara
               paraClass={
                 "max-w-[234px] sm:max-w-[450px] mx-auto !text-dark-black opacity-70 text-center leading-134 pt-[18px] ff-cabin capitalize mb-[41px] sm:mb-[51px] md:mb-[69px]"
               }
               paraText={
-                " Chcesz uprościć zarządzanie swoją nieruchomością? Wykonaj trzy proste kroki:"
+                "Chcesz uprościć zarządzanie swoją nieruchomością? Wykonaj trzy proste kroki:"
               }
             />
             <div className="relative max-w-[1200px] mx-auto px-4 before:content-[''] hidden min-[1070px]:block before:absolute before:top-0 before:bottom-0 before:left-1/2 before:-ml-[3px]">
@@ -51,87 +72,57 @@ const JakZacząć = () => {
                 alt="line-2"
               />
               <img
-                className="absolute min-[1140px]:left-[43%] left-[47%] top-[74.6%] "
+                className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]"
                 src={RoadmapImg3}
                 alt="roadmap-img-3"
               />
-              <div className="relative w-1/2 lg:pl-[95px] -top-[3px] md:left-0 max-lg:!max-w-[292px]">
-                <div className="max-w-[352px]">
-                  <h2 className="text-xl font-bold text-right pb-[6px]">
-                    Skonfiguruj Swój Pakiet
-                  </h2>
-                  <p className="ff-cabin leading-134 text-dark-black opacity-70 mb-0 text-right capitalize">
-                    Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które
-                    odpowiadają potrzebom Twojej firmy.
-                  </p>
+              {roadmapData.map((item, index) => (
+                <div
+                  key={index}
+                  className={`relative w-1/2 ${
+                    index % 2 === 1
+                      ? "left-1/2 min-[1024px]:left-[44%] min-[1140px]:left-[51%] max-[1139px]:top-[21px] !pl-0 md:!pl-[90px] lg:!pl-[119px]"
+                      : "lg:pl-[95px] md:left-0 max-lg:!max-w-[292px]"
+                  }`}
+                >
+                  <div className={`max-w-[353px] ${item.align}`}>
+                    <h2 className="text-xl font-bold font-lato pb-[6px] text-dark-black">
+                      {item.heading}
+                    </h2>
+                    <p className="ff-cabin leading-[140%] text-dark-black opacity-70 capitalize">
+                      {item.paragraph}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="relative w-1/2 !pl-0 md:!pl-[90px] lg:!pl-[119px] mb-10 left-1/2 min-[1024px]:left-[44%] min-[1140px]:left-[51%] max-[1139px]:top-[21px]">
-                <div className="max-w-[339px]">
-                  <h2 className="text-xl font-bold font-lato pb-[6px] max-w-[402px] lg:whitespace-nowrap  text-dark-black">
-                    Uzyskaj Spersonalizowane Rekomendacje
-                  </h2>
-                  <p className="ff-cabin leading-134 text-dark-black opacity-70 capitalize">
-                    Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb
-                    propozycję modułu — wraz z przejrzystą wyceną.
-                  </p>
-                </div>
-              </div>
-              <div className="relative w-1/2 lg:pl-[95px] md:left-0 max-lg:!max-w-[292px]">
-                <div className="max-w-[353px]">
-                  <h2 className="text-xl font-bold text-right font-lato pb-[6px] text-dark-black">
-                    Przetestuj lub Skontaktuj się z nami
-                  </h2>
-                  <p className="ff-cabin leading-134 text-dark-black opacity-70 text-right capitalize">
-                    Załóż konto, lub umów się na bezpłatną konsultację z naszym
-                    zespołem.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="block min-[1070px]:hidden">
-              <div className="justify-center flex flex-col items-center">
-                <img
-                  className="size-[54.26px]"
-                  src={RoadmapImg1}
-                  alt="roadmap-img-1"
-                />
-                <p className="font-bold text-xl leading-[100%] pt-[13px] font-lato text-center whitespace-nowrap text-dark-black">
-                  Skonfiguruj Swój Pakiet
-                </p>
-                <p className="sm:max-w-[338px] max-w-[206px] text-center text-dark-black opacity-70 leading-134 ff-cabin pt-[6px]">
-                  Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które
-                  odpowiadają potrzebom Twojej firmy.
-                </p>
-              </div>
-              <div className="justify-center flex flex-col items-center mt-[49px]">
-                <img
-                  className="size-[54.26px]"
-                  src={RoadmapImg2}
-                  alt="roadmap-img-2"
-                />
-                <p className="font-bold text-xl leading-120 pt-[13px] text-dark-black font-lato max-w-[212px] sm:max-w-[300px] text-center mx-auto">
-                  Uzyskaj Spersonalizowane Rekomendacje
-                </p>
-                <p className="sm:max-w-[338px] max-w-[242px] text-center text-dark-black opacity-[70%] leading-134 ff-cabin pt-[6px]">
-                  Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb
-                  propozycję modułu — wraz z przejrzystą wyceną.
-                </p>
-              </div>
-              <div className="justify-center flex flex-col items-center mt-[49px]">
-                <img
-                  className="size-[54.26px]"
-                  src={RoadmapImg3}
-                  alt="roadmap-img-3"
-                />
-                <p className="font-bold text-xl leading-120 pt-[13px] text-dark-black font-lato max-w-[212px] text-center mx-auto">
-                  Przetestuj lub Skontaktuj się z nami
-                </p>
-                <p className="sm:max-w-[338px] max-w-[212px] text-center text-dark-black opacity-[70%] leading-134 ff-cabin pt-[6px]">
-                  Załóż konto, lub umów się na bezpłatną konsultację z naszym
-                  zespołem.
-                </p>
-              </div>
+              {roadmapData.map((item, index) => (
+                <div
+                  key={index}
+                  className={`justify-center flex flex-col items-center ${
+                    index !== 0 ? "mt-[49px]" : ""
+                  }`}
+                >
+                  <img
+                    className="size-[54.26px]"
+                    src={
+                      index === 0
+                        ? RoadmapImg1
+                        : index === 1
+                        ? RoadmapImg2
+                        : RoadmapImg3
+                    }
+                    alt={`roadmap-img-${index + 1}`}
+                  />
+                  <p className="font-bold text-xl leading-[100%] pt-[13px] font-lato text-center whitespace-nowrap text-dark-black">
+                    {item.heading}
+                  </p>
+                  <p className="sm:max-w-[338px] text-center text-dark-black opacity-70 leading-134 ff-cabin pt-[6px] max-w-[242px]">
+                    {item.paragraph}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

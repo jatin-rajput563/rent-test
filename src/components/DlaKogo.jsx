@@ -10,7 +10,10 @@ const DlaKogo = () => {
   const isHomePage = location.pathname === "/";
 
   return (
-    <div id="dlakogo" className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}>
+    <div
+      id="dlakogo"
+      className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}
+    >
       <div className="max-w-[1180px] px-5 mx-auto">
         <div className="text-center">
           <CustomHeading
@@ -35,7 +38,7 @@ const DlaKogo = () => {
             </TabList>
 
             <TabPanel>
-              <div className="mt-[79px] sm:mt-[77px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center place-items-center max-w-[1052px] mx-auto">
+              <div className="mt-[79px] sm:mt-[77px] flex flex-wrap justify-center gap-[40px]">
                 {DlaKogo_data.map((item, index) => {
                   const iconBgColors = [
                     "#5E13F6",
@@ -70,7 +73,9 @@ const DlaKogo = () => {
                   return (
                     <div
                       key={index}
-                      className={`group rounded-[20px] w-full max-w-[301px] sm:max-w-[251px] sm:h-[258px] h-[155px] sm:py-[30px] text-center cursor-pointer bg-white duration-300 ${cardShadow}`}
+                      className={`group rounded-[20px] bg-white text-center cursor-pointer duration-300 ${cardShadow}
+                        w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]
+                      `}
                     >
                       <div
                         className={`w-[74px] h-[74px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
@@ -87,7 +92,7 @@ const DlaKogo = () => {
                       </h3>
                       <p
                         className={`text-dark-black text-sm opacity-80 mt-[11px] leading-134 ff-cabin mx-auto ${
-                          index === 3 ? "max-w-[283px] sm:max-w-[170px]" : ""
+                          index === 3 ? "max-w-[170px]" : ""
                         }`}
                       >
                         {item.subtitle}
