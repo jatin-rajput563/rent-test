@@ -3,9 +3,9 @@ import SliderImgTwo from "../assets/images/png/slider-img-2.png";
 import SliderImgThree from "../assets/images/png/slider-img-3.png";
 import SliderImgFour from "../assets/images/png/slider-img-4.png";
 import UserGear from "../assets/images/svg/user-gear.svg";
-import CorporateImg from "../assets/images/svg/CorporateImg.svg";
-import PortfolioImg from "../assets/images/svg/PortfolioImg.svg";
-import TrashImg from "../assets/images/svg/TrashImg-can.svg";
+import CorporateImg from "../assets/images/svg/Corporate.svg";
+import PortfolioImg from "../assets/images/svg/Portfolio.svg";
+import TrashImg from "../assets/images/svg/Trash-can.svg";
 import JoeImg from "../assets/images/svg/joe.svg";
 
 import {
