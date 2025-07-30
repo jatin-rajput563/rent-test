@@ -13,7 +13,7 @@ import { HeroSlider_Data } from "../utils/helper";
 const Hero = () => {
   return (
     <>
-      <div className="px-[19.5px] sm:px-[37px]">
+      <div className="px-[19.5px] sm:px-[24px] md:px-[27px] lg:px-[37px]">
         <div className="max-w-[1440px] relative bg-light-grey mx-auto rounded-[30px] pt-[53px] sm:pt-[77px]">
           <img
             className="absolute right-[14px] top-[28px] max-w-[114px] w-full h-[186px] max-[1275px]:left-[14px] max-[1067px]:hidden"
@@ -37,7 +37,7 @@ const Hero = () => {
                 />
               </span>
             </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-[64px] lg:hidden font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] lg:hidden font-bold leading-[120%] text-dark-blue max-w-[860px] text-center mx-auto">
               Zautomatyzuj zarządzanie nieruchomościami dzięki AI.
             </h1>
             <p className="leading-134 opacity-80 text-dark-blue max-w-[280px] sm:max-w-[820px] text-center pt-[9px] sm:pt-[15px] mx-auto">
