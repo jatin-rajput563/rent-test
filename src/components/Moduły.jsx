@@ -9,7 +9,7 @@ export function FeatureCard({ label, color }) {
   return (
     <div className="flex flex-col items-center text-center bg-white rounded-2xl px-2 py-5 min-h-[120px]">
       <div
-        className="mb-3 rounded-2xl w-[57px] h-[57px] flex items-center justify-center"
+        className="mb-[14px] rounded-2xl w-[57px] h-[57px] flex items-center justify-center"
         style={{ background: color, minWidth: 57, minHeight: 57 }}
       >
         <img
@@ -31,10 +31,10 @@ const Moduły = () => {
   return (
     <>
       <div>
-        <div className="max-w-[1440px] mx-auto sm:px-[26px] px-[11px] ">
-          <div className="flex flex-col justify-start items-center relative max-w-[1366px] bg-light-grey rounded-[10px] w-full pt-[53px] sm:pt-[63px] md:pt-[77px] pb-[52px] sm:pb-[33px]">
+        <div className="max-w-[1440px] mx-auto sm:px-[37px] px-[11px] ">
+          <div className="flex flex-col justify-start items-center bg-light-grey relative max-w-[1366px] rounded-[30px] w-full pt-[53px] sm:pt-[63px] md:pt-[77px] pb-[52px] sm:pb-[33px]">
             <img
-              className="absolute w-[80px] lg:w-[114px] sm:max-[1240px] max-[1240px]:-rotate-270 origin-top-left min-[1240px]:right-[40px] top-[7%] lg:flex hidden -right-[90px]"
+              className="absolute w-[80px] lg:w-[114px] sm:max-[1240px] max-[1260px]:-rotate-270 origin-top-left min-[1260px]:right-[40px] top-[7%] lg:flex hidden -right-[90px]"
               src={dotImage}
               alt="dots"
             />
@@ -46,18 +46,17 @@ const Moduły = () => {
             <h2 className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] py-[16px] sm:py-[24px] md:py-[39px] max-w-[900px] w-full font-bold text-dark-blue leading-120 text-center">
               7 modułów do pełnej obsługi
             </h2>
-
             <div>
               <img
                 src={circleImage}
                 alt="circleImage"
-                className="max-w-[220px] sm:max-w-[267px] w-full h-auto"
+                className="max-w-[220px] sm:max-w-[267px] w-full h-auto pointer-events-none"
               />
             </div>
           </div>
         </div>
-        <div className=" bg-gray-50">
-          <div className="flex flex-col lg:flex-row gap-6 max-w-[1270px] mx-auto px-3 py-10">
+        <div className="max-xl:px-4">
+          <div className="flex flex-col lg:flex-row gap-6 max-w-[1140px] mx-auto max-lg:px-3 pt-[63px]">
             <aside
               className="w-full gap-2.5 grid
     grid-cols-1                                      // default <650px
@@ -69,7 +68,7 @@ const Moduły = () => {
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(idx)}
-                  className={`relative h-[76px] cursor-pointer px-[16px] rounded-md font-medium transition-all text-sm sm:text-xl text-center
+                  className={`relative h-[76px] moduly-button-shadow cursor-pointer px-[16px] rounded-[11px] transition-all text-xl text-center
     ${
       activeTab === idx
         ? "bg-purple-blue text-white"
@@ -86,7 +85,7 @@ const Moduły = () => {
               ))}
             </aside>
 
-            <section className="bg-white shadow-xl rounded-2xl p-5 w-full lg:w-3/4">
+            <section className="bg-white shadow-xl moduly-shadow max-w-[850px] rounded-2xl p-[30px] w-full lg:w-3/4">
               <h2 className="text-2xl sm:text-4xl font-bold text-dark-blue text-center">
                 {tab.heading}
               </h2>
@@ -96,11 +95,11 @@ const Moduły = () => {
               <p className="text-dark-blue opacity-80 text-sm sm:text-base mt-[11px] text-center mx-auto max-w-[777px]">
                 {tab.description}
               </p>
-              <p className="text-dark-blue text-2xl text-center font-bold mt-[37px]">
+              <p className="text-dark-blue text-2xl text-center font-bold mt-[30px]">
                 Co konkretnie zawiera?
               </p>
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-6 mt-[17px]">
-                <div className="hidden md:flex flex-col gap-6 md:gap-8 flex-1">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-6 -mt-1">
+                <div className="hidden md:flex flex-col gap-6 md:gap-[53px] flex-1">
                   <FeatureCard
                     label={tab.features[0].title}
                     color={tab.features[0].color}
@@ -116,7 +115,7 @@ const Moduły = () => {
                     <img src={tabImage} alt="" className="" draggable={false} />
                   </div>
                 </div>
-                <div className="hidden md:flex flex-col gap-6 md:gap-8 flex-1">
+                <div className="hidden md:flex flex-col gap-6 md:gap-[53px] flex-1">
                   <FeatureCard
                     label={tab.features[1].title}
                     color={tab.features[1].color}
@@ -151,18 +150,18 @@ const Moduły = () => {
                 />
               </div>
 
-              <div className="mt-[67px] max-w-[808px] mx-auto">
+              <div className="mt-[34px] mx-auto">
                 <h3 className="text-lg sm:text-[32px] font-semibold text-center text-dark-blue">
                   {tab.benefitsTitle}
                 </h3>
-                <h5 className="text-purple-blue text-2xl text-center font-bold mt-[15px]">
+                <h5 className="text-purple-blue text-2xl text-center font-bold mt-[10px]">
                   {tab.benefitsSub}
                 </h5>
-                <div className="flex flex-wrap justify-center gap-2.5 mt-4">
+                <div className="flex flex-wrap justify-center mt-[26px] sm:mt-[42px]">
                   {tab.benefits.map((benefit, idx) => (
                     <div
                       key={idx}
-                      className="box-shadow flex flex-col items-center px-4 pt-6 pb-14 text-sm text-center font-semibold md:w-[194px] w-full"
+                      className="box-shadow flex flex-col items-center px-4 pt-6 pb-14 text-sm text-center min-h-[188px] h-full font-semibold md:w-[194px] w-full"
                     >
                       {benefit.iconSrc && (
                         <div

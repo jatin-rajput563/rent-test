@@ -10,7 +10,7 @@ const DlaKogo = () => {
   const isHomePage = location.pathname === "/";
 
   return (
-    <section className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}>
+    <div id="dlakogo" className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}>
       <div className="max-w-[1180px] px-5 mx-auto">
         <div className="text-center">
           <CustomHeading
@@ -108,7 +108,7 @@ const DlaKogo = () => {
           </Tabs>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

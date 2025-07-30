@@ -113,3 +113,11 @@ body {
 .box-shadow:hover .icon-glow {
     box-shadow: 5px 7px 58.2px 0px #EF414363;
 }
+
+.moduly-shadow {
+    box-shadow: 0px -3.01px 20.32px 0px #00000029;
+}
+
+.moduly-button-shadow {
+    box-shadow: 0px -3.01px 20.32px 0px #00000029;
+}

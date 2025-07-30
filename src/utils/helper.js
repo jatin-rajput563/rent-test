@@ -566,3 +566,11 @@ export const tabData = [
         ],
     },
 ];
+
+export const navLinks = [
+    { label: "Strona Główna", href: "/" },
+    { label: "Dla kogo?", href: "/dla-kogo" },
+    { label: "Jak to działa?", href: "/jak-to-dziala" },
+    { label: "Moduły", href: "/moduly" },
+    { label: "Zoe", href: "/zoe" },
+];

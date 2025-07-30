@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import CustomButton from "./common/CustomButton";
 import CustomHeading from "./common/CustomHeading";
 import FooterLogo from "../assets/images/svg/FooterLogo.svg";
-import { FooterIcons } from "../utils/helper";
+import { FooterIcons, navLinks } from "../utils/helper";
 import Location from "../assets/images/svg/Location.svg";
 import Phone from "../assets/images/svg/Phone.svg";
 import Mail from "../assets/images/svg/Mail.svg";
@@ -16,7 +16,7 @@ const Footer = () => {
     <>
       <div
         className={`sm:px-[37px] px-[21px] ${
-          isHomePage ? "sm:pt-[81px] pt-[93px]" : "pt-[20px]"
+          isHomePage ? "sm:pt-[81px] pt-[93px]" : "pt-[199px] sm:pt-[63px]"
         }`}
       >
         <div className="container max-w-[1366px] !transform-[unset] -mt-[59px] sm:-mt-[65px] translate-y-[59px] sm:translate-y-[65px] mx-auto rounded-[15px] bg-purple-blue w-full sm:py-10 pt-[41px] md:py-[61px] px-5 pb-[57px] sm:px-6">
@@ -28,7 +28,6 @@ const Footer = () => {
             }
             headClass="text-center !leading-120 mb-[39px] md:mb-[41] lg:mb-[51px] text-white !text-[32px] sm:!text-[40px] md:!text-[48px]"
           />
-
           {!isHomePage && (
             <p className="text-white opacity-80 text-center max-w-[830px] mx-auto text-base sm:text-lg mb-7">
               Pozwól Zoe zająć się powtarzalnymi zadaniami, aby Twój zespół mógł
@@ -96,19 +95,13 @@ const Footer = () => {
                     Szybkie linki
                   </p>
                   <ul className="flex gap-4 flex-col">
-                    {[
-                      "Strona Główna",
-                      "Dla kogo?",
-                      "Jak to działa?",
-                      "Moduły",
-                      "Zoe",
-                    ].map((link, i) => (
+                    {navLinks.map((link, i) => (
                       <li key={i} className="leading-160">
                         <a
-                          href="#"
+                          href={link.href}
                           className="font-lato opacity-80 text-white text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
                         >
-                          {link}
+                          {link.label}
                         </a>
                       </li>
                     ))}
@@ -164,12 +157,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="w-full sm:border-t border-solid border-white py-4 px-5">
-          <p className="sm:text-base text-sm text-center leading-160 opacity-80 text-white ff-poppins">
-            © <span>{new Date().getFullYear()}</span> RentEasy.AI — All rights
-            reserved.
-          </p>
+        <div className="w-full py-3 px-4 flex flex-wrap gap-3 justify-center border-t border-white">
+          {navLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="text-white text-sm sm:text-base opacity-80 hover:opacity-100 transition-opacity duration-200"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+        <div className="w-full text-center text-white py-4 px-5 text-sm sm:text-base opacity-80">
+          © {new Date().getFullYear()} RentEasy.AI — All rights reserved.
         </div>
       </footer>
     </>
