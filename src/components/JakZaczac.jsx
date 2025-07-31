@@ -48,13 +48,26 @@ const JakZaczac = () => {
                 alt="roadmap-img-1"
               />
               <img
-                className="absolute left-[49.2%] top-[11%] hidden min-[1140px]:block" src={roadmapLineOne} alt="roadmap-line-1"
+                className="absolute left-[49.2%] top-[11%] hidden min-[1140px]:block"
+                src={roadmapLineOne}
+                alt="roadmap-line-1"
               />
-              <div className="w-1 bg-black absolute left-[50.5%] top-[1%] block min-[1140px]:hidden h-[350px] min-[768px]:h-[281px] max-[900px]:left-[52%]"></div>
-              <img className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[37%]" src={roadmapImgTwo} alt="roadmap-img-2"
+              <div className="w-1 bg-black absolute left-[50.5%] top-[1%] block min-[1140px]:hidden h-[350px] min-[768px]:h-[259px] max-[900px]:left-[52%]"></div>
+              <img
+                className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[39%]"
+                src={roadmapImgTwo}
+                alt="roadmap-img-2"
               />
-              <img className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block" src={roadmapLineTwo} alt="line-2" />
-              <img className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]" src={roadmapImgThree} alt="roadmap-img-3" />
+              <img
+                className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block"
+                src={roadmapLineTwo}
+                alt="line-2"
+              />
+              <img
+                className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]"
+                src={roadmapImgThree}
+                alt="roadmap-img-3"
+              />
 
               {ROADMAP_DATA.map((item, index) => (
                 <div
@@ -65,11 +78,15 @@ const JakZaczac = () => {
                       : "lg:pl-[95px] md:left-0 max-lg:!max-w-[292px]"
                   }`}
                 >
-                  <div className={`max-w-[353px] ${item.align}`}>
-                    <h2 className="text-xl font-bold font-lato pb-[6px] text-dark-black">
+                  <div className={`max-w-[373px] ${item.align}`}>
+                    <h2
+                      className={`text-xl font-bold font-lato pb-[6px] text-dark-black ${
+                        index === 0 || index === 2 ? "pr-[21px]" : ""
+                      }`}
+                    >
                       {item.heading}
                     </h2>
-                    <p className="ff-cabin leading-[140%] text-dark-black opacity-70 capitalize">
+                    <p className="ff-cabin leading-[140%] max-w-[353px] text-dark-black opacity-70 capitalize">
                       {item.paragraph}
                     </p>
                   </div>
@@ -79,10 +96,29 @@ const JakZaczac = () => {
             <div className="block min-[1070px]:hidden">
               <div className="flex flex-wrap justify-center gap-[49px] sm:gap-[80px]">
                 {ROADMAP_DATA.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center text-center max-w-[300px]" >
-                    <img className="w-[54px] h-[54px]" src={ index === 0 ? roadmapImgOne : index === 1 ? roadmapImgTwo : roadmapImgThree } alt={`roadmap-img-${index + 1}`} />
-                    <p className="font-bold text-xl leading-120 pt-[13px] font-lato text-dark-black"> {item.heading} </p>
-                    <p className="text-dark-black opacity-70 leading-[134%] ff-cabin pt-[6px]"> {item.paragraph} </p>
+                  <div
+                    key={index}
+                    className="flex flex-col items-center text-center max-w-[300px]"
+                  >
+                    <img
+                      className="w-[54px] h-[54px]"
+                      src={
+                        index === 0
+                          ? roadmapImgOne
+                          : index === 1
+                          ? roadmapImgTwo
+                          : roadmapImgThree
+                      }
+                      alt={`roadmap-img-${index + 1}`}
+                    />
+                    <p className="font-bold text-xl leading-120 pt-[13px] font-lato text-dark-black">
+                      {" "}
+                      {item.heading}{" "}
+                    </p>
+                    <p className="text-dark-black opacity-70 leading-[134%] ff-cabin pt-[6px]">
+                      {" "}
+                      {item.paragraph}{" "}
+                    </p>
                   </div>
                 ))}
               </div>

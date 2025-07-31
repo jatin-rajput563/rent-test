@@ -175,7 +175,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full text-center text-white py-4 px-5 text-sm sm:border-t sm:border-white sm:text-base opacity-80">
+        <div className="w-full text-center text-white py-4 px-5 text-sm ff-poppins sm:border-t sm:border-white sm:text-base opacity-80">
           © {new Date().getFullYear()} RentEasy.AI — All rights reserved.
         </div>
       </div>
