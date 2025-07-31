@@ -1,4 +1,4 @@
-export const sliderIconOne = () => (
+export const SliderIconOne = () => (
   <svg
     width="55"
     height="54"
@@ -26,7 +26,7 @@ export const sliderIconOne = () => (
   </svg>
 );
 
-export const sliderIconTwo = () => (
+export const SliderIconTwo = () => (
   <svg
     width="55"
     height="54"
@@ -54,7 +54,7 @@ export const sliderIconTwo = () => (
   </svg>
 );
 
-export const sliderIconThree = () => (
+export const SliderIconThree = () => (
   <svg
     width="55"
     height="54"
@@ -82,7 +82,7 @@ export const sliderIconThree = () => (
   </svg>
 );
 
-export const sliderIconFour = () => (
+export const SliderIconFour = () => (
   <svg
     width="55"
     height="54"
@@ -110,7 +110,7 @@ export const sliderIconFour = () => (
   </svg>
 );
 
-export const tabsIconOne = () => (
+export const TabsIconOne = () => (
   <svg
     width="41"
     height="40"
@@ -125,7 +125,7 @@ export const tabsIconOne = () => (
   </svg>
 );
 
-export const tabsIconTwo = () => (
+export const TabsIconTwo = () => (
   <svg
     width="41"
     height="40"
@@ -147,7 +147,7 @@ export const tabsIconTwo = () => (
   </svg>
 );
 
-export const tabsIconThree = () => (
+export const TabsIconThree = () => (
   <svg
     width="41"
     height="40"
@@ -169,7 +169,7 @@ export const tabsIconThree = () => (
   </svg>
 );
 
-export const tabsIconFour = () => (
+export const TabsIconFour = () => (
   <svg
     width="41"
     height="40"
@@ -191,7 +191,7 @@ export const tabsIconFour = () => (
   </svg>
 );
 
-export const comozemyIconOne = () => (
+export const ComozemyIconOne = () => (
   <svg
     width="41"
     height="40"
@@ -213,7 +213,7 @@ export const comozemyIconOne = () => (
   </svg>
 );
 
-export const comozemyIconTwo = () => (
+export const ComozemyIconTwo = () => (
   <svg
     width="41"
     height="40"
@@ -235,7 +235,7 @@ export const comozemyIconTwo = () => (
   </svg>
 );
 
-export const comozemyIconThree = () => (
+export const ComozemyIconThree = () => (
   <svg
     width="41"
     height="40"
@@ -257,7 +257,7 @@ export const comozemyIconThree = () => (
   </svg>
 );
 
-export const comozemyIconFour = () => (
+export const ComozemyIconFour = () => (
   <svg
     width="41"
     height="40"
@@ -279,7 +279,7 @@ export const comozemyIconFour = () => (
   </svg>
 );
 
-export const comozemyIconFive = () => (
+export const ComozemyIconFive = () => (
   <svg
     width="41"
     height="40"
@@ -301,7 +301,7 @@ export const comozemyIconFive = () => (
   </svg>
 );
 
-export const comozemyIconSix = () => (
+export const ComozemyIconSix = () => (
   <svg
     width="41"
     height="40"
@@ -323,7 +323,7 @@ export const comozemyIconSix = () => (
   </svg>
 );
 
-export const dlaczegoLogoOne = () => (
+export const DlaczegoLogoOne = () => (
   <svg
     width="41"
     height="40"
@@ -345,7 +345,7 @@ export const dlaczegoLogoOne = () => (
   </svg>
 );
 
-export const dlaczegoLogoTwo = () => (
+export const DlaczegoLogoTwo = () => (
   <svg
     width="41"
     height="40"
@@ -360,7 +360,7 @@ export const dlaczegoLogoTwo = () => (
   </svg>
 );
 
-export const dlaczegoLogoThree = () => (
+export const DlaczegoLogoThree = () => (
   <svg
     width="41"
     height="40"
@@ -382,7 +382,7 @@ export const dlaczegoLogoThree = () => (
   </svg>
 );
 
-export const dlaczegoLogoFour = () => (
+export const DlaczegoLogoFour = () => (
   <svg
     width="41"
     height="40"
@@ -404,7 +404,7 @@ export const dlaczegoLogoFour = () => (
   </svg>
 );
 
-export const dlaczegoLogoFive = () => (
+export const DlaczegoLogoFive = () => (
   <svg
     width="41"
     height="40"
@@ -426,7 +426,7 @@ export const dlaczegoLogoFive = () => (
   </svg>
 );
 
-export const footerLogo = () => (
+export const FooterLogo = () => (
   <svg
     width="183"
     height="55"

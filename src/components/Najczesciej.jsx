@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Accordion_Data } from "../utils/helper";
+import { ACCORDION_DATA } from "../utils/helper";
 import CustomButton from "./common/CustomButton";
 import CustomHeading from "./common/CustomHeading";
 
@@ -19,7 +19,7 @@ const Najczesciej = () => {
             headingClass="mb-[22px] text-center"
           />
           <div className="space-y-5 sm:space-y-6 max-sm:px-5">
-            {Accordion_Data.map((obj, index) => {
+            {ACCORDION_DATA.map((obj, index) => {
               const isOpen = openIndex === index;
               return (
                 <div

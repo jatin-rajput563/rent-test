@@ -1,11 +1,13 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { DlaKogo_Data } from "../utils/helper";
+import { DLAKOGO_DATA } from "../utils/helper";
 import CustomHeading from "./common/CustomHeading";
 import { useLocation } from "react-router-dom";
 import {
-  IconBgColors_Data, IconsShadows_Data, CardShadows_Data,
+  ICONBGCOLORS_DATA,
+  ICONSHADOWS_DATA,
+  CARDSHAOWS_DATA,
 } from "../utils/helper";
 
 const DlaKogo = () => {
@@ -16,8 +18,7 @@ const DlaKogo = () => {
     <>
       <div
         id="dlakogo"
-        className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}
-      >
+        className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`} >
         <div className="max-w-[1180px] px-5 mx-auto">
           <div className="text-center">
             <CustomHeading
@@ -34,17 +35,16 @@ const DlaKogo = () => {
                 </Tab>
                 <Tab
                   className="pl-4 sm:px-6 py-[27px] sm:py-[21.5px] rounded-[73px] whitespace-nowrap sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
-                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm"
-                >
+                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm" >
                   Właścicieli, Którzy...
                 </Tab>
               </TabList>
               <TabPanel>
                 <div className="mt-[79px] sm:mt-[77px] flex flex-wrap justify-center gap-[45px]">
-                  {DlaKogo_Data.map((item, index) => {
-                    const iconBg = IconBgColors_Data[index] || "#000";
-                    const iconShadow = IconsShadows_Data[index] || "";
-                    const cardShadow = CardShadows_Data[index] || "";
+                  {DLAKOGO_DATA.map((item, index) => {
+                    const iconBg = ICONBGCOLORS_DATA[index] || "#000";
+                    const iconShadow = ICONSHADOWS_DATA[index] || "";
+                    const cardShadow = CARDSHAOWS_DATA[index] || "";
 
                     const iconPositionClass =
                       index === 1
@@ -57,12 +57,10 @@ const DlaKogo = () => {
                       <div
                         key={index}
                         className={`group rounded-[20px] bg-white text-center cursor-pointer duration-300 ${cardShadow}
-                          w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]`}
-                      >
+                          w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]`} >
                         <div
                           className={`w-[74px] h-[74px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
-                          style={{ backgroundColor: iconBg }}
-                        >
+                          style={{ backgroundColor: iconBg }} >
                           <div
                             className={`text-black w-6 h-6 ${iconPositionClass}`}
                           >
@@ -74,18 +72,19 @@ const DlaKogo = () => {
                         </h3>
                         <p
                           className={`text-dark-black text-sm opacity-80 mt-[11px] leading-134 ff-cabin mx-auto ${
-                            index === 3 ? "max-w-[170px]" : ""
-                          }`}
-                        >
+                            index === 3 ? "max-w-[170px]" : "" }`} >
                           {item.subtitle}
                         </p>
-                      </div>);
+                      </div>
+                    );
                   })}
                 </div>
               </TabPanel>
               <TabPanel>
                 <div className="mt-12 text-center text-dark-blue">
-                  <p className="text-lg font-medium">Wkrótce: Funkcje dla Właścicieli...</p>
+                  <p className="text-lg font-medium">
+                    Wkrótce: Funkcje dla Właścicieli...
+                  </p>
                 </div>
               </TabPanel>
             </Tabs>

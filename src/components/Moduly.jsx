@@ -3,7 +3,7 @@ import dotImage from "../assets/images/png/dot.png";
 import circleImg from "../assets/images/png/circle.png";
 import tabImg from "../assets/images/png/tab-image.png";
 import taskChecklist from "../assets/images/svg/task-checklist.svg";
-import { Tab_Data } from "../utils/helper";
+import { TAB_DATA } from "../utils/helper";
 
 export function FeatureCard({ label, color }) {
   return (
@@ -27,7 +27,7 @@ export function FeatureCard({ label, color }) {
 }
 const Moduly = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const tab = Tab_Data[activeTab];
+  const tab = TAB_DATA[activeTab];
   return (
     <>
       <div>
@@ -64,7 +64,7 @@ const Moduly = () => {
     [@media(min-width:858px)]:grid-cols-3
     lg:flex lg:flex-col max-[450px]:max-w-[267px] lg:max-w-[267px] mx-auto"
             >
-              {Tab_Data.map((item, idx) => (
+              {TAB_DATA.map((item, idx) => (
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(idx)}

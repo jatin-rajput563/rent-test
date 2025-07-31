@@ -8,7 +8,7 @@ import roadmapLineOne from "../assets/images/svg/roadmap-line-1.svg";
 import roadmapLineTwo from "../assets/images/svg/roadmap-line-2.svg";
 import CustomHeading from "./common/CustomHeading";
 import CustomPara from "./common/CustomPara";
-import { RoadMap_Data } from "../utils/helper";
+import { ROADMAP_DATA } from "../utils/helper";
 
 const JakZaczac = () => {
   const location = useLocation();
@@ -56,7 +56,7 @@ const JakZaczac = () => {
               <img className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block" src={roadmapLineTwo} alt="line-2" />
               <img className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]" src={roadmapImgThree} alt="roadmap-img-3" />
 
-              {RoadMap_Data.map((item, index) => (
+              {ROADMAP_DATA.map((item, index) => (
                 <div
                   key={index}
                   className={`relative w-1/2 ${
@@ -78,7 +78,7 @@ const JakZaczac = () => {
             </div>
             <div className="block min-[1070px]:hidden">
               <div className="flex flex-wrap justify-center gap-[49px] sm:gap-[80px]">
-                {RoadMap_Data.map((item, index) => (
+                {ROADMAP_DATA.map((item, index) => (
                   <div key={index} className="flex flex-col items-center text-center max-w-[300px]" >
                     <img className="w-[54px] h-[54px]" src={ index === 0 ? roadmapImgOne : index === 1 ? roadmapImgTwo : roadmapImgThree } alt={`roadmap-img-${index + 1}`} />
                     <p className="font-bold text-xl leading-120 pt-[13px] font-lato text-dark-black"> {item.heading} </p>

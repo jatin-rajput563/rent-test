@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/images/svg//Logo.svg";
 import Flag from "../../assets/images/png/flag.png";
-import { HeaderLinks_Data } from "../../utils/helper";
+import { HEADERLINKS_DATA } from "../../utils/helper";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
           isOpen ? "max-[1025px]:right-0" : "max-[1025px]:-right-full"
         }`}
       >
-        {HeaderLinks_Data.map((link, index) => (
+        {HEADERLINKS_DATA.map((link, index) => (
           <li key={index} className="nav-link text-dark-blue">
             <NavLink
               to={link.link}

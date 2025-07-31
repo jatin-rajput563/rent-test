@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import CustomButton from "./CustomButton";
 import CustomHeading from "./CustomHeading";
 import FooterLogo from "../../assets/images/svg/FooterLogo.svg";
-import { FooterIcons_Data, NavLinks_Data } from "../../utils/helper";
+import { FOOTERICONS_DATA, NavLinks_Data } from "../../utils/helper";
 import Location from "../../assets/images/svg/Location.svg";
 import Phone from "../../assets/images/svg/Phone.svg";
 import Mail from "../../assets/images/svg/Mail.svg";
@@ -79,7 +79,7 @@ const Footer = () => {
                 Zbudowane przez profesjonalistów, dla profesjonalistów
               </p>
               <div className="flex gap-4 mt-[22px] sm:mt-4 items-center max-sm:justify-center">
-                {FooterIcons_Data.map(({ href, svg }, index) => (
+                {FOOTERICONS_DATA.map(({ href, svg }, index) => (
                   <a
                     href={href}
                     target="_blank"

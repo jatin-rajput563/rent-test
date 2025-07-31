@@ -8,155 +8,135 @@ import portfolioImg from "../assets/images/svg/portfolio.svg";
 import trashImg from "../assets/images/svg/trash-can.svg";
 import joeImg from "../assets/images/svg/joe.svg";
 
-import {
-    dlaczegoLogoFive,
-    dlaczegoLogoFour,
-    dlaczegoLogoOne,
-    dlaczegoLogoThree,
-    dlaczegoLogoTwo,
-    comozemyIconOne,
-    comozemyIconTwo,
-    comozemyIconThree,
-    comozemyIconFour,
-    comozemyIconFive,
-    comozemyIconSix,
-    sliderIconOne,
-    sliderIconTwo,
-    sliderIconThree,
-    sliderIconFour,
-    tabsIconOne,
-    tabsIconTwo,
-    tabsIconThree,
-    tabsIconFour,
-} from "./Icons";
+import { ComozemyIconFive, ComozemyIconFour, ComozemyIconOne, ComozemyIconSix, ComozemyIconThree, ComozemyIconTwo, DlaczegoLogoFive, DlaczegoLogoFour, DlaczegoLogoOne, DlaczegoLogoThree, DlaczegoLogoTwo, SliderIconFour, SliderIconOne, SliderIconThree, SliderIconTwo, TabsIconFour, TabsIconOne, TabsIconThree, TabsIconTwo } from "./Icons";
 
-export const HeroSlider_Data = [
+export const HEROSLIDER_DATA = [
     {
         image: sliderImgOne,
-        sliderIcon: sliderIconOne,
+        sliderIcon: SliderIconOne,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
         image: sliderImgTwo,
-        sliderIcon: sliderIconTwo,
+        sliderIcon: SliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
         image: sliderImgThree,
-        sliderIcon: sliderIconThree,
+        sliderIcon: SliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
         image: sliderImgFour,
-        sliderIcon: sliderIconFour,
+        sliderIcon: SliderIconFour,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
         image: sliderImgTwo,
-        sliderIcon: sliderIconTwo,
+        sliderIcon: SliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
         image: sliderImgThree,
-        sliderIcon: sliderIconThree,
+        sliderIcon: SliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
         image: sliderImgOne,
-        sliderIcon: sliderIconOne,
+        sliderIcon: SliderIconOne,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
         image: sliderImgTwo,
-        sliderIcon: sliderIconTwo,
+        sliderIcon: SliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
         image: sliderImgThree,
-        sliderIcon: sliderIconThree,
+        sliderIcon: SliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
         image: sliderImgFour,
-        sliderIcon: sliderIconFour,
+        sliderIcon: SliderIconFour,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
         image: sliderImgTwo,
-        sliderIcon: sliderIconTwo,
+        sliderIcon: SliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
         image: sliderImgThree,
-        sliderIcon: sliderIconThree,
+        sliderIcon: SliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
 ];
 
-export const DlaKogo_Data = [
+export const DLAKOGO_DATA = [
     {
-        icon: tabsIconOne,
+        icon: TabsIconOne,
         title: "Zarządzają wynajmem",
         subtitle: "Długoterminowym Lub Krótkoterminowym.",
     },
     {
-        icon: tabsIconTwo,
+        icon: TabsIconTwo,
         title: "Obsługują apartotele",
         subtitle: "Lub Kwatery Pracownicze.",
     },
     {
-        icon: tabsIconThree,
+        icon: TabsIconThree,
         title: "Mają własne mieszkania",
         subtitle: "I Chcą Je Prowadzić Profesjonalnie.",
     },
     {
-        icon: tabsIconFour,
+        icon: TabsIconFour,
         title: "Walczą z chaosem",
         subtitle:
             "Przestań Ogarniać Wszystko W Excelu, Mailu I Na Telefonie.",
     },
 ];
 
-export const Comozemy_Data = [
+export const COMOZEMY_DATA = [
     {
         title: "Zautomatyzuj windykację i rozliczenia",
         text: "Pozwól systemowi automatycznie obsługiwać przypomnienia, zawiadomienia prawne i eskalacje do partnerów prawnych.",
-        image: comozemyIconOne,
+        image: ComozemyIconOne,
         bgColor: "#5E13F6",
     },
     {
         title: "Zminimalizuj błędy ludzkie",
         text: "Zoe, Twój inteligentny asystent, śledzi terminy, dokumenty, płatności i interakcje z najemcami.",
-        image: comozemyIconTwo,
+        image: ComozemyIconTwo,
         bgColor: "#FF3B61",
     },
     {
         title: "Usprawnij swoje działania",
         text: "Od wystawiania ofert i rejestracji nowych klientów po realizację zamówień i fakturowanie — zarządzaj wszystkim z jednej platformy.",
-        image: comozemyIconThree,
+        image: ComozemyIconThree,
         bgColor: "#FF4DF5",
     },
     {
         title: "Oszczędzaj swój czas",
         text: "Wbudowany menedżer zadań + panel samoobsługi najemcy = mniej połączeń, większa przejrzystość.",
-        image: comozemyIconFour,
+        image: ComozemyIconFour,
         bgColor: "#00F0FF",
     },
     {
         title: "Zyskaj przewagę konkurencyjną",
         text: "Ocena najemców, rezerwacje online, integracja inteligentnych zamków, faktury, e-sąd — wszystko w jednym miejscu.",
-        image: comozemyIconFive,
+        image: ComozemyIconFive,
         bgColor: "#D5C7FF",
     },
     {
         title: "Łatwa skalowalność",
         text: "Dodaj więcej nieruchomości bez zatrudniania dodatkowych pracowników i bez wprowadzania chaosu. RentEasy.AI rozwija się razem z Tobą.",
-        image: comozemyIconSix,
+        image: ComozemyIconSix,
         bgColor: "#1B1E3C",
     },
 ];
 
-export const FooterIcons_Data = [
+export const FOOTERICONS_DATA = [
     {
         name: "facebook",
         href: "https://www.facebook.com",
@@ -199,7 +179,7 @@ export const FooterIcons_Data = [
     },
 ];
 
-export const HeaderLinks_Data = [
+export const HEADERLINKS_DATA = [
     { link: "/dlaczego", label: "Strona Główna" },
     { link: "/dlakogo", label: "Dla kogo?" },
     { link: "/działa", label: "Jak to działa?" },
@@ -207,35 +187,35 @@ export const HeaderLinks_Data = [
     { link: "/", withImage: true, image: joeImg },
 ];
 
-export const Dlaczego_Data = [
+export const DLACZEGO_DATA = [
     {
-        icon: dlaczegoLogoOne,
+        icon: DlaczegoLogoOne,
         title: "Przewaga Konkurencyjna",
         descrition: "Ponieważ nie jesteśmy tylko oprogramowaniem — jesteśmy Twoją przewagą konkurencyjną."
     },
     {
-        icon: dlaczegoLogoTwo,
+        icon: DlaczegoLogoTwo,
         title: "Efektywność Kosztowa",
         descrition: "Zamiast zatrudniać trzech nowych pracowników, uruchamiasz RentEasy.AI. I to działa."
     },
     {
-        icon: dlaczegoLogoThree,
+        icon: DlaczegoLogoThree,
         title: "Wgląd W Branżę",
         descrition: "Stworzyliśmy ten system we współpracy z prawdziwymi zarządcami nieruchomości — rozumiemy Twoją branżę, tempo pracy i formalności, z którymi się zmagasz."
     },
     {
-        icon: dlaczegoLogoFour,
+        icon: DlaczegoLogoFour,
         title: "Aktywna Automatyzacja",
         descrition: "RentEasy.AI nie tylko przechowuje informacje — wykonuje pracę za Ciebie."
     },
     {
-        icon: dlaczegoLogoFive,
+        icon: DlaczegoLogoFive,
         title: "Łatwe Wdrożenie",
         descrition: "Brak skomplikowanego procesu wdrażania — jest intuicyjny, nie wymaga szkolenia, a my pomagamy w migracji z innych narzędzi, takich jak SON."
     },
 ];
 
-export const Accordion_Data = [
+export const ACCORDION_DATA = [
     {
         question: "Czym jest RentEasy.AI?",
         answer:
@@ -268,7 +248,7 @@ export const Accordion_Data = [
     },
 ];
 
-export const Tab_Data = [
+export const TAB_DATA = [
     {
         id: 0,
         label: "Moduł ofert z integracjami",
@@ -578,7 +558,7 @@ export const NavLinks_Data = [
     { label: "Zoe", href: "/zoe" },
 ];
 
-export const Colors_Data = [
+export const COLORS_DATA = [
     "bg-[#5E13F6]",
     "bg-[#FF3B61]",
     "bg-[#FF4DF5]",
@@ -586,28 +566,28 @@ export const Colors_Data = [
     "bg-[#1B1E3C]",
 ];
 
-export const IconBgColors_Data = [
+export const ICONBGCOLORS_DATA = [
     "#5E13F6",
     "#FF3B61",
     "#FF4DF5",
     "#00F0FF",
 ];
 
-export const IconsShadows_Data = [
+export const ICONSHADOWS_DATA = [
     "group-hover:shadow-[5px_7px_58.2px_0px_#5E13F6]",
     "group-hover:shadow-[5px_7px_58.2px_0px_#FF3B61]",
     "group-hover:shadow-[5px_7px_58.2px_0px_#FF4DF5]",
     "group-hover:shadow-[5px_7px_58.2px_0px_#00F0FF]",
 ];
 
-export const CardShadows_Data = [
+export const CARDSHAOWS_DATA = [
     "hover:shadow-[5px_7px_58.2px_0px_#5E13F61A]",
     "hover:shadow-[5px_7px_58.2px_0px_#FF3B611A]",
     "hover:shadow-[5px_7px_58.2px_0px_#FF4DF51A]",
     "hover:shadow-[5px_7px_58.2px_0px_#00F0FF1A]",
 ];
 
-export const RoadMap_Data = [
+export const ROADMAP_DATA = [
     {
         heading: "Skonfiguruj Swój Pakiet",
         paragraph:
