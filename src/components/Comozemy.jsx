@@ -1,5 +1,5 @@
 import React from "react";
-import SpyImg from "../assets/images/png/spy-img.png";
+import spyImg  from "../assets/images/png/spy-img.png";
 import CustomHeading from "./common/CustomHeading";
 import { Comozemy_Data } from "../utils/helper";
 
@@ -9,7 +9,7 @@ const Comozemy = () => {
       <div className="max-[640px]:pt-[162px] sm:pt-[80px] lg:pt-[140px] max-xl:px-5">
         <img
           className="mx-auto max-w-[221px] w-full pointer-events-none"
-          src={SpyImg}
+          src={spyImg }
           alt="spy-img"
         />
         <div className="max-w-[1137px] mx-auto bg-light-grey shadow-top-glow rounded-[15px] py-[48px] lg:py-10 xl:py-[58px] px-[17px] xl:px-[26px] border-2 border-grey">

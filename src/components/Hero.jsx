@@ -1,6 +1,6 @@
 import React from "react";
 import logoImg from "../assets/images/png/logo-text.png";
-import HeroDots from "../assets/images/png/dots-img.png";
+import heroDots from "../assets/images/png/dots-img.png";
 import CustomButton from "./common/CustomButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -14,7 +14,7 @@ const Hero = () => {
     <>
       <div className="px-[19.5px] sm:px-[24px] md:px-[27px] lg:px-[37px]">
         <div className="max-w-[1440px] relative bg-light-grey mx-auto rounded-[30px] pt-[53px] sm:pt-[77px]">
-          <img className="absolute right-[14px] top-[28px] max-w-[114px] w-full pointer-events-none h-[186px] max-[1275px]:left-[14px] max-[1067px]:hidden" src={HeroDots} alt="dots" />
+          <img className="absolute right-[14px] top-[28px] max-w-[114px] w-full pointer-events-none h-[186px] max-[1275px]:left-[14px] max-[1067px]:hidden" src={heroDots} alt="dots" />
           <div className="justify-center items-center flex mx-auto mb-[18px] max-w-[291px] sm:max-w-full">
             <p className="bg-light-purple max-w-[352.97px] text-sm sm:text-base max-sm:whitespace-nowrap w-full py-[11.5px] uppercase rounded-[21px] border border-purple-blue text-purple-blue font-bold leading-100 text-center">
               Twój zespół cyfrowy dostępny 24/7. </p>

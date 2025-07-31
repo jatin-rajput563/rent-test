@@ -1,11 +1,11 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import RoadmapTopImg from "../assets/images/png/roadmap-top-img.png";
-import RoadmapImgOne from "../assets/images/svg/roadmap-img-1.svg";
-import RoadmapImgTwo from "../assets/images/svg/roadmap-img-2.svg";
-import RoadmapImgThree from "../assets/images/svg/roadmap-img-3.svg";
-import RoadmapLineOne from "../assets/images/svg/roadmap-line-1.svg";
-import RoadmapLineTwo from "../assets/images/svg/roadmap-line-2.svg";
+import roadmapTopImg from "../assets/images/png/roadmap-top-img.png";
+import roadmapImgOne from "../assets/images/svg/roadmap-img-1.svg";
+import roadmapImgTwo from "../assets/images/svg/roadmap-img-2.svg";
+import roadmapImgThree from "../assets/images/svg/roadmap-img-3.svg";
+import roadmapLineOne from "../assets/images/svg/roadmap-line-1.svg";
+import roadmapLineTwo from "../assets/images/svg/roadmap-line-2.svg";
 import CustomHeading from "./common/CustomHeading";
 import CustomPara from "./common/CustomPara";
 import { RoadMap_Data } from "../utils/helper";
@@ -25,7 +25,7 @@ const JakZaczac = () => {
         <div className="max-w-[1140px] mx-auto px-[19.5px] xl:px-0">
           <img
             className="max-w-[170px] lg:max-w-[221px] pointer-events-none mx-auto"
-            src={RoadmapTopImg}
+            src={roadmapTopImg}
             alt="roadmap-top-img"
           />
           <div className="w-full shadow-lg text-center mx-auto rounded-[15px] border border-grey renteasy-bg-shadow pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
@@ -44,17 +44,17 @@ const JakZaczac = () => {
             <div className="relative max-w-[1200px] mx-auto px-4 before:content-[''] hidden min-[1070px]:block before:absolute before:top-0 before:bottom-0 before:left-1/2 before:-ml-[3px]">
               <img
                 className="absolute min-[1140px]:left-[43%] z-10 left-[47%]"
-                src={RoadmapImgOne}
+                src={roadmapImgOne}
                 alt="roadmap-img-1"
               />
               <img
-                className="absolute left-[49.2%] top-[11%] hidden min-[1140px]:block" src={RoadmapLineOne} alt="roadmap-line-1"
+                className="absolute left-[49.2%] top-[11%] hidden min-[1140px]:block" src={roadmapLineOne} alt="roadmap-line-1"
               />
               <div className="w-1 bg-black absolute left-[50.5%] top-[1%] block min-[1140px]:hidden h-[350px] min-[768px]:h-[281px] max-[900px]:left-[52%]"></div>
-              <img className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[37%]" src={RoadmapImgTwo} alt="roadmap-img-2"
+              <img className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[37%]" src={roadmapImgTwo} alt="roadmap-img-2"
               />
-              <img className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block" src={RoadmapLineTwo} alt="line-2" />
-              <img className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]" src={RoadmapImgThree} alt="roadmap-img-3" />
+              <img className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block" src={roadmapLineTwo} alt="line-2" />
+              <img className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]" src={roadmapImgThree} alt="roadmap-img-3" />
 
               {RoadMap_Data.map((item, index) => (
                 <div
@@ -80,7 +80,7 @@ const JakZaczac = () => {
               <div className="flex flex-wrap justify-center gap-[49px] sm:gap-[80px]">
                 {RoadMap_Data.map((item, index) => (
                   <div key={index} className="flex flex-col items-center text-center max-w-[300px]" >
-                    <img className="w-[54px] h-[54px]" src={ index === 0 ? RoadmapImgOne : index === 1 ? RoadmapImgTwo : RoadmapImgThree } alt={`roadmap-img-${index + 1}`} />
+                    <img className="w-[54px] h-[54px]" src={ index === 0 ? roadmapImgOne : index === 1 ? roadmapImgTwo : roadmapImgThree } alt={`roadmap-img-${index + 1}`} />
                     <p className="font-bold text-xl leading-120 pt-[13px] font-lato text-dark-black"> {item.heading} </p>
                     <p className="text-dark-black opacity-70 leading-[134%] ff-cabin pt-[6px]"> {item.paragraph} </p>
                   </div>

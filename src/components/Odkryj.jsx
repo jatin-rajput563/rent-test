@@ -1,6 +1,6 @@
 import React from "react";
-import SpyImg from "../assets/images/png/spy-img.png";
-import DiscoverRentImg from "../assets/images/webp/discover-rent-img.webp";
+import spyImg from "../assets/images/png/spy-img.png";
+import discoverRentImg from "../assets/images/webp/discover-rent-img.webp";
 import CustomHeading from "./common/CustomHeading";
 import SubHeading from "./common/SubHeading";
 import CustomButton from "./common/CustomButton";
@@ -12,7 +12,7 @@ const Odkryj = () => {
       <div className="pt-[52px] md:pt-[60px] lg:pt-[80px] xl:pt-[140px] px-[17px]">
         <div className="max-w-[1137px] mx-auto">
           <div className="max-w-[170px] lg:max-w-[221px] ml-12 z-10 pointer-events-none max-sm:mx-auto">
-            <img src={SpyImg} alt="spy-img" />
+            <img src={spyImg} alt="spy-img" />
           </div>
           <div className="bg-white border-2 border-grey rounded-[15px] renteasy-bg-shadow md:py-[55px] max-md:pt-[41px] max-md:pb-[33px] xl:pl-14 pl-[37px] pr-[37px] max-lg:px-7 max-sm:px-[10px]">
             <div className="min-[821px]:flex max-[821px]:flex-wrap gap-9 lg:gap-[58px]">
@@ -62,7 +62,7 @@ const Odkryj = () => {
               </div>
               <div>
                 <img
-                  src={DiscoverRentImg}
+                  src={discoverRentImg}
                   alt="discover-rent-img"
                   className="max-[425px]:h-[474px] min-[820px]:w-[517.3px] min-[820px]:h-[515px] pointer-events-none rounded-2xl object-cover"
                 />

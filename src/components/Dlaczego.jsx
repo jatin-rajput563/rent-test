@@ -1,6 +1,6 @@
 import React from "react";
 import CustomHeading from "./common/CustomHeading";
-import AiImg from "../assets/images/webp/ai-img.webp";
+import aiImg from "../assets/images/webp/ai-img.webp";
 import { Dlaczego_Data, Colors_Data } from "../utils/helper";
 import { useLocation } from "react-router-dom";
 
@@ -50,7 +50,7 @@ const Dlaczego = () => {
 
             <div className="w-full lg:max-w-[457px] mx-auto lg:h-[610px] sm:h-[500px] h-[447px]">
               <img
-                src={AiImg}
+                src={aiImg}
                 alt="work with us"
                 className="w-full h-full object-cover pointer-events-none rounded-[15px]"
               />

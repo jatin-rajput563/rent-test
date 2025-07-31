@@ -1,12 +1,12 @@
-import SliderImgOne from "../assets/images/png/slider-img-1.png";
-import SliderImgTwo from "../assets/images/png/slider-img-2.png";
-import SliderImgThree from "../assets/images/png/slider-img-3.png";
-import SliderImgFour from "../assets/images/png/slider-img-4.png";
-import UserGear from "../assets/images/svg/user-gear.svg";
-import CorporateImg from "../assets/images/svg/corporate.svg";
-import PortfolioImg from "../assets/images/svg/portfolio.svg";
-import TrashImg from "../assets/images/svg/trash-can.svg";
-import JoeImg from "../assets/images/svg/joe.svg";
+import sliderImgOne from "../assets/images/png/slider-img-1.png";
+import sliderImgTwo from "../assets/images/png/slider-img-2.png";
+import sliderImgThree from "../assets/images/png/slider-img-3.png";
+import sliderImgFour from "../assets/images/png/slider-img-4.png";
+import userGear from "../assets/images/svg/user-gear.svg";
+import corporateImg from "../assets/images/svg/corporate.svg";
+import portfolioImg from "../assets/images/svg/portfolio.svg";
+import trashImg from "../assets/images/svg/trash-can.svg";
+import joeImg from "../assets/images/svg/joe.svg";
 
 import {
     dlaczegoLogoFive,
@@ -32,62 +32,62 @@ import {
 
 export const HeroSlider_Data = [
     {
-        image: SliderImgOne,
+        image: sliderImgOne,
         sliderIcon: sliderIconOne,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
-        image: SliderImgTwo,
+        image: sliderImgTwo,
         sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        image: SliderImgThree,
+        image: sliderImgThree,
         sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
-        image: SliderImgFour,
+        image: sliderImgFour,
         sliderIcon: sliderIconFour,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
-        image: SliderImgTwo,
+        image: sliderImgTwo,
         sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        image: SliderImgThree,
+        image: sliderImgThree,
         sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
-        image: SliderImgOne,
+        image: sliderImgOne,
         sliderIcon: sliderIconOne,
         description: "Twoje automatyczne faktury, obliczenia depozytów, dochody i obsługa zadłużenia",
     },
     {
-        image: SliderImgTwo,
+        image: sliderImgTwo,
         sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        image: SliderImgThree,
+        image: sliderImgThree,
         sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
     {
-        image: SliderImgFour,
+        image: sliderImgFour,
         sliderIcon: sliderIconFour,
         description: "Wszystko, czego potrzebujesz, aby zarządzać wszystkimi najemcami i zapewnić im bardziej komfortowy pobyt.",
     },
     {
-        image: SliderImgTwo,
+        image: sliderImgTwo,
         sliderIcon: sliderIconTwo,
         description: "Wszystkie informacje o Twoich mieszkaniach, domach, pokojach i kawalerkach",
     },
     {
-        image: SliderImgThree,
+        image: sliderImgThree,
         sliderIcon: sliderIconThree,
         description: "Wszystko, czego potrzebujesz, aby zapewnić najlepszą obsługę swoim partnerom.",
     },
@@ -204,7 +204,7 @@ export const HeaderLinks_Data = [
     { link: "/dlakogo", label: "Dla kogo?" },
     { link: "/działa", label: "Jak to działa?" },
     { link: "/moduly", label: "Moduły" },
-    { link: "/", withImage: true, image: JoeImg },
+    { link: "/", withImage: true, image: joeImg },
 ];
 
 export const Dlaczego_Data = [
@@ -299,22 +299,22 @@ export const Tab_Data = [
         benefits: [
             {
                 text: "Zwiększyć Kontrolę Nad Procesem Wynajmu",
-                iconSrc: UserGear,
+                iconSrc: userGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Zminimalizować Czas Od Publikacji Do Podpisania Umowy",
-                iconSrc: CorporateImg,
+                iconSrc: corporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Pozyskać Najemców Bez Pośredników",
-                iconSrc: PortfolioImg,
+                iconSrc: portfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Budować Markę Własną W Ramach Strony Ofertowej",
-                iconSrc: TrashImg,
+                iconSrc: trashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -348,22 +348,22 @@ export const Tab_Data = [
         benefits: [
             {
                 text: "Zwiększyć Kontrolę Nad Procesem Wynajmu",
-                iconSrc: UserGear,
+                iconSrc: userGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Zminimalizować Czas Od Publikacji Do Podpisania Umowy",
-                iconSrc: CorporateImg,
+                iconSrc: corporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Pozyskać Najemców Bez Pośredników",
-                iconSrc: PortfolioImg,
+                iconSrc: portfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Budować Markę Własną W Ramach Strony Ofertowej",
-                iconSrc: TrashImg,
+                iconSrc: trashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -398,22 +398,22 @@ export const Tab_Data = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: UserGear,
+                iconSrc: userGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: CorporateImg,
+                iconSrc: corporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: PortfolioImg,
+                iconSrc: portfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: TrashImg,
+                iconSrc: trashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -448,22 +448,22 @@ export const Tab_Data = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: UserGear,
+                iconSrc: userGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: CorporateImg,
+                iconSrc: corporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: PortfolioImg,
+                iconSrc: portfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: TrashImg,
+                iconSrc: trashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -498,22 +498,22 @@ export const Tab_Data = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: UserGear,
+                iconSrc: userGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: CorporateImg,
+                iconSrc: corporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: PortfolioImg,
+                iconSrc: portfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: TrashImg,
+                iconSrc: trashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],
@@ -548,22 +548,22 @@ export const Tab_Data = [
         benefits: [
             {
                 text: "Zarządzaj Wynajmem Długoterminowym Lub Krótkoterminowym.",
-                iconSrc: UserGear,
+                iconSrc: userGear,
                 bgColor: "bg-[#5E13F6]",
             },
             {
                 text: "Prowadzenie Aparthoteli Lub Zakwaterowania Dla Pracowników.",
-                iconSrc: CorporateImg,
+                iconSrc: corporateImg,
                 bgColor: "bg-[#FF3B61]",
             },
             {
                 text: "Posiadasz Portfel Nieruchomości Na Wynajem I Chcesz Nim Zarządzać W Profesjonalny Sposób.",
-                iconSrc: PortfolioImg,
+                iconSrc: portfolioImg,
                 bgColor: "bg-[#FF4DF5]",
             },
             {
                 text: "Jesteś Przytłoczony Arkuszami Excel, Telefonami I Ciągłymi E-Mailami.",
-                iconSrc: TrashImg,
+                iconSrc: trashImg,
                 bgColor: "bg-[#00F0FF]",
             },
         ],

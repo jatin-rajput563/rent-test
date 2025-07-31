@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import DotImage from "../assets/images/png/dot.png";
-import CircleImg from "../assets/images/png/circle.png";
-import TabImg from "../assets/images/png/tab-image.png";
+import dotImage from "../assets/images/png/dot.png";
+import circleImg from "../assets/images/png/circle.png";
+import tabImg from "../assets/images/png/tab-image.png";
 import taskChecklist from "../assets/images/svg/task-checklist.svg";
 import { Tab_Data } from "../utils/helper";
 
@@ -35,7 +35,7 @@ const Moduly = () => {
           <div className="flex flex-col justify-start items-center bg-light-grey relative max-w-[1366px] rounded-[30px] w-full pt-[53px] sm:pt-[63px] md:pt-[77px] pb-[52px] sm:pb-[33px]">
             <img
               className="absolute w-[80px] lg:w-[114px] sm:max-[1240px] max-[1260px]:-rotate-270 origin-top-left min-[1260px]:right-[40px] top-[7%] lg:flex hidden -right-[90px]"
-              src={DotImage}
+              src={dotImage}
               alt="dots"
             />
 
@@ -48,8 +48,8 @@ const Moduly = () => {
             </h2>
             <div>
               <img
-                src={CircleImg}
-                alt="CircleImg"
+                src={circleImg}
+                alt="circleImg"
                 className="max-w-[220px] sm:max-w-[267px] w-full h-auto pointer-events-none"
               />
             </div>
@@ -118,7 +118,7 @@ const Moduly = () => {
 
                 <div className="hidden md:flex flex-shrink-0 items-center justify-center my-6 md:my-0">
                   <div className="w-[188px] flex items-center justify-center relative overflow-hidden">
-                    <img src={TabImg} alt="" className="" draggable={false} />
+                    <img src={tabImg} alt="" className="" draggable={false} />
                   </div>
                 </div>
                 <div className="hidden md:flex flex-col gap-0 md:gap-8 lg:gap-[53px] flex-1">
@@ -143,7 +143,7 @@ const Moduly = () => {
                 />
                 <div className="flex items-center justify-center my-6">
                   <div className="w-[188px] flex items-center justify-center relative overflow-hidden">
-                    <img src={TabImg} alt="" className="" draggable={false} />
+                    <img src={tabImg} alt="" className="" draggable={false} />
                   </div>
                 </div>
                 <FeatureCard
