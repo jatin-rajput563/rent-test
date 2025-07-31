@@ -44,9 +44,7 @@ const Header = () => {
               {link.withImage && (
                 <img
                   className="pointer-events-none w-[67.6px] h-[26px]"
-                  src={link.image}
-                  alt="Zoe"
-                />
+                  src={link.image} alt="Zoe"/>
               )}
             </NavLink>
           </li>
@@ -58,15 +56,13 @@ const Header = () => {
               Polski{" "}
               <span className="!cursor-pointer ">
                 <img
-                  className="!w-[33.6px] !cursor-pointer !h-[21px]"
+                  className="!w-[33.6px] !cursor-pointer pointer-events-none !h-[21px]"
                   src={Flag}
-                  alt="flag"
-                />
+                  alt="flag"/>
               </span>
             </button>
             <button className="px-[25.3px] py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
-              Zarejestruj
-            </button>
+              Zarejestruj</button>
           </div>
         </li>
       </ul>
@@ -76,35 +72,25 @@ const Header = () => {
             Polski{" "}
             <span className="!cursor-pointer">
               <img
-                className=" !w-[33.6px] !cursor-pointer !h-[21px]"
-                src={Flag}
-                alt="flag"
+                className=" !w-[33.6px] !cursor-pointer pointer-events-none !h-[21px]" src={Flag} alt="flag"
               />
             </span>
           </button>
           <button className="px-[25.3px]  cursor-pointer py-[11.5px] text-base font-semibold rounded-[21px] duration-300 shadow-[0px_1px_15px_0px_#5E13F687] border border-transparent hover:border-purple-blue hover:bg-transparent hover:text-purple-blue bg-purple-blue leading-[19px] text-white">
-            Zarejestruj
-          </button>
+            Zarejestruj</button>
         </div>
         <div
           className="z-50 cursor-pointer group relative min-h-[17px] w-[25px] flex flex-col justify-center items-center gap-1 max-[1025px]:flex min-[1025px]:hidden"
-          onClick={toggleNavbar}
-        >
+          onClick={toggleNavbar}>
           <span
             className={`h-[3px] bg-dark-blue rounded-full duration-300 w-full ${
-              isOpen ? "rotate-45 translate-y-[8px]" : ""
-            }`}
-          />
+              isOpen ? "rotate-45 translate-y-[8px]" : ""}`}/>
           <span
             className={`h-[3px] bg-dark-blue rounded-full duration-300 w-full ${
-              isOpen ? "opacity-0" : ""
-            }`}
-          />
+              isOpen ? "opacity-0" : ""}`}/>
           <span
             className={`h-[3px] bg-dark-blue rounded-full duration-300 w-full ${
-              isOpen ? "-rotate-47 -translate-y-[6px]" : ""
-            }`}
-          />
+              isOpen ? "-rotate-47 -translate-y-[6px]" : ""}`}/>
         </div>
       </div>
     </div>

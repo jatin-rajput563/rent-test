@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import CustomButton from "./CustomButton";
 import CustomHeading from "./CustomHeading";
 import FooterLogo from "../../assets/images/svg/FooterLogo.svg";
@@ -115,12 +115,12 @@ const Footer = () => {
                           i === 2 ? "max-[425px]:max-w-[50px]" : ""
                         }`}
                       >
-                        <a
-                          href={link.href}
+                        <NavLink
+                          to={link.href}
                           className="font-lato opacity-80 text-white text-base leading-160 relative after:h-[1px] after:absolute after:bg-white after:left-0 after:bottom-0 after:rounded-full after:right-full hover:after:right-0 after:duration-300 hover:text-white duration-300"
                         >
                           {link.label}
-                        </a>
+                        </NavLink>
                       </li>
                     ))}
                   </ul>

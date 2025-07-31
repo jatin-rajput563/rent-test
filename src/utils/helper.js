@@ -572,8 +572,8 @@ export const Tab_Data = [
 
 export const NavLinks_Data = [
     { label: "Strona Główna", href: "/" },
-    { label: "Dla kogo?", href: "/dla-kogo" },
-    { label: "Jak to działa?", href: "/jak-to-dziala" },
+    { label: "Dla kogo?", href: "/dlakogo" },
+    { label: "Jak to działa?", href: "/dlaczego" },
     { label: "Moduły", href: "/moduly" },
     { label: "Zoe", href: "/zoe" },
 ];
