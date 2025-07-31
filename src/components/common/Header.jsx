@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../../assets/images/svg//Logo.svg";
-import Flag from "../../assets/images/png/flag.png";
+import logo from "../../assets/images/svg//logo.svg";
+import flag from "../../assets/images/png/flag.png";
 import { HEADERLINKS_DATA } from "../../utils/helper";
 import { NavLink } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Header = () => {
       <NavLink to="/">
         <img
           className="sm:h-[54px] h-[41px] w-[139px] pointer-events-none sm:w-[183px]"
-          src={Logo}
+          src={logo}
           alt="logo"
         />
       </NavLink>
@@ -49,7 +49,6 @@ const Header = () => {
             </NavLink>
           </li>
         ))}
-
         <li>
           <div className="items-center gap-[15px] flex flex-col sm:hidden">
             <button className="text-dark-blue leading-[19px] duration-300 flex !cursor-pointer justify-center items-center gap-[15px]">
@@ -57,7 +56,7 @@ const Header = () => {
               <span className="!cursor-pointer ">
                 <img
                   className="!w-[33.6px] !cursor-pointer pointer-events-none !h-[21px]"
-                  src={Flag}
+                  src={flag}
                   alt="flag"/>
               </span>
             </button>
@@ -72,7 +71,7 @@ const Header = () => {
             Polski{" "}
             <span className="!cursor-pointer">
               <img
-                className=" !w-[33.6px] !cursor-pointer pointer-events-none !h-[21px]" src={Flag} alt="flag"
+                className=" !w-[33.6px] !cursor-pointer pointer-events-none !h-[21px]" src={flag} alt="flag"
               />
             </span>
           </button>

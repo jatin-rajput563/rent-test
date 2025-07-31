@@ -4,7 +4,7 @@ import CustomButton from "./common/CustomButton";
 import CustomHeading from "./common/CustomHeading";
 
 const Najczesciej = () => {
-  const [openIndex, setOpenIndex] = useState(0); // 👈 First accordion open by default
+  const [openIndex, setOpenIndex] = useState(0);
   const contentRefs = useRef([]);
 
   const handleToggle = (index) => {
