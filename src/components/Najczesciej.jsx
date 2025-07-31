@@ -34,7 +34,7 @@ const Najczesciej = () => {
                   onClick={() => handleToggle(index)}
                   className={`w-full flex flex-col text-left cursor-pointer font-bold text-dark-black text-lg sm:text-xl leading-[120%] px-[25px] transition-all duration-300 overflow-hidden ${
                     isOpen
-                      ? "pt-[30px] pb-[15px] h-[163px]"
+                      ? "pt-[30px] pb-[15px] sm:h-[163px]"
                       : "min-h-[76px] py-[20px] justify-center"
                   }`}
                 >
