@@ -24,11 +24,11 @@ const JakZaczac = () => {
       >
         <div className="max-w-[1140px] mx-auto px-[19.5px] xl:px-0">
           <img
-            className="max-w-[170px] lg:max-w-[221px] pointer-events-none mx-auto"
+            className="max-w-[221px] pointer-events-none mx-auto"
             src={roadmapTopImg}
             alt="roadmap-top-img"
           />
-          <div className="w-full shadow-lg text-center mx-auto rounded-[15px] border border-grey renteasy-bg-shadow pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
+          <div className="w-full shadow-lg text-center mx-auto rounded-[15px] h-full min-h-[613px] border border-grey renteasy-bg-shadow pt-[25px] sm:pt-[35px] md:pt-[45px] lg:pt-[62px] pb-[53px] sm:pb-[62px] relative">
             <CustomHeading
               headingText={"Jak Zacząć?"}
               headinglass={"text-center"}
@@ -54,17 +54,17 @@ const JakZaczac = () => {
               />
               <div className="w-1 bg-black absolute left-[50.5%] top-[1%] block min-[1140px]:hidden h-[350px] min-[768px]:h-[259px] max-[900px]:left-[52%]"></div>
               <img
-                className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[39%]"
+                className="absolute left-[47%] min-[1140px]:left-[51.8%] top-[38%]"
                 src={roadmapImgTwo}
                 alt="roadmap-img-2"
               />
               <img
-                className="absolute right-[47.9%] top-[48%] hidden min-[1140px]:block"
+                className="absolute right-[47.9%] top-[47%] hidden min-[1140px]:block"
                 src={roadmapLineTwo}
                 alt="line-2"
               />
               <img
-                className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[74.6%] top-[76.6%]"
+                className="absolute min-[1140px]:left-[43%] left-[47%] min-[1140px]:top-[73.6%] top-[76.6%]"
                 src={roadmapImgThree}
                 alt="roadmap-img-3"
               />
@@ -81,11 +81,12 @@ const JakZaczac = () => {
                   <div className={`max-w-[373px] ${item.align}`}>
                     <h2
                       className={`text-xl font-bold font-lato pb-[6px] text-dark-black ${
-                        index === 0 || index === 2 ? "pr-[21px]" : ""
-                      }`}
+                        index === 1 ? "pt-[21px]" : ""
+                      } ${index === 0 || index === 2 ? "pr-[21px]" : ""}`}
                     >
                       {item.heading}
                     </h2>
+
                     <p className="ff-cabin leading-[140%] max-w-[353px] text-dark-black opacity-70 capitalize">
                       {item.paragraph}
                     </p>
@@ -98,7 +99,7 @@ const JakZaczac = () => {
                 {ROADMAP_DATA.map((item, index) => (
                   <div
                     key={index}
-                    className="flex flex-col items-center text-center max-w-[300px]"
+                    className="flex flex-col max-w-[212px] items-center text-center "
                   >
                     <img
                       className="w-[54px] h-[54px]"

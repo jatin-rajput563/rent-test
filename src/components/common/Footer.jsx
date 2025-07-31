@@ -53,7 +53,7 @@ const Footer = () => {
                 isHomePage ? "Zarejestruj się" : "Skonfiguruj swój pakiet"
               }
               btnClass={`text-white text-center hover:bg-white hover:text-dark-blue border-solid border-white !py-[9px] ${
-                isHomePage ? "sm:!px-[23.8px] !px-[59.3px]" : "!px-[20.8px]"
+                isHomePage ? "sm:!px-[23.8px] !px-[62.4px]" : "!px-[20.8px]"
               }`}
             />
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                     alt="footer-logo"
                     width="183"
                     height="54"
-                    className="max-sm:w-[246px] max-sm:h-[74px] pointer-events-none max-[183px] max-h-[54px]"
+                    className="pointer-events-none max-sm:w-[246px] max-sm:h-[74px] w-[183px] h-[54px]"
                   />
                 </a>
               </div>

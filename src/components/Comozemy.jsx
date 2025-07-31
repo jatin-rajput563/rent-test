@@ -6,7 +6,7 @@ import { COMOZEMY_DATA } from "../utils/helper";
 const Comozemy = () => {
   return (
     <>
-      <div className="max-[640px]:pt-[162px] sm:pt-[80px] lg:pt-[140px] max-xl:px-5">
+      <div className="max-[640px]:pt-[172px] sm:pt-[80px] lg:pt-[140px] max-xl:px-5">
         <img
           className="mx-auto max-w-[221px] w-full pointer-events-none"
           src={spyImg}
@@ -29,10 +29,10 @@ const Comozemy = () => {
                 >
                   <item.image />
                 </div>
-                <h2 className="font-bold text-xl text-dark-black sm:pt-4 sm:pb-[6px] pt-6 pb-[11px] leading-120 sm:px-0 px-[15px]">
+                <h2 className="font-bold text-xl text-dark-black sm:pt-4 sm:pb-[6px] pt-6 pb-[11px] leading-120 sm:px-0   ">
                   {item.title}
                 </h2>
-                <p className="ff-cabin leading-134 text-dark-black opacity-70 sm:px-0 px-[15px]">
+                <p className="ff-cabin leading-134 max-w-[450px] capitalize text-dark-black opacity-70">
                   {item.text}
                 </p>
               </div>

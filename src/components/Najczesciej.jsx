@@ -62,14 +62,14 @@ const Najczesciej = () => {
                   <div
                     ref={(el) => (contentRefs.current[index] = el)}
                     className={`grid transition-all duration-500 ease-in-out overflow-hidden ${
-                      isOpen ? "mt-0" : "mt-0"
+                      isOpen ? "mt-[6px]" : "mt-0"
                     }`}
                     style={{
                       gridTemplateRows: isOpen ? "1fr" : "0fr",
                     }}
                   >
                     <div className="overflow-hidden">
-                      <p className="text-base font-normal text-dark-black opacity-70 leading-[134%] ff-cabin max-w-[900px]">
+                      <p className="text-base font-normal capitalize text-dark-black opacity-70 leading-[134%] ff-cabin max-w-[900px]">
                         {obj.answer}
                       </p>
                     </div>

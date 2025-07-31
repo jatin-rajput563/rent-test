@@ -18,7 +18,7 @@ const Dlaczego = () => {
           <div className="flex flex-col lg:flex-row gap-[37px] xl:gap-[83px] justify-center items-center">
             <div className="flex flex-col max-w-[600px] w-full py-0">
               <CustomHeading
-                headingClass=" !leading-120 mb-[37px] max-lg:text-center"
+                headingClass=" !leading-120 mb-[25px] sm:mb-[37px] max-lg:text-center"
                 headingText="Dlaczego warto skorzystać z RentEasy.AI?" />
               {DLACZEGO_DATA.map((item, index) => (
                 <div
@@ -35,10 +35,10 @@ const Dlaczego = () => {
                     <item.icon />
                   </div>
                   <div>
-                    <h4 className="font-bold text-xl leading-100 pb-1.5 text-dark-black">
+                    <h4 className="font-bold text-xl leading-100 capitalize pb-1.5 text-dark-black">
                       {item.title}
                     </h4>
-                    <h4 className="leading-134 text-dark-black opacity-70 ff-cabin">
+                    <h4 className="leading-134 text-dark-black capitalize opacity-70 ff-cabin">
                       {item.descrition}
                     </h4>
                   </div>

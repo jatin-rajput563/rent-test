@@ -18,7 +18,8 @@ const DlaKogo = () => {
     <>
       <div
         id="dlakogo"
-        className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`} >
+        className={`${isHomePage ? "pt-[145px] sm:pt-[140px]" : "pt-0"}`}
+      >
         <div className="max-w-[1180px] px-5 mx-auto">
           <div className="text-center">
             <CustomHeading
@@ -26,19 +27,21 @@ const DlaKogo = () => {
               headingText="Dla kogo?"
             />
             <Tabs>
-              <TabList className="inline-flex bg-white border border-purple-blue rounded-full gap-1 justify-center items-center">
+              <TabList className="inline-flex bg-white max-w-[452px] w-full border border-purple-blue rounded-full gap-1 justify-center items-center h-[73px] sm:h-auto">
                 <Tab
-                  className="sm:py-[21.5px] sm:pl-[58.8px] py-[27px] px-9 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
-                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm  shadow-[inset_4px_6px_4px_0px_#00000040]"
+                  className="sm:py-[21.5px] sm:pl-[58.8px] w-full py-[23px] max-w-[226px] px-9 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm shadow-[inset_4px_6px_4px_0px_#00000040]"
                 >
                   Firm, Które...
                 </Tab>
                 <Tab
-                  className="pl-4 sm:px-6 py-[27px] sm:py-[21.5px] rounded-[73px] whitespace-nowrap sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
-                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm shadow-[inset_4px_6px_4px_0px_#00000040]" >
+                  className="pl-4 sm:px-6 py-[23px] sm:py-[21.5px] w-full !pr-0 rounded-[73px] whitespace-nowrap sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
+                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm shadow-[inset_4px_6px_4px_0px_#00000040]"
+                >
                   Właścicieli, Którzy...
                 </Tab>
               </TabList>
+
               <TabPanel>
                 <div className="mt-[79px] sm:mt-[77px] flex max-[900px]:flex-wrap justify-center gap-[45px]">
                   {DLAKOGO_DATA.map((item, index) => {
@@ -57,10 +60,12 @@ const DlaKogo = () => {
                       <div
                         key={index}
                         className={`group rounded-[20px] bg-white text-center cursor-pointer duration-300 ${cardShadow}
-                          w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]`} >
+                          w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]`}
+                      >
                         <div
                           className={`w-[74px] h-[74px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
-                          style={{ backgroundColor: iconBg }} >
+                          style={{ backgroundColor: iconBg }}
+                        >
                           <div
                             className={`text-black w-6 h-6 ${iconPositionClass}`}
                           >
@@ -72,7 +77,9 @@ const DlaKogo = () => {
                         </h3>
                         <p
                           className={`text-dark-blue text-sm opacity-80 mt-[11px] leading-134 ff-cabin mx-auto ${
-                            index === 3 ? "max-w-[170px]" : "" }`} >
+                            index === 3 ? "max-w-[170px]" : ""
+                          }`}
+                        >
                           {item.subtitle}
                         </p>
                       </div>
