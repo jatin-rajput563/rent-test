@@ -60,11 +60,11 @@ const Odkryj = () => {
                   btnText={"Sprawdź nas!"}
                 />
               </div>
-              <div>
+              <div className="mx-auto flex justify-center">
                 <img
                   src={discoverRentImg}
                   alt="discover-rent-img"
-                  className="max-[425px]:h-[474px] min-[820px]:w-[517.3px] min-[820px]:h-[515px] pointer-events-none rounded-2xl object-cover"
+                  className="max-[425px]:h-[474px] sm:w-[517.3px] min-[820px]:h-[515px] pointer-events-none rounded-2xl object-cover"
                 />
               </div>
             </div>

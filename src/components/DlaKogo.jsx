@@ -71,7 +71,7 @@ const DlaKogo = () => {
                           {item.title}
                         </h3>
                         <p
-                          className={`text-dark-black text-sm opacity-80 mt-[11px] leading-134 ff-cabin mx-auto ${
+                          className={`text-dark-blue text-sm opacity-80 mt-[11px] leading-134 ff-cabin mx-auto ${
                             index === 3 ? "max-w-[170px]" : "" }`} >
                           {item.subtitle}
                         </p>

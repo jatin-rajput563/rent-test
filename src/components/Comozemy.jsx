@@ -21,7 +21,7 @@ const Comozemy = () => {
             {COMOZEMY_DATA.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center sm:bg-white max-w-[301px] sm:max-w-[527px] min-h-[223px] xl:min-h-[199px] rounded-[15px] md:py-[22px] sm:py-6 md:pl-[21px] md:pr-[45px] sm:px-4 sm:h-full transition-all duration-300 ease-in-out comozemy-card hover:shadow-lg"
+                className="flex flex-col items-center text-center sm:bg-white max-w-[301px] sm:max-w-[527px] min-h-[223px] xl:min-h-[199px] rounded-[15px] md:py-[22px] sm:py-6 md:pl-[21px] md:pr-[45px] sm:px-4 sm:h-full transition-all duration-300 ease-in-out comozemy-card hover:shadow-lg max-sm:!shadow-none"
               >
                 <div
                   className="justify-center items-center flex sm:size-16 size-[74px] rounded-2xl"

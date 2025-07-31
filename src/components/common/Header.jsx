@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="max-w-[1180px] px-5 mx-auto sm:pt-7 py-[11px] sm:pb-[26px] flex justify-between items-center relative overflow-x-clip">
+    <div className="max-w-[1180px] px-5 mx-auto sm:pt-7 py-[11px] sm:pb-[28px] flex justify-between items-center relative overflow-x-clip">
       <NavLink to="/">
         <img
           className="sm:h-[54px] h-[41px] w-[139px] pointer-events-none sm:w-[183px]"

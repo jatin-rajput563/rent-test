@@ -46,7 +46,7 @@ const Dlaczego = () => {
               ))}
             </div>
 
-            <div className="w-full lg:max-w-[457px] mx-auto lg:h-[610px] sm:h-[500px] h-[447px]">
+            <div className="w-full max-w-[457px] mx-auto lg:h-[610px] sm:h-[500px] h-[447px]">
               <img
                 src={aiImg}
                 alt="work with us"
