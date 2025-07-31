@@ -30,7 +30,7 @@ const Hero = () => {
               <span className="bg-light-purple rounded-tl-xl rounded-bl-xl relative pl-2 ml-1">
                 dzięki AI.
                 <img
-                  className="absolute -top-[32px] h-[104px] pointer-events-none -right-[85px] "
+                  className="absolute -top-[27px] h-[104px] pointer-events-none -right-[85px] "
                   src={logoImg}
                   alt="logo-text-img" />
               </span>

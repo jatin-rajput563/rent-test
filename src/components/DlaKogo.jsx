@@ -29,13 +29,13 @@ const DlaKogo = () => {
               <TabList className="inline-flex bg-white border border-purple-blue rounded-full gap-1 justify-center items-center">
                 <Tab
                   className="sm:py-[21.5px] sm:pl-[58.8px] py-[27px] px-9 whitespace-nowrap sm:pr-[42px] rounded-[73px] sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
-                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm"
+                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm  shadow-[inset_4px_6px_4px_0px_#00000040]"
                 >
                   Firm, Które...
                 </Tab>
                 <Tab
                   className="pl-4 sm:px-6 py-[27px] sm:py-[21.5px] rounded-[73px] whitespace-nowrap sm:text-xl font-bold text-dark-blue cursor-pointer border border-transparent focus:outline-none focus:ring-0 transition-colors duration-300"
-                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm" >
+                  selectedClassName="bg-purple-blue text-white border border-purple-blue shadow-sm shadow-[inset_4px_6px_4px_0px_#00000040]" >
                   Właścicieli, Którzy...
                 </Tab>
               </TabList>
