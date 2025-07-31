@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import react from "react";
 import "./App.css";
 import Comozemy from "./components/Comozemy";
 import DlaKogo from "./components/DlaKogo";
@@ -13,38 +13,9 @@ import Dlaczego from "./components/Dlaczego";
 import Moduly from "./components/Moduly";
 import BackToTop from "./components/BackToTop";
 
-import Lenis from "lenis";
-
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smooth: true,
-  smoothTouch: false,
-  touchMultiplier: 2,
-});
-
-function ScrollManager() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
-    lenis.scrollTo(0, {
-      offset: 0,
-      immediate: true,
-    });
-  }, [location.pathname]);
-
-  return null;
-}
-
 function App() {
   return (
     <BrowserRouter>
-      <ScrollManager />
       <Header />
       <Routes>
         <Route

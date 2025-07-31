@@ -20,7 +20,7 @@ const Hero = () => {
             alt="dots"
           />
           <div className="justify-center items-center flex mx-auto mb-[18px] max-w-[291px] sm:max-w-full">
-            <p className="bg-light-purple max-w-[352.97px] text-right text-sm sm:text-base max-sm:whitespace-nowrap w-full py-[11.5px] uppercase rounded-[21px] border border-purple-blue text-purple-blue font-bold leading-100">
+            <p className="bg-light-purple max-w-[352.97px] sm:text-right text-center text-sm sm:text-base max-sm:whitespace-nowrap w-full py-[11.5px] uppercase rounded-[21px] border border-purple-blue text-purple-blue font-bold leading-100">
               Twój zespół cyfrowy dostępny 24/7.{" "}
             </p>
           </div>
@@ -54,7 +54,7 @@ const Hero = () => {
                 btnText={"Zobacz Zoe w akcji"} />
             </div>
           </div>
-          <div className="min-[769px]:mt-[5.5px] px-4 max-[1025px]:!-mt-[50px]">
+          <div className="max-[425px]:!mt-[10px] px-4 ">
             <Swiper
               modules={[Autoplay]}
               slidesPerView={5}

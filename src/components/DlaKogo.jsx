@@ -40,7 +40,7 @@ const DlaKogo = () => {
                 </Tab>
               </TabList>
               <TabPanel>
-                <div className="mt-[79px] sm:mt-[77px] flex flex-wrap justify-center gap-[45px]">
+                <div className="mt-[79px] sm:mt-[77px] flex max-[900px]:flex-wrap justify-center gap-[45px]">
                   {DLAKOGO_DATA.map((item, index) => {
                     const iconBg = ICONBGCOLORS_DATA[index] || "#000";
                     const iconShadow = ICONSHADOWS_DATA[index] || "";
