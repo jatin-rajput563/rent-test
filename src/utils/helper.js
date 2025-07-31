@@ -606,3 +606,24 @@ export const CardShadows_Data = [
     "hover:shadow-[5px_7px_58.2px_0px_#FF4DF51A]",
     "hover:shadow-[5px_7px_58.2px_0px_#00F0FF1A]",
 ];
+
+export const RoadMap_Data = [
+    {
+        heading: "Skonfiguruj Swój Pakiet",
+        paragraph:
+            "Porozmawiaj z Zoe i pozwól jej wybrać funkcje, które odpowiadają potrzebom Twojej firmy.",
+        align: "text-right",
+    },
+    {
+        heading: "Uzyskaj Spersonalizowane Rekomendacje",
+        paragraph:
+            "Otrzymaj natychmiastową, dostosowaną do Twoich potrzeb propozycję modułu — wraz z przejrzystą wyceną.",
+        align: "text-left",
+    },
+    {
+        heading: "Przetestuj lub Skontaktuj się z nami",
+        paragraph:
+            "Załóż konto, lub umów się na bezpłatną konsultację z naszym zespołem.",
+        align: "text-right",
+    },
+];

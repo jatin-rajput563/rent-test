@@ -7,7 +7,6 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import { HeroSlider_Data } from "../utils/helper";
 
 const Hero = () => {
