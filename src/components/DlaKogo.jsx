@@ -4,6 +4,9 @@ import "react-tabs/style/react-tabs.css";
 import { DlaKogo_Data } from "../utils/helper";
 import CustomHeading from "./common/CustomHeading";
 import { useLocation } from "react-router-dom";
+import {
+  IconBgColors_Data, IconsShadows_Data, CardShadows_Data,
+} from "../utils/helper";
 
 const DlaKogo = () => {
   const location = useLocation();
@@ -21,7 +24,6 @@ const DlaKogo = () => {
               headingClass="font-bold text-dark-blue !leading-[121%] mb-[34px] sm:mb-[44px] text-center"
               headingText="Dla kogo?"
             />
-
             <Tabs>
               <TabList className="inline-flex bg-white border border-purple-blue rounded-full gap-1 justify-center items-center">
                 <Tab
@@ -37,32 +39,12 @@ const DlaKogo = () => {
                   Właścicieli, Którzy...
                 </Tab>
               </TabList>
-
               <TabPanel>
                 <div className="mt-[79px] sm:mt-[77px] flex flex-wrap justify-center gap-[45px]">
                   {DlaKogo_Data.map((item, index) => {
-                    const iconBgColors = [
-                      "#5E13F6",
-                      "#FF3B61",
-                      "#FF4DF5",
-                      "#00F0FF",
-                    ];
-                    const iconShadows = [
-                      "group-hover:shadow-[5px_7px_58.2px_0px_#5E13F6]",
-                      "group-hover:shadow-[5px_7px_58.2px_0px_#FF3B61]",
-                      "group-hover:shadow-[5px_7px_58.2px_0px_#FF4DF5]",
-                      "group-hover:shadow-[5px_7px_58.2px_0px_#00F0FF]",
-                    ];
-                    const cardShadows = [
-                      "hover:shadow-[5px_7px_58.2px_0px_#5E13F61A]",
-                      "hover:shadow-[5px_7px_58.2px_0px_#FF3B611A]",
-                      "hover:shadow-[5px_7px_58.2px_0px_#FF4DF51A]",
-                      "hover:shadow-[5px_7px_58.2px_0px_#00F0FF1A]",
-                    ];
-
-                    const iconBg = iconBgColors[index] || "#000";
-                    const iconShadow = iconShadows[index] || "";
-                    const cardShadow = cardShadows[index] || "";
+                    const iconBg = IconBgColors_Data[index] || "#000";
+                    const iconShadow = IconsShadows_Data[index] || "";
+                    const cardShadow = CardShadows_Data[index] || "";
 
                     const iconPositionClass =
                       index === 1
@@ -75,8 +57,7 @@ const DlaKogo = () => {
                       <div
                         key={index}
                         className={`group rounded-[20px] bg-white text-center cursor-pointer duration-300 ${cardShadow}
-                        w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]
-                      `}
+                          w-[301px] h-[155px] sm:w-[251px] sm:h-[258px] sm:py-[30px]`}
                       >
                         <div
                           className={`w-[74px] h-[74px] mx-auto mb-6 flex items-center justify-center rounded-xl transition-shadow duration-300 ${iconShadow}`}
@@ -98,17 +79,13 @@ const DlaKogo = () => {
                         >
                           {item.subtitle}
                         </p>
-                      </div>
-                    );
+                      </div>);
                   })}
                 </div>
               </TabPanel>
-
               <TabPanel>
                 <div className="mt-12 text-center text-dark-blue">
-                  <p className="text-lg font-medium">
-                    Wkrótce: Funkcje dla Właścicieli...
-                  </p>
+                  <p className="text-lg font-medium">Wkrótce: Funkcje dla Właścicieli...</p>
                 </div>
               </TabPanel>
             </Tabs>

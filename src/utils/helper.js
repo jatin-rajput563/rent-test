@@ -577,3 +577,32 @@ export const NavLinks_Data = [
     { label: "Moduły", href: "/moduly" },
     { label: "Zoe", href: "/zoe" },
 ];
+
+export const Colors_Data = [
+    "bg-[#5E13F6]",
+    "bg-[#FF3B61]",
+    "bg-[#FF4DF5]",
+    "bg-[#00F0FF]",
+    "bg-[#1B1E3C]",
+];
+
+export const IconBgColors_Data = [
+    "#5E13F6",
+    "#FF3B61",
+    "#FF4DF5",
+    "#00F0FF",
+];
+
+export const IconsShadows_Data = [
+    "group-hover:shadow-[5px_7px_58.2px_0px_#5E13F6]",
+    "group-hover:shadow-[5px_7px_58.2px_0px_#FF3B61]",
+    "group-hover:shadow-[5px_7px_58.2px_0px_#FF4DF5]",
+    "group-hover:shadow-[5px_7px_58.2px_0px_#00F0FF]",
+];
+
+export const CardShadows_Data = [
+    "hover:shadow-[5px_7px_58.2px_0px_#5E13F61A]",
+    "hover:shadow-[5px_7px_58.2px_0px_#FF3B611A]",
+    "hover:shadow-[5px_7px_58.2px_0px_#FF4DF51A]",
+    "hover:shadow-[5px_7px_58.2px_0px_#00F0FF1A]",
+];

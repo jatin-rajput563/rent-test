@@ -1,20 +1,12 @@
 import React from "react";
 import CustomHeading from "./common/CustomHeading";
 import AiImg from "../assets/images/webp/ai-img.webp";
-import { Dlaczego_Data } from "../utils/helper";
+import { Dlaczego_Data, Colors_Data } from "../utils/helper";
 import { useLocation } from "react-router-dom";
 
 const Dlaczego = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-
-  const COLORS = [
-    "bg-[#5E13F6]",
-    "bg-[#FF3B61]",
-    "bg-[#FF4DF5]",
-    "bg-[#00F0FF]",
-    "bg-[#1B1E3C]",
-  ];
 
   return (
     <>
@@ -39,7 +31,7 @@ const Dlaczego = () => {
                 >
                   <div
                     className={`flex justify-center items-center min-h-[64px] min-w-[64px] size-[64px] rounded-[14px] ${
-                      COLORS[index % COLORS.length]
+                      Colors_Data[index % Colors_Data.length]
                     }`}
                   >
                     <item.icon />
