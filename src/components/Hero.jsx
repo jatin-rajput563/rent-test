@@ -54,11 +54,11 @@ const Hero = () => {
                 btnText={"Zobacz Zoe w akcji"} />
             </div>
           </div>
-          <div className="min-[769px]:mt-[5.5px]">
+          <div className="min-[769px]:mt-[5.5px] px-4">
             <Swiper
               modules={[Autoplay]}
               slidesPerView={5}
-              spaceBetween={20}
+              spaceBetween={44}
               loop={true}
               autoplay={{
                 delay: 2000,
@@ -74,9 +74,9 @@ const Hero = () => {
                 return (
                   <SwiperSlide key={index}>
                     <div
-                      className="relative bg-white rounded-[15px] max-w-[231px] w-full h-[261px] mt-[48px] sm:mt-[60px] md:mt-[75px] lg:mt-[82px] mb-[33px] sm:mb-[20px] mx-auto"
+                      className="relative bg-white rounded-[15px]  w-full h-[261px] mt-[48px] sm:mt-[60px] md:mt-[75px] lg:mt-[82px] mb-[33px] sm:mb-[20px] mx-auto"
                       style={{ boxShadow: "7px -5px 35.4px 0px #5E13F61A" }} >
-                      <img className="max-w-[231px] h-[145px] w-full rounded-t-[15px]" src={slide.image} alt="slider-img" />
+                      <img className=" h-[145px] w-full object-cover rounded-t-[15px]" src={slide.image} alt="slider-img" />
                       <div className="absolute top-[40%] size-[54px] left-1/2 -translate-x-1/2 z-10">
                         <slide.sliderIcon />
                       </div>
